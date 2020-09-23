@@ -508,6 +508,8 @@ color: gray;
 .APAGARDRENAMEL_text{
   font-size: 0.1vw;
 }
+
+/* stepページ */
 .products_step{
   width: 100%;
   height: auto;
@@ -516,6 +518,13 @@ color: gray;
   margin: 0 auto;
     width: 80%;
     margin-block-start: 10%;
+    margin-block-end: 30px;
+}
+.products_step_boder{
+  width: 80%;
+    margin: 0 auto;
+    padding: 20px 0;
+    border:solid #ccc 1px;
 }
 .products_step_bar img{
   width: 80vw;
@@ -537,28 +546,42 @@ color: gray;
 .products_step_purchase_img img{
   width: 100%;
 }
-.products_step_purchase_text h2{
+.products_step_purchase_text_name{
   font-size: 4vw;
+  margin-bottom: 0;
 }
-.products_step_purchase_text p{
+.products_step_purchase_text_text,.products_step_purchase_text_praice{
   font-size: 3.5vw;
 }
 .products_step_recalculation{
   text-align: center;
 }
 .products_step_recalculation input{
-  width: 30%;
-  height: 6vw;
-  margin-right: 4%;
-}
+  width: 35.9%;
+      height: 6vw;
+      margin-right: 10%;
+
+  }
 .products_step_count{
   text-align: center;
   margin-top: 5%;
 }
+.ple_58{
+  padding-inline-end: 58px;
+}
+.products_step_count form{
+
+}
 .products_step_count input{
-  width: 30%;
-  height: 6vw;
-  margin-right: 4%;
+  width: 29%;
+      height: 6vw;
+      margin-right: 8.3%;
+
+}
+.products_step_deletebutton{
+  border: none;
+    background: none;
+    font-size: 2vw;
 }
 .products_step_recalculation button{
 border: none;
@@ -568,7 +591,7 @@ border: none;
     padding: 2vw 3vw;
     background: gray;
   }
-.products_step_count  button{
+.products_step_button1{
   border: none;
       outline: none;
       color: white;
@@ -576,19 +599,42 @@ border: none;
       padding: 2vw 4.5vw;
       background:  gray;
     }
+ .products_step_button2{
+      border: none;
+          outline: none;
+          color: white;
+          font-size: 3vw;
+          padding: 2vw 4.5vw;
+          background:  gray;
+  }
+
   .products_step_{
     width: 100%;
     text-align: center;
   }
   .products_step_boybutton{
-    margin-block-start: 15%;
-    border: none;
-        outline: none;
-        color: white;
-        font-size: 3vw;
-        padding: 2vw 4.5vw;
-        background:  gray;
-    width: 80%
+    margin-block-start: 4%;
+      border: none;
+      outline: none;
+      color: white;
+      font-size: 3vw;
+      /* padding: 2vw 4.5vw; */
+      background: linear-gradient(#B1ACAC, gray);
+      width: 80%;
+      height: 13vw;
+      font-size: 5vw;
+  }
+  .products_step_boybutton2{
+    margin-block-start: 3%;
+      border: none;
+      outline: none;
+      color: white;
+      font-size: 3vw;
+      /* padding: 2vw 4.5vw; */
+      background: linear-gradient(#B1ACAC, gray);
+      width: 80%;
+      height: 13vw;
+      font-size: 5vw;
   }
 }
 
