@@ -146,9 +146,10 @@ header {
 }
 .TOP_content_subtitle{
   color: grey;
-  margin: 0;
-  text-align: center;
-  font-size: 5vw;
+    font-weight: bold;
+    margin: 0;
+    text-align: center;
+    font-size: 3.8vw;
   }
 .TOP_content_youtube{
   margin: 0;
