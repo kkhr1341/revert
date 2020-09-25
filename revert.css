@@ -407,7 +407,7 @@ color: gray;
 }
 .product_sonic_explanationtext{
   margin-left: 1vw;
-  font-size: 3.09vw;
+  font-size: 4vw;
 }
 .product_sonic_explanationtext p{
   margin-bottom: 8%;
@@ -567,7 +567,7 @@ width: 100%;
     margin-bottom: 5%;
 }
 .products_step_purchase_text_text{
-  font-size: 2.1vw;
+  font-size: 1.5vw;
 }
 .products_step_purchase_text_praice{
   font-size: 5.5vw;
@@ -721,11 +721,11 @@ padding-top: 25%;
 }
 .product_sonic_explanation h2 {
     margin: 12vw 0 0 0;
-    font-size: 3.3vw;
+    font-size: 5.3vw;
 }
 .product_sonic_explanationtext {
     margin-left: 1vw;
-    font-size: 2.09vw;
+    font-size: 4vw;
 }
 .product_sonic_under {
     border-top: solid gray 1.5px;
@@ -809,6 +809,7 @@ padding-top: 25%;
     margin-bottom: 5%;
 }
 .products_step_purchase_text_text{
+  width: 80%;
   font-size: 0.5vw;
 }
 .products_step_purchase_text_praice{
