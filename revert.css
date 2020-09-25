@@ -77,7 +77,7 @@ header {
   left: 0;
   z-index: 9999;/*最前面に*/
   width: 90%;/*右側に隙間を作る（閉じるカバーを表示）*/
-  max-width: 330px;/*最大幅（調整してください）*/
+  max-width: 40%;/*最大幅（調整してください）*/
   height: 100%;
   background: #fff;/*背景色*/
   transition: .3s ease-in-out;/*滑らかに表示*/
@@ -97,7 +97,7 @@ header {
 #nav-content ul li a{
   display: block;
     color: #333;
-    font-size: 20px;
+    font-size: 3vw;
     padding: 1em;
     text-decoration: none;
     transition-duration: 0.2s;
