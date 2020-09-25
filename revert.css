@@ -261,7 +261,7 @@ header {
 .TOP_ploduct_subtitle{
   margin-block-start: 8vw;
       margin-bottom: 4vw;
-      font-size: 3.9vw;
+      font-size: 4.5vw;
       color: gray;
 }
 .TOP_ploduct_contentbutton{
@@ -709,13 +709,13 @@ padding-top: 25%;
     color: gray;
 }
 .beginners_text {
-    font-size: 2.3vw;
+    font-size: 3vw;
     color: gray;
-    width: 79vw;
+    width: 66vw;
     margin: 0 auto;
 }
 .beginners_img{
-  width: 70%;
+  width: 60%;
     margin: 0 auto;
 }
 .beginners_img img{
@@ -926,6 +926,13 @@ padding-top: 25%;
     font-size: 90%;
     margin-bottom: 13%;
   }
+/* 初めての方へページ */
+.beginners_text {
+    font-size: 2.5vw;
+    color: gray;
+    width: 70vw;
+    margin: 0 auto;
+}
 /* 微調整 */
 .mrg-40{
   margin-bottom: 16%;
