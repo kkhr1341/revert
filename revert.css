@@ -389,14 +389,16 @@ color: gray;
 .product_sonic_button a{
   text-decoration: none;
 }
-.product_sonic_button h1{
-  color: white;
-    margin: 0;
+.product_sonic_button h1 {
+    color: white;
+    margin: 0 0 20% 0;
     font-size: 5.5vw;
 }
-.product_sonic_subtitle{
-  font-size: 5.5vw;
-  color: gray;
+.product_sonic_subtitle {
+    font-size: 4.5vw;
+    width: 90%;
+    color: gray;
+    margin: 0 auto;
 }
 .product_sonic_explanation{
   color: gray;
@@ -405,9 +407,9 @@ color: gray;
   margin: 12vw 0 0 0;
     font-size: 5.3vw;
 }
-.product_sonic_explanationtext{
-  margin-left: 1vw;
-  font-size: 4vw;
+.product_sonic_explanationtext {
+    margin-left: 1vw;
+    font-size: 3.5vw;
 }
 .product_sonic_explanationtext p{
   margin-bottom: 8%;
