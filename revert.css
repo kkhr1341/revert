@@ -450,32 +450,51 @@ color: gray;
     border-bottom: solid gray 7px;
     margin: 10vw auto;
 }
+.products_content{
+width: 100%;
+}
 .product_sonic_set{
-  text-align: center;
-    display: flex;
-    justify-content: space-around;
+  margin: 0 auto;
+  width: 90%;
+      gap: 2%;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
 }
 .product_sonic_set img {
-    width: 72.223%;
-    height: 52.366%;
+    width: 100%;
 }
 .APAGARDRENAMEL{
-  font-size: 1.5vw;
+  font-size: 2vw;
+  width: 100%;
+}
+.APAGARDRENAMEL_text{
+  text-align: center;
+  font-size: 2.5vw;
+  margin-top: 0;
 }
 .APAGARDRENAMEL img {
-  width: 65%;
-  height: 51.825%;
+  width: 100%;
+}
+.ORALPEACE{
+  width: 100%;
 }
 .ORALPEACE img {
-    width: 72.223%;
-    height: 51.825%;
+    width: 100%;
 }
 .ORALPEACE_name{
-  font-size: 1.5vw;
+  margin-top: 0;
+  text-align: center;
+  font-size: 2.5vw;
 }
 .ORALPEACE_text{
-  font-size: 1.5vw;
+  padding: 0px 5px;
+    font-size: 2vw;
+  font-size: 1.9vw;
 }
+.ORALPEACE2{
+  width: 100%;
+}
+
 /* stepページ */
 .products_step{
   width: 100%;
@@ -490,7 +509,7 @@ color: gray;
 .products_step_boder{
   width: 80%;
     margin: 0 auto;
-    padding: 20px 0;
+  padding: 20px 0 8vw 0;
     border:solid #ccc 1px;
 }
 .products_step_bar img{
@@ -505,73 +524,133 @@ color: gray;
 .products_step_purchase{
   justify-content: center;
     display: flex;
+    padding: 0 4%;
 }
 .products_step_purchase_img{
-  width: 35%;
+  width: 100%;
   margin-right: 10%;
+}
+.products_step_purchase_img_co{
+    width: 43%;
+    margin-right: 4%;
+}
+.products_step_purchase_sonicimg{
+  width: 47%;
+  margin-right:0;
 }
 .products_step_purchase_img img{
   width: 100%;
+  padding-top: 7vw;
+}
+.products_step_purchase_img_co img{
+  width: 100%;
+  padding-top: 7vw;
+}
+
+.products_step_purchase_sonicimg img{
+  width: 100%;
+  padding-top: 7vw;
+}
+.products_step_purchase_text{
+  margin-block-start: 6vw;
+  color: gray;
 }
 .products_step_purchase_text_name{
-  font-size: 4vw;
-  margin-bottom: 0;
+  font-size: 3vw;
+    margin-bottom: 5%;
 }
-.products_step_purchase_text_text,.products_step_purchase_text_praice{
-  font-size: 3.5vw;
+.products_step_purchase_text_nameset{
+  font-size: 3vw;
+    margin-bottom: 5%;
+}
+.products_step_purchase_text_text{
+  font-size: 2.1vw;
+}
+.products_step_purchase_text_praice{
+  font-size: 5.5vw;
 }
 .products_step_recalculation{
-  text-align: center;
+  padding-left: 10%;
 }
 .products_step_recalculation input{
-  width: 35.9%;
+  border-radius: 1.5vw;
+    box-shadow: none;
+    padding: 2px 8px;
+  position: relative;
+  font-size: 5vw;
+  width: 28%;
       height: 6vw;
-      margin-right: 10%;
-
+      margin-right: 7%;
+  font-size: 5vw;
+  top: 5px;
   }
 .products_step_count{
-  text-align: center;
   margin-top: 5%;
 }
 
-.products_step_count form{
-
+.products_step_count{
+  padding-left: 10%;
+}
+.products_step_purchase_calculation{
+  padding-left: 10%;
 }
 .products_step_count input{
-  width: 29%;
+  border-radius: 1.5vw;
+    box-shadow: none;
+    padding: 2px 8px;
+  position: relative;
+  font-size: 5vw;
+  top: 5px;
+  width: 28%;
       height: 6vw;
-      margin-right: 8.3%;
-
+      margin-right: 7%;
 }
 .products_step_deletebutton{
-  border: none;
+  padding: 0;
+    color: gray;
+    border: none;
     background: none;
-    font-size: 2vw;
-    vertical-align: bottom;
+    font-size: 3vw;
+    position: relative;
+    top: 1.4vw;
+    border-bottom: solid;
+    border-color: darkgray;
+    border-width: 1vw;
+    height: 3.8vw;
 }
 .products_step_recalculation button{
-border: none;
+  top: 1.3%;
+    position: relative;
+  border: none;
     outline: none;
     color: white;
-    font-size: 3vw;
-    padding: 2vw 3vw;
+    font-size: 5vw;
+    padding: 0vw 2.5vw;
     background: gray;
   }
+.products_step_purchase_calculations{
+    padding-left: 11%;
+}
 .products_step_button1{
+  top: 1.3%;
+    position: relative;
   border: none;
-      outline: none;
-      color: white;
-      font-size: 3vw;
-      padding: 2vw 4.5vw;
-      background:  gray;
+    outline: none;
+    color: white;
+    font-size: 5vw;
+    padding: 0vw 2.5vw;
+    background: gray;
     }
  .products_step_button2{
-      border: none;
-          outline: none;
-          color: white;
-          font-size: 3vw;
-          padding: 2vw 4.5vw;
-          background:  gray;
+   top: 1.3%;
+    position: relative;
+   border: none;
+     outline: none;
+     color: white;
+     font-size: 5vw;
+     padding: 0vw 5vw;
+     background: gray;
+     margin-right: 3vw;
   }
 
   .products_step_{
@@ -602,6 +681,15 @@ border: none;
       height: 13vw;
       font-size: 5vw;
   }
+/* 微調整 */
+.mrg-40{
+  margin-bottom: 16%;
+    margin-top: 10%;
+}
+.pdt-25{
+padding-top: 25%;
+}
+
 /* スマホ版 */
 @media screen and (max-width:480px) {
   .header_rogo {
@@ -637,24 +725,26 @@ border: none;
     font-size: 2.09vw;
 }
 .product_sonic_under {
-    border-top: solid gray 2.5px;
+    border-top: solid gray 1.5px;
 }
 .product_sonic_under p {
     width: 50%;
     text-align: center;
     font-size: 5vw;
     margin-top: 6vw;
-    border-bottom: solid gray 2.5px;
+    border-bottom: solid gray 1.5px;
     margin: 10vw auto;
 }
 .product_sonic_set {
-    width: 100%;
-    gap: 2%;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+  padding: 0 0px;
+  margin: 0 auto;
+  width: 87%;
+  gap: 2%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 .APAGARDRENAMEL {
-    width: 100%;
+  width: 100%;
 }
 .APAGARDRENAMEL_name{
   font-size: 2vw;
@@ -692,47 +782,54 @@ border: none;
 .products_step_purchase{
   justify-content: center;
     display: flex;
+    padding: 0 4%;
 }
 .products_step_purchase_img{
-  width: 50%;
+  width: 100%;
   margin-right: 10%;
 }
 .products_step_purchase_img img{
   width: 100%;
-  padding-top: 14%;
+  padding-top: 7vw;
+}
+.products_step_purchase_img_co img{
+  width: 100%;
+  padding-top: 7vw;
+}
+
+.products_step_purchase_text{
+  margin-block-start:0;
+  color: gray;
 }
 .products_step_purchase_text_name{
-  font-size: 2vw;
-  margin-bottom: 0;
+  font-size: 100%;
+    margin-bottom: 5%;
 }
-.products_step_purchase_text_text,.products_step_purchase_text_praice{
+.products_step_purchase_text_text{
+  font-size: 0.5vw;
+}
+.products_step_purchase_text_praice{
   font-size: 3.5vw;
 }
 .products_step_recalculation{
-  text-align: center;
+  padding-left: 10%;
 }
 .products_step_recalculation input{
-  width: 28.2%;
-    height: 6vw;
-    margin-right: 8%;
-
+  width: 20%;
+      height: 6vw;
+      margin-right: 4%;
+  top:0;
   }
 .products_step_count{
-  text-align: end;
   margin-top: 5%;
 }
-
-.products_step_count form{
-
-}
 .products_step_count input{
-  width: 29%;
-    height: 6vw;
-    margin-right: 7.3%;
-
+  width: 20%;
+      height: 6vw;
+      margin-right: 4%;
+  top:0;
 }
 .products_step_deletebutton{
-  border: none;
     background: none;
     font-size: 2vw;
 }
@@ -740,25 +837,28 @@ border: none;
   border: none;
     outline: none;
     color: white;
-    font-size: 4vw;
-    padding: 1vw 2vw;
+    font-size: 5vw;
+    padding: 0vw 2.5vw;
     background: gray;
   }
+.products_step_purchase_calculations{
+  padding-left: 8vw;
+}
 .products_step_button1{
   border: none;
     outline: none;
     color: white;
-    font-size: 4vw;
-    padding: 1vw 2vw;
+    font-size: 5vw;
+    padding: 0vw 2.5vw;
     background: gray;
     }
  .products_step_button2{
    border: none;
- outline: none;
- color: white;
- font-size: 4vw;
- padding: 1vw 4.2vw;
- background: gray;
+     outline: none;
+     color: white;
+     font-size: 5vw;
+     padding: 0vw 5vw;
+     background: gray;
   }
 
   .products_step_{
@@ -789,11 +889,30 @@ border: none;
       height: 13vw;
       font-size: 5vw;
   }
+  .products_step_purchase_text_nameset{
+    font-size: 90%;
+    margin-bottom: 13%;
+  }
+/* 微調整 */
 .mrg-40{
-  margin-bottom: 40%;
+  margin-bottom: 16%;
+    margin-top: 10%;
+}
+.mrg-42{
+  margin-bottom: 42%;
+  margin-top: 16%;
+}
+.kosf{
+  font-size: 2.8vw;
+}
+.mgbs{
+margin-block-start: 0;
+}
+.products_step_purchase_img_co{
+  width: 90%;
+    margin-right: 4%;
 }
 }
-
 /* @media screen and (max-width: 896px){
 .product_sonic_subtitle {
     font-size: 1.4vw;
