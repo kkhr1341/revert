@@ -5,7 +5,7 @@ body{
 }
 /* ヘッダー */
 .header_rogo {
-    padding-left: 100px;
+  width: 3.7%;
     font-family: league-gothic, sans-serif;
     font-weight: 400;
     font-style: normal;
@@ -443,7 +443,7 @@ color: gray;
     padding: 0 10vw;
 }
 .product_sonic_under{
-  border-top: solid gray 9.5px;
+  border-top: solid gray 4.5px;
 }
 .product_sonic_under p {
     color: gray;
@@ -451,7 +451,7 @@ color: gray;
     text-align: center;
     font-size: 4vw;
     margin-top: 6vw;
-    border-bottom: solid gray 7px;
+    border-bottom: solid gray 4.5px;
     margin: 10vw auto;
 }
 .products_content{
@@ -727,11 +727,10 @@ padding-top: 25%;
 /* スマホ版 */
 @media screen and (max-width:480px) {
   .header_rogo {
-    padding-left: 40px;
     font-family: league-gothic, sans-serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 7vw;
+    font-size: 8vw;
     color: white;
     margin: auto;
 }

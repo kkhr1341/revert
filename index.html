@@ -25,6 +25,19 @@ controls: false,
 });
 
  });
+ const button = document.getElementsByTagName('button');
+ const slidesisplay =document.getElementsByClassName('TOP_content_slider');
+ const slider1 =document.getElementsByClassName('slider_content1');
+ const slider2 =document.getElementsByClassName('slider_content2');
+ console.log(slidesisplay);
+ console.log(slider1);
+ console.log(slider2);
+ function right(){
+   if (slider1.width==100){
+      slider1.style.width = (slider1.width - 100);
+   }
+ }
+
 </script>
     <title></title>
   </head>
@@ -75,8 +88,8 @@ controls: false,
 </div>
   </div>
 <div class="TOP_Product_buttun">
-  <button class="TOP_genre_leftbutton">歯ブラシ</button>
-  <button class="TOP_genre_rightbutton">歯磨き粉</button>
+  <button class="TOP_genre_leftbutton" onclick="left">歯ブラシ</button>
+  <button class="TOP_genre_rightbutton" onclick="right">歯磨き粉</button>
 </div>
 <div class="TOP_content_slider">
 <div class="slider_content1">
