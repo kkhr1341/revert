@@ -335,6 +335,7 @@ header {
   padding: 0 7vw;
 }
 .TOP_address{
+  color: gray;
   font-size: 3.2vw;
     margin-inline-start: 10vw;
 }
@@ -454,6 +455,7 @@ color: gray;
 width: 100%;
 }
 .product_sonic_set{
+  color: gray;
   margin: 0 auto;
   width: 90%;
       gap: 2%;
