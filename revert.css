@@ -692,6 +692,35 @@ width: 100%;
 .pdt-25{
 padding-top: 25%;
 }
+.mgt-10vw{
+  margin-top: 10vw;
+}
+.mgb-10vw{
+  margin-bottom: 10vw
+}
+/* 初めての方へページ */
+.beginners_title{
+  font-size: 9vw;
+    height: 12vw;
+    width: 65%;
+    margin: 0 auto;
+    text-align: center;
+    border-bottom: solid gray 0.4vw;
+    color: gray;
+}
+.beginners_text {
+    font-size: 2.3vw;
+    color: gray;
+    width: 79vw;
+    margin: 0 auto;
+}
+.beginners_img{
+  width: 70%;
+    margin: 0 auto;
+}
+.beginners_img img{
+  width: 100%;
+}
 
 /* スマホ版 */
 @media screen and (max-width:480px) {
