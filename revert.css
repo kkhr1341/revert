@@ -182,16 +182,16 @@ header {
   text-align: end;
 }
 .twitter{
-  padding-right: 4vw;
-  width: 8vw;
-  margin-block-end: 3px;
+    width: 7.9vw;
+    margin-block-end: 4px;
 }
 .instagram{
-  width: 8vw;
+    width: 8.1vw;
+    margin-block-end: 2.5px;
 }
 .youtube{
   width: 8vw;
-  margin-block-end: 3px;
+    margin-block-end: 3px;
 }
 .TOP_slider2_bolder {
     margin: 10vw auto 0;
@@ -686,20 +686,6 @@ width: 100%;
       height: 13vw;
       font-size: 5vw;
   }
-/* 微調整 */
-.mrg-40{
-  margin-bottom: 16%;
-    margin-top: 10%;
-}
-.pdt-25{
-padding-top: 25%;
-}
-.mgt-10vw{
-  margin-top: 10vw;
-}
-.mgb-10vw{
-  margin-bottom: 10vw
-}
 /* 初めての方へページ */
 .beginners_title{
   font-size: 9vw;
@@ -723,7 +709,24 @@ padding-top: 25%;
 .beginners_img img{
   width: 100%;
 }
-
+/* お問い合わせページ */
+.contact_form{
+  margin-top: 5vw;
+}
+/* 微調整 */
+.mrg-40{
+  margin-bottom: 16%;
+  margin-top: 10%;
+}
+.pdt-25{
+  padding-top: 25%;
+}
+.mgt-10vw{
+  margin-top: 10vw;
+}
+.mgb-10vw{
+  margin-bottom: 10vw
+}
 /* スマホ版 */
 @media screen and (max-width:480px) {
   .header_rogo {
@@ -954,17 +957,3 @@ margin-block-start: 0;
     margin-right: 4%;
 }
 }
-/* @media screen and (max-width: 896px){
-.product_sonic_subtitle {
-    font-size: 1.4vw;
-    color: gray;
-}
-.product_sonic_explanation h2 {
-    margin: 12vw 0 0 0;
-    font-size: 3.3vw;
-}
-.product_sonic_explanationtext {
-    margin-left: 1vw;
-    font-size: 2.09vw;
-}
-} */
