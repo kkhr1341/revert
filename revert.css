@@ -569,7 +569,7 @@ width: 100%;
     margin-bottom: 5%;
 }
 .products_step_purchase_text_text{
-  font-size: 1.5vw;
+  font-size: 3vw;
 }
 .products_step_purchase_text_praice{
   font-size: 5.5vw;
@@ -840,7 +840,7 @@ padding-top: 25%;
 }
 .products_step_purchase_text_text{
   width: 80%;
-  font-size: 0.5vw;
+  font-size: 3.5vw;
 }
 .products_step_purchase_text_praice{
   font-size: 3.5vw;
