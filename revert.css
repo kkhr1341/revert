@@ -210,11 +210,15 @@ header {
   height: 2vw!important;
   border-radius: none!important;
 }
-
+.TOP_content_toothbrush{
+  width: 100vw;
+  margin-bottom: 10vw;
+}
 .TOP_Product_buttun{
   display: flex;
   width: 100%;
   margin-top: 13%;
+  margin-bottom: 12%;
   justify-content: center;
 }
 
@@ -232,9 +236,9 @@ header {
   background-color: lightgrey;
 }
 .TOP_content_slider{
+  display: flex;
   text-align: center;
   width: 100%;
-  margin-block-start: 14vw;
 }
 .slider_content1{
   width: 100%;
@@ -287,9 +291,6 @@ header {
       text-align: center;
       background:gray;
       padding: 2vw 14vw;
-}
-.mgt-120{
-  margin-top: 8vw;
 }
 .c-container {
   position: relative;
@@ -713,6 +714,67 @@ width: 100%;
 .contact_form{
   margin-top: 5vw;
 }
+/* 診断ページ */
+.diagnosis{
+  width: 100%;
+    height: auto;
+    margin-top: 12%;
+}
+.diagnosis_title{
+  height: auto;
+      border: solid gray 1vw;
+      width: 50%;
+      text-align: center;
+      margin: 0 auto;
+      font-size: 6vw;
+      color: gray;
+}
+.diagnosis_title_top{
+  border-bottom: solid gray 1.3vw;
+}
+.diagnosis_title_bottom{
+  margin-bottom: 3%;
+}
+#diagnosis_count{
+  width: 17%;
+  margin: 3% auto 10%;
+  text-align: center;
+  font-size: 4.5vw;
+  background-color: gray;
+  color: white;
+}
+.diagnosis_cheak{
+  margin-top: 5%;
+}
+.diagnosis_img{
+  width: 35%;
+  margin: 0 auto;
+}
+.diagnosis_img img{
+  width: 100%;
+}
+.box_title{
+  text-align: center;
+    font-size: 4vw;
+    margin: 0 auto;
+    width: 70%;
+    color: gray;
+}
+.diagnosis_cheak ul{
+  display: flex;
+    justify-content: space-around;
+    font-size: 3vw;
+    list-style: none;
+    padding: 0;
+}
+.box_border{
+  position: relative;
+    color: gray;
+    font-size: 4vw;
+    margin: 0;
+    text-align: center;
+    bottom: 1vw;
+}
 /* 微調整 */
 .mrg-40{
   margin-bottom: 16%;
@@ -727,6 +789,69 @@ width: 100%;
 .mgb-10vw{
   margin-bottom: 10vw
 }
+.diagnosis_result{
+  width: 100%;
+}
+.diagnosis_result_content{
+    width: 75%;
+    margin: 0 auto;
+    text-align: center;
+    border: solid gray 0.5vw;
+}
+.diagnosis_result_content_text1{
+  font-size: 3vw;
+}
+.diagnosis_result_content_text2{
+  font-size: 4vw;
+  margin-bottom: 3%;
+  font-size: 4vw;
+}
+.diagnosis_result_content_type{
+  font-size: 2.5vw;
+    margin: 0;
+}
+.diagnosis_result_content img{
+  width: 100%;
+}
+.diagnosis_result_content_name{
+  margin-bottom: 0;
+  margin-top: 0;
+  font-size: 4vw;
+}
+.diagnosis_result_content_praice{
+  font-size: 5vw;
+    margin-top: 0;
+    color: red;
+}
+.diagnosis_step_{
+  width: 100%;
+  text-align: center;
+}
+.diagnosis_step_button{
+    border: none;
+    outline: none;
+    color: white;
+    font-size: 3vw;
+    /* padding: 2vw 4.5vw; */
+    background: linear-gradient(#B1ACAC, gray);
+    width: 70%;
+    height: 10vw;
+    font-size: 6vw
+}
+.diagnosis_step_button2{
+margin-block-start: 8%;
+    border: none;
+    outline: none;
+    color: white;
+    font-size: 3vw;
+    /* padding: 2vw 4.5vw; */
+    background: linear-gradient(#B1ACAC, gray);
+    width: 70%;
+    height: 10vw;
+    font-size: 6vw;
+    margin-bottom: 8%;
+}
+
 /* スマホ版 */
 @media screen and (max-width:480px) {
   .header_rogo {

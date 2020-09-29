@@ -5,8 +5,10 @@
       <link rel="stylesheet" href="revert.css">
       <link rel="stylesheet" href="https://use.typekit.net/ngv6mfs.css">
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+      <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
       <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+      <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
       <script>
       $(document).ready(function(){
 
@@ -23,7 +25,14 @@ pause: 4000,
 speed: 1000,
 controls: false,
 });
+$('.slider3').bxSlider({
+auto: true,
+pause: 4000,
+speed: 1000,
+controls: false,
+});
 
+$('.slick01').slick();
  });
  const button = document.getElementsByTagName('button');
  const slidesisplay =document.getElementsByClassName('TOP_content_slider');
@@ -92,6 +101,8 @@ controls: false,
   <button class="TOP_genre_rightbutton" onclick="right">歯磨き粉</button>
 </div>
 <div class="TOP_content_slider">
+  <ul class="slick01">
+<li>
 <div class="slider_content1">
 <div class="TOP_content_toothbrush">
   <img class="TOP_ploduct" src="revert\sonic2 (1).jpg" alt="">
@@ -106,7 +117,7 @@ controls: false,
 
 </div>
 <div class="TOP_content_toothbrush">
-  <img class="TOP_ploduct mgt-120" src="revert\クラプロ.jpg" alt="">
+  <img class="TOP_ploduct" src="revert\クラプロ.jpg" alt="">
 　<div class="TOP_ploduct_text">
   <p class="TOP_ploduct_name">クラップロックス</p>
   <p class="TOP_ploduct_subtitle">ブラシの植毛数が世界最多！<br>むし歯も歯周病も<br>同時に予防できる唯一の歯ブラシ</p>
@@ -118,7 +129,7 @@ controls: false,
 </div>
 
 <div class="TOP_content_toothbrush">
-  <img class="TOP_ploduct mgt-120" src="revert\tepe①.jpg" alt="">
+  <img class="TOP_ploduct" src="revert\tepe①.jpg" alt="">
 　<div class="TOP_ploduct_text">
   <p class="TOP_ploduct_name">TEPE</p>
   <p class="TOP_ploduct_subtitle">予防先進国スウェーデンで使用率が約<br>８割の圧倒的シェア！<br>
@@ -130,10 +141,11 @@ controls: false,
 </div>
 </div>
 </div>
-
+</li>
+<li>
 <div class="slider_content2">
   <div class="TOP_content_toothbrush">
-    <img class="TOP_ploduct mgt-120" src="revert\アパカード①.jpg" alt="">
+    <img class="TOP_ploduct" src="revert\アパカード①.jpg" alt="">
   　<div class="TOP_ploduct_text">
     <p class="TOP_ploduct_name">アパガード　リナメル</p>
     <p class="TOP_ploduct_subtitle">お家でもプロ級の歯磨きを！<br>
@@ -146,7 +158,7 @@ controls: false,
   </div>
 
   <div class="TOP_content_toothbrush">
-    <img class="TOP_ploduct mgt-120" src="revert\ルシェロ②.jpg" alt="">
+    <img class="TOP_ploduct" src="revert\ルシェロ②.jpg" alt="">
   　<div class="TOP_ploduct_text">
     <p class="TOP_ploduct_name">ルシェロホワイト</p>
     <p class="TOP_ploduct_subtitle">笑顔に自信を！<br>
@@ -159,7 +171,7 @@ controls: false,
   </div>
 
   <div class="TOP_content_toothbrush">
-    <img class="TOP_ploduct mgt-120" src="revert\オーラル②.jpg" alt="">
+    <img class="TOP_ploduct" src="revert\オーラル②.jpg" alt="">
   　<div class="TOP_ploduct_text">
     <p class="TOP_ploduct_name">オーラルピース</p>
     <p class="TOP_ploduct_subtitle">オーラルケアにこそオーガニックを！<br>
@@ -171,7 +183,10 @@ controls: false,
   </div>
   </div>
 </div>
+</li>
+</ul>
 </div>
+
 <!-- フッター -->
 <div class="TOP_under">
 <p class="TOP_under_text">Revert</p>

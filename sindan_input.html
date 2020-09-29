@@ -1,0 +1,380 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="content-Type" content="text/html; charset=UTF-8" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="revert.css">
+<link rel="stylesheet" href="https://use.typekit.net/ngv6mfs.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+<title>サンプル診断</title>
+
+</head>
+<script type="text/javascript">
+
+var one = 0;
+var two = 0;
+var three = 0;
+
+window.onload=function() {
+  // 質問
+  document.getElementById("box2").style.display="none";
+  document.getElementById("box3").style.display="none";
+  document.getElementById("box4").style.display="none";
+  document.getElementById("box5").style.display="none";
+  document.getElementById("box6").style.display="none";
+  document.getElementById("box7").style.display="none";
+  document.getElementById("box8").style.display="none";
+  document.getElementById("box9").style.display="none";
+  document.getElementById("box10").style.display="none";
+  document.getElementById("box11").style.display="none";
+  document.getElementById("box12").style.display="none";
+ // // 結果
+  document.getElementById("kekka1").style.display="none";
+  document.getElementById("kekka2").style.display="none";
+  document.getElementById("kekka3").style.display="none";
+}
+
+function clickTest0(evt){
+ t=evt.target || evt.srcElement;
+ if(t.className == "one") {
+  one = one + 1;
+ }
+ if(t.className == "two") {
+  two = two + 1;
+
+ }
+ if(t.className == "three") {
+  three = three + 1;
+ }
+}
+function clickTest1(evt){
+ t=evt.target || evt.srcElement;
+ document.getElementById("box1").style.display="none";
+ var diagnosis_count = document.getElementById('diagnosis_count');
+ diagnosis_count.innerHTML='02/12';
+ document.getElementById("box2").style.display="";
+
+}
+function clickTest2(evt){
+ t=evt.target || evt.srcElement;
+ document.getElementById("box2").style.display="none";
+ var diagnosis_count = document.getElementById('diagnosis_count');
+ diagnosis_count.innerHTML='03/12';
+ document.getElementById("box3").style.display="";
+}
+function clickTest3(evt){
+ t=evt.target || evt.srcElement;
+ document.getElementById("box3").style.display="none";
+ var diagnosis_count = document.getElementById('diagnosis_count');
+ diagnosis_count.innerHTML='04/12';
+ document.getElementById("box4").style.display="";
+}
+function clickTest4(evt){
+ t=evt.target || evt.srcElement;
+ document.getElementById("box4").style.display="none";
+ var diagnosis_count = document.getElementById('diagnosis_count');
+ diagnosis_count.innerHTML='05/12';
+ document.getElementById("box5").style.display="";
+}
+function clickTest5(evt){
+ t=evt.target || evt.srcElement;
+ document.getElementById("box5").style.display="none";
+ var diagnosis_count = document.getElementById('diagnosis_count');
+ diagnosis_count.innerHTML='06/12';
+ document.getElementById("box6").style.display="";
+}
+function clickTest6(evt){
+ t=evt.target || evt.srcElement;
+ document.getElementById("box6").style.display="none";
+ var diagnosis_count = document.getElementById('diagnosis_count');
+ diagnosis_count.innerHTML='07/12';
+ document.getElementById("box7").style.display="";
+}
+function clickTest7(evt){
+ t=evt.target || evt.srcElement;
+ document.getElementById("box7").style.display="none";
+ var diagnosis_count = document.getElementById('diagnosis_count');
+ diagnosis_count.innerHTML='08/12';
+ document.getElementById("box8").style.display="";
+}
+function clickTest8(evt){
+ t=evt.target || evt.srcElement;
+ document.getElementById("box8").style.display="none";
+ var diagnosis_count = document.getElementById('diagnosis_count');
+ diagnosis_count.innerHTML='09/12';
+ document.getElementById("box9").style.display="";
+}
+function clickTest9(evt){
+ t=evt.target || evt.srcElement;
+ document.getElementById("box9").style.display="none";
+ var diagnosis_count = document.getElementById('diagnosis_count');
+ diagnosis_count.innerHTML='10/12';
+ document.getElementById("box10").style.display="";
+}
+function clickTest10(evt){
+ t=evt.target || evt.srcElement;
+ document.getElementById("box10").style.display="none";
+ var diagnosis_count = document.getElementById('diagnosis_count');
+ diagnosis_count.innerHTML='11/12';
+ document.getElementById("box11").style.display="";
+}
+function clickTest11(evt){
+ t=evt.target || evt.srcElement;
+ document.getElementById("box11").style.display="none";
+ var diagnosis_count = document.getElementById('diagnosis_count');
+ diagnosis_count.innerHTML='12/12';
+ document.getElementById("box12").style.display="";
+}
+// 結果反映
+function clickTest12(evt){
+ t=evt.target || evt.srcElement;
+ document.getElementById("box12").style.display="none";
+ document.getElementById("answer_none").style.display="none";
+  if( two < one && three < one){
+   document.getElementById("kekka1").style.display="";
+ } else if (one < two && three < two) {
+   document.getElementById("kekka2").style.display="";
+ }  else if (one < three && two < three){
+   document.getElementById("kekka3").style.display="";
+ }else{
+      document.getElementById("kekka1").style.display="";
+ }
+}
+</script>
+
+<body>
+  <!-- ヘッター -->
+  <header>
+    <h1 class="header_rogo">Revert</h1>
+<div id="nav-drawer">
+    <input id="nav-input" type="checkbox" class="nav-unshown">
+    <label id="nav-open" for="nav-input"><span></span></label>
+    <label class="nav-unshown" id="nav-close" for="nav-input"></label>
+    <div id="nav-content">
+      <ul>
+      <li><a href="#">オンラインサロン</a></li>
+      <li><a href="#">利用規約</a></li>
+      <li><a href="http://127.0.0.1:9000/HP%E4%BD%9C%E6%88%90/revert/revert_html/contact.html">お問い合わせ</a></li>
+      <li><a href="#">初めての方へ</a></li>
+  </ul>
+    </div>
+</div>
+</header>
+<!-- ヘッターここまで -->
+
+<div class="diagnosis">
+  <div id="answer_none">
+<div class="diagnosis_title">
+  <p><span class="diagnosis_title_top">12問で分かる</span></p>
+  <p class="diagnosis_title_bottom">適正診断</p>
+  </div>
+  <p id="diagnosis_count">01/12</p>
+<div class="diagnosis_img">
+  <img src="revert\スクリーンショット (213).png">
+</div>
+</div>
+<div class="diagnosis_cheak">
+<div id="box1">
+<p class="box_title">Q.歯磨きは何回？</p>
+<p class="box_border">‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾</p>
+<ul>
+ <li  id="clickTest" onClick='clickTest1(event),clickTest0(event);' >しない</li>
+ <li  id="clickTest" onClick='clickTest1(event),clickTest0(event);' >1回〜2回</li>
+ <li  id="clickTest" onClick='clickTest1(event),clickTest0(event);' >3回以上</li>
+</ul>
+</div>
+
+<div id="box2">
+<p class="box_title">Q.歯磨き後にフロスは使用している？</p>
+<p class="box_border">‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾</p>
+<ul>
+ <li  id="clickTest" onClick='clickTest2(event),clickTest0(event);' >してる</li>
+ <li class="two" id="clickTest" onClick='clickTest2(event),clickTest0(event);' >たまに</li>
+ <li class="three" id="clickTest" onClick='clickTest2(event),clickTest0(event);' >してない</li>
+</ul>
+</div>
+
+<div id="box3">
+<p class="box_title">Q.虫歯経験</p>
+<p class="box_border">‾‾‾‾‾‾‾‾‾</p>
+<ul>
+ <li class="one" id="clickTest" onClick='clickTest3(event),clickTest0(event);' >なったことがない</li>
+ <li class="two" id="clickTest" onClick='clickTest3(event),clickTest0(event);' >1〜3本</li>
+ <li class="three" id="clickTest" onClick='clickTest3(event),clickTest0(event);' >4本以上</li>
+</ul>
+</div>
+
+<div id="box4">
+<p class="box_title">Q.お菓子や甘いものをよく食べる？</p>
+<p class="box_border">‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾</p>
+<ul>
+ <li class="three" id="clickTest" onClick='clickTest4(event),clickTest0(event);' >よく食べる</li>
+ <li class="two" id="clickTest" onClick='clickTest4(event),clickTest0(event);' >たまに</li>
+ <li class="one" id="clickTest" onClick='clickTest4(event),clickTest0(event);' >食べない</li>
+</ul>
+</div>
+
+<div id="box5">
+<p class="box_title">Q.冷たいものや熱いものがしみる</p>
+<p class="box_border">‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾</p>
+<ul>
+ <li class="one" id="clickTest" onClick='clickTest5(event),clickTest0(event);' >しみる</li>
+ <li class="two" id="clickTest" onClick='clickTest5(event),clickTest0(event);' >たまにしみる</li>
+ <li class="three" id="clickTest" onClick='clickTest5(event),clickTest0(event);' >しみない</li>
+</ul>
+</div>
+
+<div id="box6">
+<p class="box_title">Q.1日辺りタバコを吸う本数は</p>
+<p class="box_border">‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾</p>
+<ul>
+ <li class="one" id="clickTest" onClick='clickTest6(event),clickTest0(event);' >吸わない</li>
+ <li class="two" id="clickTest" onClick='clickTest6(event),clickTest0(event);' >5本未満</li>
+ <li class="three" id="clickTest" onClick='clickTest6(event),clickTest0(event);' >5本以上</li>
+</ul>
+</div>
+
+<div id="box7">
+<p class="box_title">Q.歯の黄ばみが気になる</p>
+<p class="box_border">‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾</p>
+<ul>
+ <li class="two"  id="clickTest" onClick='clickTest7(event),clickTest0(event);' >わからない</li>
+ <li  id="clickTest" onClick='clickTest7(event),clickTest0(event);' >気にならない</li>
+ <li class="three" id="clickTest" onClick='clickTest7(event),clickTest0(event);' >気になる</li>
+</ul>
+</div>
+
+<div id="box8">
+<p class="box_title">Q.自身の口臭が気になる</p>
+<p class="box_border">‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾</p>
+<ul>
+ <li class="two" id="clickTest" onClick='clickTest8(event),clickTest0(event);' >わからない</li>
+ <li id="clickTest" onClick='clickTest8(event),clickTest0(event);' >気にならない</li>
+ <li class="three" id="clickTest" onClick='clickTest8(event),clickTest0(event);' >気になる</li>
+</ul>
+</div>
+
+<div id="box9">
+<p class="box_title">Q.歯磨きの時の出血頻度</p>
+<p class="box_border">‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾</p>
+<ul>
+ <li class="three" id="clickTest" onClick='clickTest9(event),clickTest0(event);' >いつも</li>
+ <li class="two" id="clickTest" onClick='clickTest9(event),clickTest0(event);' >たまに</li>
+ <li class="one" id="clickTest" onClick='clickTest9(event),clickTest0(event);' >ない</li>
+</ul>
+</div>
+
+<div id="box10">
+<p class="box_title">Q.口の中の乾燥が気になる</p>
+<p class="box_border">‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾</p>
+<ul>
+  <li class="three" id="clickTest" onClick='clickTest10(event),clickTest0(event);' >いつも</li>
+  <li class="two" id="clickTest" onClick='clickTest10(event),clickTest0(event);' >たまに</li>
+  <li class="one" id="clickTest" onClick='clickTest10(event),clickTest0(event);' >気にならない</li>
+</ul>
+</div>
+
+<div id="box11">
+<p class="box_title">Q.歯磨きにかける時間</p>
+<p class="box_border">‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾</p>
+<ul>
+ <li  id="clickTest" onClick='clickTest11(event),clickTest0(event);' >1分程</li>
+ <li  id="clickTest" onClick='clickTest11(event),clickTest0(event);' >1〜3分</li>
+ <li  id="clickTest" onClick='clickTest11(event),clickTest0(event);' >3分以上</li>
+</ul>
+</div>
+
+<div id="box12">
+<p class="box_title">Q.定期的メンテナンス</p>
+<p class="box_border">‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾</p>
+<ul>
+ <li  id="clickTest" onClick='clickTest12(event),clickTest0(event);' >定期的に通っている</li>
+ <li  id="clickTest" onClick='clickTest12(event),clickTest0(event);' >1年に数回</li>
+ <li   id="clickTest" onClick='clickTest12(event),clickTest0(event);' >行ったことがない</li>
+</ul>
+</div>
+
+<div id="kekka1">
+<h2 class="product_revert">Revert</h2>
+<div class="diagnosis_result">
+  <div class="diagnosis_result_content">
+    <p class="diagnosis_result_content_text1">診断お疲れ様です。</p>
+    <p class="diagnosis_result_content_text2">○○さんのご希望あった<br>歯磨きセット</p>
+    <p class="diagnosis_result_content_type">ホワイトニングタイプ</p>
+    <img src="revert\ソニッケアー×ルシェロホワイト.png" alt="">
+      <p class="diagnosis_result_content_name">ソニッケアー<br>×<br>ルシェロホワイト</p>
+      <p class="diagnosis_result_content_praice">￥34,950</p>
+      <div class="diagnosis_step_">
+      <button class="diagnosis_step_button">ご購入</button>
+      <button class="diagnosis_step_button2">買い物を続ける</button>
+      </div>
+  </div>
+</div>
+</div>
+
+<div id="kekka2">
+  <h2 class="product_revert">Revert</h2>
+  <div class="diagnosis_result">
+    <div class="diagnosis_result_content">
+      <p class="diagnosis_result_content_text1">診断お疲れ様です。</p>
+      <p class="diagnosis_result_content_text2">○○さんのご希望あった<br>歯磨きセット</p>
+      <p class="diagnosis_result_content_type">虫歯予防タイプ</p>
+      <img src="revert\テペ×アパガード.png" alt="">
+        <p class="diagnosis_result_content_name">テぺ<br>×<br>アパガード</p>
+        <p class="diagnosis_result_content_praice">￥2,240</p>
+        <div class="diagnosis_step_">
+        <button class="diagnosis_step_button">ご購入</button>
+        <button class="diagnosis_step_button2">買い物を続ける</button>
+        </div>
+    </div>
+  </div>
+</div>
+
+<div id="kekka3">
+  <h2 class="product_revert">Revert</h2>
+  <div class="diagnosis_result">
+    <div class="diagnosis_result_content">
+      <p class="diagnosis_result_content_text1">診断お疲れ様です。</p>
+      <p class="diagnosis_result_content_text2">○○さんのご希望あった<br>歯磨きセット</p>
+      <p class="diagnosis_result_content_type">虫歯予防タイプ</p>
+      <img src="revert\クラプロックス×オラピ.png" alt="">
+        <p class="diagnosis_result_content_name">クラブロックス<br>×<br>オーラルピース</p>
+        <p class="diagnosis_result_content_praice">￥2,150</p>
+        <div class="diagnosis_step_">
+        <button class="diagnosis_step_button">ご購入</button>
+        <button class="diagnosis_step_button2">買い物を続ける</button>
+        </div>
+    </div>
+  </div>
+
+
+</div>
+</div>
+</div>
+<!-- フッター -->
+<div class="TOP_under">
+<p class="TOP_under_text">Revert</p>
+<div class="undermenu">
+<a href="#" class="TOP_new"><p>初めての方へ</p></a>
+<a href="#" class="TOP_online"><p>オンラインサロン</p></a>
+</div>
+<div class="undermenu mgt-120">
+<a href="#" class="TOP_service"><p>利用規約</p></a>
+<a href="http://127.0.0.1:9000/HP%E4%BD%9C%E6%88%90/revert/revert_html/contact.html" class="TOP_contact"><p>お問い合わせ</p></a>
+</div>
+<p class="TOP_address mgt-120">住所 ： 東京都中央区新富1-1-7 BizSQUARE銀座　6階<br>TEL : 03-4405-5679<p>
+  <div class="TOP_under_icon">
+  <img class="youtube pr7" src="revert\ユーチューブ.png" alt="">
+  <img class="instagram" src="revert\インスタ.png" alt="">
+  <img class="twitter pl7" src="revert\ツイッター.png" alt="">
+  </div>
+
+</div>
+<!-- フッターここまで -->
+
+</body>
+</html>
