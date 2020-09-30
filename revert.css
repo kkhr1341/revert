@@ -319,12 +319,13 @@ header {
   border-bottom: solid gray 0.4vw;
 }
 .TOP_new{
+  margin-bottom: 5vw;
   height: 6vw;
   padding: 0 8vw;
 }
  .undermenu p{
    color: gray;
-  margin: 0 0 10px 0;
+  margin: 0 0 20px 0;
 }
 .TOP_online{
   height: 6vw;
@@ -533,8 +534,8 @@ width: 100%;
     padding: 0 4%;
 }
 .products_step_purchase_img{
-  width: 100%;
-  margin-right: 10%;
+    width: 123vw;
+    margin-right: 5%;
 }
 .products_step_purchase_img_co{
     width: 43%;
@@ -546,7 +547,7 @@ width: 100%;
 }
 .products_step_purchase_img img{
   width: 100%;
-  padding-top: 7vw;
+    padding-top: 16vw;
 }
 .products_step_purchase_img_co img{
   width: 100%;
@@ -737,7 +738,7 @@ width: 100%;
 }
 #diagnosis_count{
   width: 17%;
-  margin: 3% auto 10%;
+  margin: 3% auto 6%;
   text-align: center;
   font-size: 4.5vw;
   background-color: gray;
@@ -752,6 +753,7 @@ width: 100%;
 }
 .diagnosis_img img{
   width: 100%;
+    margin-bottom: 20%;
 }
 .box_title{
   text-align: center;
@@ -774,6 +776,14 @@ width: 100%;
     margin: 0;
     text-align: center;
     bottom: 1vw;
+}
+#clickTest{
+  border: solid gray 1vw;
+      border-radius: 100%;
+      width: 28%;
+      height: 12vw;
+      text-align: center;
+      padding-top: 7%;
 }
 /* 微調整 */
 .mrg-40{
@@ -851,7 +861,15 @@ margin-block-start: 8%;
     font-size: 6vw;
     margin-bottom: 8%;
 }
-
+.horizontal{
+  width: 35%;
+    margin: 0 auto;
+}
+.horizontal img{
+  width: 100%;
+    margin-bottom: 20%;
+    height: 34.55vw;
+}
 /* スマホ版 */
 @media screen and (max-width:480px) {
   .header_rogo {
@@ -946,8 +964,8 @@ margin-block-start: 8%;
     padding: 0 4%;
 }
 .products_step_purchase_img{
-  width: 100%;
-  margin-right: 10%;
+  width: 116vw;
+    margin-right: 5%;
 }
 .products_step_purchase_img img{
   width: 100%;
@@ -967,8 +985,8 @@ margin-block-start: 8%;
     margin-bottom: 5%;
 }
 .products_step_purchase_text_text{
-  width: 80%;
-  font-size: 3.5vw;
+  width: 100%;
+    font-size: 2.5vw;
 }
 .products_step_purchase_text_praice{
   font-size: 3.5vw;
