@@ -236,12 +236,14 @@ header {
   background-color: lightgrey;
 }
 .TOP_content_slider{
+
   display: flex;
   text-align: center;
   width: 100%;
 }
 .slider_content1{
   width: 100%;
+  transition: 1s;
 }
 .TOP_ploduct_slider{
   width: 100%;
@@ -580,6 +582,7 @@ width: 100%;
   padding-left: 10%;
 }
 .products_step_recalculation input{
+  outline: none;
   border-radius: 1.5vw;
     box-shadow: none;
     padding: 2px 8px;
@@ -602,6 +605,7 @@ width: 100%;
   padding-left: 10%;
 }
 .products_step_count input{
+  outline: none;
   border-radius: 1.5vw;
     box-shadow: none;
     padding: 2px 8px;

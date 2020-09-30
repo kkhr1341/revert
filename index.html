@@ -5,11 +5,9 @@
       <link rel="stylesheet" href="revert.css">
       <link rel="stylesheet" href="https://use.typekit.net/ngv6mfs.css">
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
-      <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
       <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
-      <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-      <script>
+      <script type="text/javascript">
       $(document).ready(function(){
 
 $('.slider').bxSlider({
@@ -25,27 +23,23 @@ pause: 4000,
 speed: 1000,
 controls: false,
 });
-$('.slider3').bxSlider({
-auto: true,
-pause: 4000,
-speed: 1000,
-controls: false,
 });
-
-$('.slick01').slick();
- });
- const button = document.getElementsByTagName('button');
- const slidesisplay =document.getElementsByClassName('TOP_content_slider');
- const slider1 =document.getElementsByClassName('slider_content1');
- const slider2 =document.getElementsByClassName('slider_content2');
- console.log(slidesisplay);
- console.log(slider1);
- console.log(slider2);
- function right(){
-   if (slider1.width==100){
-      slider1.style.width = (slider1.width - 100);
-   }
+window.onload=function(){
+  document.getElementById("slider_content2").style.display="none";
+}
+function TOP_genre_rightbutton_click(){
+  document.getElementById("slider_content1").style.display="none";
+  document.getElementById("slider_content2").style.display="block";
+  document.getElementById('TOP_genre_rightbutton').style.backgroundColor = "gray";
+  document.getElementById('TOP_genre_leftbutton').style.backgroundColor = "lightgrey";
  }
+ function TOP_genre_leftbutton_click(){
+   document.getElementById("slider_content2").style.display="none";
+   document.getElementById("slider_content1").style.display="block";
+   document.getElementById('TOP_genre_rightbutton').style.backgroundColor = "lightgrey";
+   document.getElementById('TOP_genre_leftbutton').style.backgroundColor = "gray";
+  }
+
 
 </script>
     <title></title>
@@ -97,13 +91,11 @@ $('.slick01').slick();
 </div>
   </div>
 <div class="TOP_Product_buttun">
-  <button class="TOP_genre_leftbutton" onclick="left">歯ブラシ</button>
-  <button class="TOP_genre_rightbutton" onclick="right">歯磨き粉</button>
+  <button class="TOP_genre_leftbutton" id="TOP_genre_leftbutton" onclick="TOP_genre_leftbutton_click()">歯ブラシ</button>
+  <button class="TOP_genre_rightbutton" id="TOP_genre_rightbutton" onclick="TOP_genre_rightbutton_click()">歯磨き粉</button>
 </div>
 <div class="TOP_content_slider">
-  <ul class="slick01">
-<li>
-<div class="slider_content1">
+<div id="slider_content1" class="slider_content1">
 <div class="TOP_content_toothbrush">
   <img class="TOP_ploduct" src="revert\sonic2 (1).jpg" alt="">
 　<div class="TOP_ploduct_text">
@@ -141,9 +133,8 @@ $('.slick01').slick();
 </div>
 </div>
 </div>
-</li>
-<li>
-<div class="slider_content2">
+
+<div id="slider_content2" class="slider_content2">
   <div class="TOP_content_toothbrush">
     <img class="TOP_ploduct" src="revert\アパカード①.jpg" alt="">
   　<div class="TOP_ploduct_text">
@@ -183,8 +174,6 @@ $('.slick01').slick();
   </div>
   </div>
 </div>
-</li>
-</ul>
 </div>
 
 <!-- フッター -->
