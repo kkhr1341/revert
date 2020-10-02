@@ -1,7 +1,7 @@
 body{
   margin: 0;
   padding: 0;
-
+font-family: "HiraMinProN-W6";
 }
 /* ヘッダー */
 .header_rogo {
@@ -211,7 +211,7 @@ header {
   border-radius: none!important;
 }
 .TOP_content_toothbrush{
-  width: 100vw;
+  width: 100%;
   margin-bottom: 10vw;
 }
 .TOP_Product_buttun{
@@ -473,7 +473,7 @@ width: 100%;
     width: 100%;
 }
 .APAGARDRENAMEL{
-  font-size: 2vw;
+  font-size: 1.9vw;
   width: 100%;
 }
 .APAGARDRENAMEL_text{
@@ -895,6 +895,7 @@ margin-block-start: 8%;
     content: '';
     cursor: pointer;
 }
+/* 商品詳細ページ */
 　.product_sonic_subtitle {
     font-size: 1.4vw;
     color: gray;
@@ -931,9 +932,6 @@ margin-block-start: 8%;
 }
 .APAGARDRENAMEL_name{
   font-size: 2vw;
-}
-.APAGARDRENAMEL_text{
-  font-size: 0.1vw;
 }
 
 /* stepページ */
@@ -985,7 +983,7 @@ margin-block-start: 8%;
   color: gray;
 }
 .products_step_purchase_text_name{
-  font-size: 100%;
+  font-size: 2.8vw;
     margin-bottom: 5%;
 }
 .products_step_purchase_text_text{
@@ -1054,8 +1052,6 @@ margin-block-start: 8%;
       border: none;
       outline: none;
       color: white;
-      font-size: 3vw;
-      /* padding: 2vw 4.5vw; */
       background: linear-gradient(#B1ACAC, gray);
       width: 80%;
       height: 13vw;
@@ -1066,8 +1062,6 @@ margin-block-start: 8%;
       border: none;
       outline: none;
       color: white;
-      font-size: 3vw;
-      /* padding: 2vw 4.5vw; */
       background: linear-gradient(#B1ACAC, gray);
       width: 80%;
       height: 13vw;
