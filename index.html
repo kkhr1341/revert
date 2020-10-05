@@ -47,14 +47,14 @@ function TOP_genre_rightbutton_click(){
   <body>
     <!-- ヘッター -->
     <header>
-      <h1 class="header_rogo">Revert</h1>
+      <img class="header_rogo"src="revert\ヘッターロゴ.png" alt="">
   <div id="nav-drawer">
       <input id="nav-input" type="checkbox" class="nav-unshown">
       <label id="nav-open" for="nav-input"><span></span></label>
       <label class="nav-unshown" id="nav-close" for="nav-input"></label>
       <div id="nav-content">
         <ul>
-        <li><a href="#">オンラインサロン</a></li>
+        <li><a href="#">適正診断</a></li>
         <li><a href="#">利用規約</a></li>
         <li><a href="http://127.0.0.1:3000/HP%E4%BD%9C%E6%88%90/revert/revert_html/contact.html">お問い合わせ</a></li>
         <li><a href="#">初めての方へ</a></li>
@@ -63,19 +63,27 @@ function TOP_genre_rightbutton_click(){
   </div>
 </header>
 <!-- ヘッターここまで -->
+<div class="TOP_slider1">
 <ul class="slider">
   <li><img src="revert\スクリーンショット (212).png" alt=""></li>
   <li><img src="revert\スクリーンショット (210).png" alt=""></li>
-  <li><img src="revert\スクリーンショット (207).png" alt=""></li>
+  <li><img id="TOP_slider1_icon" src="revert\ロゴ.png" alt=""></li>
 </ul>
+
+</div>
 <div class="TOP_content">
   <h1 class="TOP_content_title">〝歯〟に対する意識改革</h1>
-  <p class="TOP_content_subtitle">【企業理念】<br>〝Revert〟は<br>本当の意味での【豊かな生活】を提供しております。</p>
+  <p class="TOP_content_subtitle"><span class="corporate_philosophy">【企業理念】</span>
+    <br>〝Revert〟は本当の意味での<br>【豊かな生活】を提供しております。</p>
   <p class="TOP_content_youtube">詳しくはYoutubeへ</p>
+  <div class="TOP_content_bgimg1">
+    <img src="revert\背景(1).jpg" alt="">
+    </div>
   <p class="TOP_content_text">まずは<br>あなたにオススメの商品を<br>診断します</p>
   <div class="TOP_diagnosis">
   <a href="sindan_input.html"><h1 class="TOP_content_diagnosis">診断</h1></a>
 </div>
+
 <div class="TOP_SNS_icon">
 <img class="youtube" src="revert\ユーチューブ.png" alt="">
 <img class="instagram" src="revert\インスタ.png" alt="">
@@ -178,10 +186,12 @@ function TOP_genre_rightbutton_click(){
 
 <!-- フッター -->
 <div class="TOP_under">
-<p class="TOP_under_text">Revert</p>
+  <div class="TOP_under_img">
+<img class="TOP_under_text" src="revert\フッターロゴ.png">
+</div>
 <div class="undermenu">
 <a href="#" class="TOP_new"><p>初めての方へ</p></a>
-<a href="#" class="TOP_online"><p>オンラインサロン</p></a>
+<a href="#" class="TOP_online"><p>適正診断</p></a>
 </div>
 <div class="undermenu mgt-120">
 <a href="#" class="TOP_service"><p>利用規約</p></a>
