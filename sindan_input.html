@@ -15,49 +15,49 @@
 </head>
 <script type="text/javascript">
 
-var one = 0;
-var two = 0;
-var three = 0;
-
 window.onload=function() {
   // 質問
-  document.getElementById("box2").style.display="none";
-  document.getElementById("box3").style.display="none";
-  document.getElementById("box4").style.display="none";
-  document.getElementById("box5").style.display="none";
-  document.getElementById("box6").style.display="none";
-  document.getElementById("box7").style.display="none";
-  document.getElementById("box8").style.display="none";
-  document.getElementById("box9").style.display="none";
-  document.getElementById("box10").style.display="none";
-  document.getElementById("box11").style.display="none";
-  document.getElementById("box12").style.display="none";
- // // 結果
+  for(var i =2; i<=12; i++){
+  document.getElementById("box"+i).style.display="none";
+}
+document.getElementById(back);
+ // // 結果(初期状態)
   document.getElementById("kekka1").style.display="none";
   document.getElementById("kekka2").style.display="none";
   document.getElementById("kekka3").style.display="none";
 }
-
+// 点数を追加していく
+var one = 0;
+var two = 0;
+var three = 0;
+const array1 = [];
+const array2 = [];
+array1.push(one);
+array1.push(two);
+array1.push(three);
 function clickTest0(evt){
  t=evt.target || evt.srcElement;
  if(t.className == "one") {
-  one = one + 1;
+  array1[0] +=1;
  }
- if(t.className == "two") {
-  two = two + 1;
-
+ else if(t.className == "two") {
+  array1[1] +=1;
  }
- if(t.className == "three") {
-  three = three + 1;
+ else if(t.className == "three") {
+  array1[2]+=1;
  }
-}
+console.log(array1);
+ }
+ console.log(array1);
+// 問題を表示するJS
 function clickTest1(evt){
  t=evt.target || evt.srcElement;
  document.getElementById("box1").style.display="none";
  var diagnosis_count = document.getElementById('diagnosis_count');
  diagnosis_count.innerHTML='02/12';
  document.getElementById("box2").style.display="";
-
+ var q1 = []
+question1 = q1.concat(array1);
 }
 function clickTest2(evt){
  t=evt.target || evt.srcElement;
@@ -65,13 +65,17 @@ function clickTest2(evt){
  var diagnosis_count = document.getElementById('diagnosis_count');
  diagnosis_count.innerHTML='03/12';
  document.getElementById("box3").style.display="";
-}
+ var q2 = []
+question2 = q2.concat(array1);
+ }
 function clickTest3(evt){
  t=evt.target || evt.srcElement;
  document.getElementById("box3").style.display="none";
  var diagnosis_count = document.getElementById('diagnosis_count');
  diagnosis_count.innerHTML='04/12';
  document.getElementById("box4").style.display="";
+ var q3 = []
+question3 = q3.concat(array1);
 }
 function clickTest4(evt){
  t=evt.target || evt.srcElement;
@@ -79,6 +83,8 @@ function clickTest4(evt){
  var diagnosis_count = document.getElementById('diagnosis_count');
  diagnosis_count.innerHTML='05/12';
  document.getElementById("box5").style.display="";
+ var q4 = []
+question4 = q4.concat(array1);
 }
 function clickTest5(evt){
  t=evt.target || evt.srcElement;
@@ -86,6 +92,8 @@ function clickTest5(evt){
  var diagnosis_count = document.getElementById('diagnosis_count');
  diagnosis_count.innerHTML='06/12';
  document.getElementById("box6").style.display="";
+ var q5 = []
+question5 = q5.concat(array1);
 }
 function clickTest6(evt){
  t=evt.target || evt.srcElement;
@@ -93,6 +101,8 @@ function clickTest6(evt){
  var diagnosis_count = document.getElementById('diagnosis_count');
  diagnosis_count.innerHTML='07/12';
  document.getElementById("box7").style.display="";
+ var q6 = []
+question6 = q6.concat(array1);
 }
 function clickTest7(evt){
  t=evt.target || evt.srcElement;
@@ -100,6 +110,8 @@ function clickTest7(evt){
  var diagnosis_count = document.getElementById('diagnosis_count');
  diagnosis_count.innerHTML='08/12';
  document.getElementById("box8").style.display="";
+ var q7 = []
+question7 = q7.concat(array1);
 }
 function clickTest8(evt){
  t=evt.target || evt.srcElement;
@@ -107,6 +119,8 @@ function clickTest8(evt){
  var diagnosis_count = document.getElementById('diagnosis_count');
  diagnosis_count.innerHTML='09/12';
  document.getElementById("box9").style.display="";
+ var q8 = []
+question8 = q8.concat(array1);
 }
 function clickTest9(evt){
  t=evt.target || evt.srcElement;
@@ -114,6 +128,8 @@ function clickTest9(evt){
  var diagnosis_count = document.getElementById('diagnosis_count');
  diagnosis_count.innerHTML='10/12';
  document.getElementById("box10").style.display="";
+ var q9 = []
+question9 = q9.concat(array1);
 }
 function clickTest10(evt){
  t=evt.target || evt.srcElement;
@@ -121,6 +137,8 @@ function clickTest10(evt){
  var diagnosis_count = document.getElementById('diagnosis_count');
  diagnosis_count.innerHTML='11/12';
  document.getElementById("box11").style.display="";
+ var q10 = []
+question10 = q10.concat(array1);
 }
 function clickTest11(evt){
  t=evt.target || evt.srcElement;
@@ -128,22 +146,170 @@ function clickTest11(evt){
  var diagnosis_count = document.getElementById('diagnosis_count');
  diagnosis_count.innerHTML='12/12';
  document.getElementById("box12").style.display="";
+ var q11 = []
+question11 = q11.concat(array1);
 }
+// 戻るボタンをおして１問戻る処理
+var back =document.getElementById('back');
+function backclick(){
+// // 点数
+
+// console.log(array1);
+// console.log(array1[1]);
+// console.log(array1[2]);
+// 画面
+if(document.getElementById("box2").style.display== ""){
+  document.getElementById("box2").style.display="none";
+  var diagnosis_count = document.getElementById('diagnosis_count');
+  diagnosis_count.innerHTML='01/12';
+  document.getElementById("box1").style.display="";  // １問目に戻る処理ここまで
+if(array1[0] != question1[0]){
+  array1[0] = question1[0];
+}else if(array1[1] != question1[1]){
+  array1[1] = question1[1];
+}else if (array1[2] != question1[2]) {
+  array1[2] = question1[2];
+}
+  }else if(document.getElementById("box3").style.display== ""){
+    document.getElementById("box3").style.display="none";
+    var diagnosis_count = document.getElementById('diagnosis_count');
+    diagnosis_count.innerHTML='02/12';
+    document.getElementById("box2").style.display="";// ２問目に戻る処理ここまで
+    if(array1[0] != question2[0]){
+      array1[0] = question2[0];
+    }else if(array1[1] != question2[1]){
+      array1[1] = question2[1];
+    }else if (array1[2] != question2[2]) {
+      array1[2] = question2[2];
+    }
+    }else if(document.getElementById("box4").style.display== ""){
+      document.getElementById("box4").style.display="none";
+      var diagnosis_count = document.getElementById('diagnosis_count');
+      diagnosis_count.innerHTML='03/12';
+      document.getElementById("box3").style.display="";// ３問目に戻る処理ここまで
+      if(array1[0] != question3[0]){
+        array1[0] = question3[0];
+      }else if(array1[1] != question3[1]){
+        array1[1] = question3[1];
+      }else if (array1[2] != question3[2]) {
+        array1[2] = question3[2];
+      }
+    }else if(document.getElementById("box5").style.display== ""){
+        document.getElementById("box5").style.display="none";
+        var diagnosis_count = document.getElementById('diagnosis_count');
+        diagnosis_count.innerHTML='04/12';
+        document.getElementById("box4").style.display="";// ４問目に戻る処理ここまで
+        if(array1[0] != question4[0]){
+          array1[0] = question4[0];
+        }else if(array1[1] != question4[1]){
+          array1[1] = question4[1];
+        }else if (array1[2] != question4[2]) {
+          array1[2] = question4[2];
+        }
+      }else if(document.getElementById("box6").style.display== ""){
+        document.getElementById("box6").style.display="none";
+        var diagnosis_count = document.getElementById('diagnosis_count');
+        diagnosis_count.innerHTML='05/12';
+        document.getElementById("box5").style.display="";// ５問目に戻る処理ここまで
+        if(array1[0] != question5[0]){
+          array1[0] = question5[0];
+        }else if(array1[1] != question5[1]){
+          array1[1] = question5[1];
+        }else if (array1[2] != question5[2]) {
+          array1[2] = question5[2];
+        }
+      }else if(document.getElementById("box7").style.display== ""){
+          document.getElementById("box7").style.display="none";
+          var diagnosis_count = document.getElementById('diagnosis_count');
+          diagnosis_count.innerHTML='06/12';
+          document.getElementById("box6").style.display="";// ６問目に戻る処理ここまで
+          if(array1[0] != question6[0]){
+            array1[0] = question6[0];
+          }else if(array1[1] != question6[1]){
+            array1[1] = question6[1];
+          }else if (array1[2] != question6[2]) {
+            array1[2] = question6[2];
+          }
+        }else if(document.getElementById("box8").style.display== ""){
+            document.getElementById("box8").style.display="none";
+            var diagnosis_count = document.getElementById('diagnosis_count');
+            diagnosis_count.innerHTML='07/12';
+            document.getElementById("box7").style.display="";// ７問目に戻る処理ここまで
+            if(array1[0] != question7[0]){
+              array1[0] = question7[0];
+            }else if(array1[1] != question7[1]){
+              array1[1] = question7[1];
+            }else if (array1[2] != question7[2]) {
+              array1[2] = question7[2];
+            }
+          }else if(document.getElementById("box9").style.display== ""){
+              document.getElementById("box9").style.display="none";
+              var diagnosis_count = document.getElementById('diagnosis_count');
+              diagnosis_count.innerHTML='08/12';
+              document.getElementById("box8").style.display="";// ８問目に戻る処理ここまで
+              if(array1[0] != question8[0]){
+                array1[0] = question8[0];
+              }else if(array1[1] != question8[1]){
+                array1[1] = question8[1];
+              }else if (array1[2] != question8[2]) {
+                array1[2] = question8[2];
+              }
+            }else if(document.getElementById("box10").style.display== ""){
+                document.getElementById("box10").style.display="none";
+                var diagnosis_count = document.getElementById('diagnosis_count');
+                diagnosis_count.innerHTML='09/12';
+                document.getElementById("box9").style.display="";// ９問目に戻る処理ここまで
+                if(array1[0] != question9[0]){
+                  array1[0] = question9[0];
+                }else if(array1[1] != question9[1]){
+                  array1[1] = question9[1];
+                }else if (array1[2] != question9[2]) {
+                  array1[2] = question9[2];
+                }
+              }else if(document.getElementById("box11").style.display== ""){
+                  document.getElementById("box11").style.display="none";
+                  var diagnosis_count = document.getElementById('diagnosis_count');
+                  diagnosis_count.innerHTML='10/12';
+                  document.getElementById("box10").style.display="";// １０問目に戻る処理ここまで
+                  if(array1[0] != question10[0]){
+                    array1[0] = question10[0];
+                  }else if(array1[1] != question10[1]){
+                    array1[1] = question10[1];
+                  }else if (array1[2] != question10[2]) {
+                    array1[2] = question10[2];
+                  }
+                }else if(document.getElementById("box12").style.display== ""){
+                    document.getElementById("box12").style.display="none";
+                    var diagnosis_count = document.getElementById('diagnosis_count');
+                    diagnosis_count.innerHTML='11/12';
+                    document.getElementById("box11").style.display="";// １１問目に戻る処理ここまで
+                    if(array1[0] != question11[0]){
+                      array1[0] = question11[0];
+                    }else if(array1[1] != question11[1]){
+                      array1[1] = question11[1];
+                    }else if (array1[2] != question11[2]) {
+                      array1[2] = question11[2];
+                    }
+}
+console.log(array1);
+}
+
 // 結果反映
 function clickTest12(evt){
  t=evt.target || evt.srcElement;
  document.getElementById("box12").style.display="none";
  document.getElementById("answer_none").style.display="none";
-  if( two < one && three < one){
+  if( array1[1] < array1[0] && array1[2] < array1[0]){
    document.getElementById("kekka1").style.display="";
- } else if (one < two && three < two) {
+ } else if (array1[0] < array1[1] && array1[2] < array1[1]) {
    document.getElementById("kekka2").style.display="";
- }  else if (one < three && two < three){
+ }  else if (array1[0] < array1[2] && array1[1] < array1[2]){
    document.getElementById("kekka3").style.display="";
  }else{
       document.getElementById("kekka1").style.display="";
  }
 }
+console.log(array1);
 </script>
 
 <body>
@@ -197,9 +363,10 @@ function clickTest12(evt){
 <p class="box_border">‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾</p>
 <ul>
  <li  id="clickTest" onClick='clickTest2(event),clickTest0(event);' >してる</li>
- <li class="two" id="clickTest" onClick='clickTest2(event),clickTest0(event);' >たまに</li>
- <li class="three" id="clickTest" onClick='clickTest2(event),clickTest0(event);' >してない</li>
+ <li class="two" id="clickTest" onClick='clickTest2(event),clickTest0(event);' >たまに②</li>
+ <li class="three" id="clickTest" onClick='clickTest2(event),clickTest0(event);' >してない③</li>
 </ul>
+<button id="back" onclick="backclick()">戻る</buttan>
 </div>
 
 <div id="box3">
@@ -209,10 +376,11 @@ function clickTest12(evt){
 <p class="box_title">Q.虫歯経験</p>
 <p class="box_border">‾‾‾‾‾‾‾‾‾</p>
 <ul>
- <li class="one" id="clickTest" onClick='clickTest3(event),clickTest0(event);' >なったことがない</li>
- <li class="two" id="clickTest" onClick='clickTest3(event),clickTest0(event);' >1〜3本</li>
- <li class="three" id="clickTest" onClick='clickTest3(event),clickTest0(event);' >4本以上</li>
+ <li class="one" id="clickTest" onClick='clickTest3(event),clickTest0(event);' >なったことがない①</li>
+ <li class="two" id="clickTest" onClick='clickTest3(event),clickTest0(event);' >1〜3本②</li>
+ <li class="three" id="clickTest" onClick='clickTest3(event),clickTest0(event);' >4本以上③</li>
 </ul>
+<button id="back" onclick="backclick()">戻る</buttan>
 </div>
 
 <div id="box4">
@@ -222,10 +390,11 @@ function clickTest12(evt){
 <p class="box_title">Q.お菓子や甘いものをよく食べる？</p>
 <p class="box_border">‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾</p>
 <ul>
- <li class="three" id="clickTest" onClick='clickTest4(event),clickTest0(event);' >よく食べる</li>
- <li class="two" id="clickTest" onClick='clickTest4(event),clickTest0(event);' >たまに</li>
- <li class="one" id="clickTest" onClick='clickTest4(event),clickTest0(event);' >食べない</li>
+ <li class="three" id="clickTest" onClick='clickTest4(event),clickTest0(event);' >よく食べる③ </li>
+ <li class="two" id="clickTest" onClick='clickTest4(event),clickTest0(event);' >たまに②</li>
+ <li class="one" id="clickTest" onClick='clickTest4(event),clickTest0(event);' >食べない①</li>
 </ul>
+<button id="back" onclick="backclick()">戻る</buttan>
 </div>
 
 <div id="box5">
@@ -235,10 +404,11 @@ function clickTest12(evt){
 <p class="box_title">Q.冷たいものや熱いものがしみる</p>
 <p class="box_border">‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾</p>
 <ul>
- <li class="one" id="clickTest" onClick='clickTest5(event),clickTest0(event);' >しみる</li>
- <li class="two" id="clickTest" onClick='clickTest5(event),clickTest0(event);' >たまにしみる</li>
- <li class="three" id="clickTest" onClick='clickTest5(event),clickTest0(event);' >しみない</li>
+ <li class="one" id="clickTest" onClick='clickTest5(event),clickTest0(event);' >しみる① </li>
+ <li class="two" id="clickTest" onClick='clickTest5(event),clickTest0(event);' >たまにしみる②</li>
+ <li class="three" id="clickTest" onClick='clickTest5(event),clickTest0(event);' >しみない③</li>
 </ul>
+<button id="back" onclick="backclick()">戻る</buttan>
 </div>
 
 <div id="box6">
@@ -248,10 +418,11 @@ function clickTest12(evt){
 <p class="box_title">Q.1日辺りタバコを吸う本数は</p>
 <p class="box_border">‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾</p>
 <ul>
- <li class="one" id="clickTest" onClick='clickTest6(event),clickTest0(event);' >吸わない</li>
- <li class="two" id="clickTest" onClick='clickTest6(event),clickTest0(event);' >5本未満</li>
- <li class="three" id="clickTest" onClick='clickTest6(event),clickTest0(event);' >5本以上</li>
+ <li class="one" id="clickTest" onClick='clickTest6(event),clickTest0(event);' >吸わない① </li>
+ <li class="two" id="clickTest" onClick='clickTest6(event),clickTest0(event);' >5本未満②</li>
+ <li class="three" id="clickTest" onClick='clickTest6(event),clickTest0(event);' >5本以上③</li>
 </ul>
+<button id="back" onclick="backclick()">戻る</buttan>
 </div>
 
 <div id="box7">
@@ -261,10 +432,11 @@ function clickTest12(evt){
 <p class="box_title">Q.歯の黄ばみが気になる</p>
 <p class="box_border">‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾</p>
 <ul>
- <li class="two"  id="clickTest" onClick='clickTest7(event),clickTest0(event);' >わからない</li>
+ <li class="two"  id="clickTest" onClick='clickTest7(event),clickTest0(event);' >わからない②</li>
  <li  id="clickTest" onClick='clickTest7(event),clickTest0(event);' >気にならない</li>
- <li class="three" id="clickTest" onClick='clickTest7(event),clickTest0(event);' >気になる</li>
+ <li class="three" id="clickTest" onClick='clickTest7(event),clickTest0(event);' >気になる③</li>
 </ul>
+<button id="back" onclick="backclick()">戻る</buttan>
 </div>
 
 <div id="box8">
@@ -274,10 +446,11 @@ function clickTest12(evt){
 <p class="box_title">Q.自身の口臭が気になる</p>
 <p class="box_border">‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾</p>
 <ul>
- <li class="two" id="clickTest" onClick='clickTest8(event),clickTest0(event);' >わからない</li>
+ <li class="two" id="clickTest" onClick='clickTest8(event),clickTest0(event);' >わからない②</li>
  <li id="clickTest" onClick='clickTest8(event),clickTest0(event);' >気にならない</li>
- <li class="three" id="clickTest" onClick='clickTest8(event),clickTest0(event);' >気になる</li>
+ <li class="three" id="clickTest" onClick='clickTest8(event),clickTest0(event);' >気になる③</li>
 </ul>
+<button id="back" onclick="backclick()">戻る</buttan>
 </div>
 
 <div id="box9">
@@ -287,10 +460,11 @@ function clickTest12(evt){
 <p class="box_title">Q.歯磨きの時の出血頻度</p>
 <p class="box_border">‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾</p>
 <ul>
- <li class="three" id="clickTest" onClick='clickTest9(event),clickTest0(event);' >いつも</li>
- <li class="two" id="clickTest" onClick='clickTest9(event),clickTest0(event);' >たまに</li>
- <li class="one" id="clickTest" onClick='clickTest9(event),clickTest0(event);' >ない</li>
+ <li class="three" id="clickTest" onClick='clickTest9(event),clickTest0(event);' >いつも③</li>
+ <li class="two" id="clickTest" onClick='clickTest9(event),clickTest0(event);' >たまに②</li>
+ <li class="one" id="clickTest" onClick='clickTest9(event),clickTest0(event);' >ない①</li>
 </ul>
+<button id="back" onclick="backclick()">戻る</buttan>
 </div>
 
 <div id="box10">
@@ -300,10 +474,11 @@ function clickTest12(evt){
 <p class="box_title">Q.口の中の乾燥が気になる</p>
 <p class="box_border">‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾</p>
 <ul>
-  <li class="three" id="clickTest" onClick='clickTest10(event),clickTest0(event);' >いつも</li>
-  <li class="two" id="clickTest" onClick='clickTest10(event),clickTest0(event);' >たまに</li>
-  <li class="one" id="clickTest" onClick='clickTest10(event),clickTest0(event);' >気にならない</li>
+  <li class="three" id="clickTest" onClick='clickTest10(event),clickTest0(event);' >いつも③</li>
+  <li class="two" id="clickTest" onClick='clickTest10(event),clickTest0(event);' >たまに②</li>
+  <li class="one" id="clickTest" onClick='clickTest10(event),clickTest0(event);' >気にならない①</li>
 </ul>
+<button id="back" onclick="backclick()">戻る</buttan>
 </div>
 
 <div id="box11">
@@ -317,6 +492,7 @@ function clickTest12(evt){
  <li  id="clickTest" onClick='clickTest11(event),clickTest0(event);' >1〜3分</li>
  <li  id="clickTest" onClick='clickTest11(event),clickTest0(event);' >3分以上</li>
 </ul>
+<button id="back" onclick="backclick()">戻る</buttan>
 </div>
 
 <div id="box12">
@@ -330,6 +506,8 @@ function clickTest12(evt){
  <li  id="clickTest" onClick='clickTest12(event),clickTest0(event);' >1年に数回</li>
  <li   id="clickTest" onClick='clickTest12(event),clickTest0(event);' >行ったことがない</li>
 </ul>
+<button id="back" onclick="backclick()">戻る</buttan>
+
 </div>
 
 <div id="kekka1">
