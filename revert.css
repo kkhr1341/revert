@@ -163,14 +163,14 @@ header .bx-wrapper {
 }
 .TOP_content_title{
   font-size: 8vw;
-      width: 100%;
-      font-weight: 500;
-      color: grey;
-      text-align: center;
-      margin-left: -4vw;
+    width: 100%;
+    font-weight: 500;
+    color: #666666;
+    text-align: center;
+    margin-left: -4vw;
 }
 .TOP_content_subtitle{
-  color: grey;
+  color: #666666;
     font-weight: bold;
     margin: 0;
     text-align: center;
@@ -193,9 +193,9 @@ header .bx-wrapper {
 .TOP_content_text{
   position: relative;
       color: #666666;
-      font-size: 3vw;
+      font-size: 3.8vw;
       text-align: center;
-      line-height: 2;
+      line-height: 1.7;
   }
 .TOP_content_bgimg1{
   position: relative;
@@ -205,10 +205,10 @@ header .bx-wrapper {
 }
 .TOP_content_bgimg1 img{
   width: 100%;
-    position: absolute;
-    margin: 0 auto;
-    height: 35vw;
-    border: solid gray 0.3vw;
+      position: absolute;
+      margin: 0 auto;
+      height: 38vw;
+      border: solid gray 0.3vw;
   }
 .TOP_diagnosis{
   position: relative;
@@ -306,7 +306,7 @@ header .bx-wrapper {
   overflow: scroll;
 }
 .TOP_ploduct{
-  width: 80vw;
+  width: 80%;
 }
 .TOP_ploduct_text{
   text-align: center;
@@ -330,26 +330,28 @@ font-size: 3.5vw;
 .TOP_ploduct_contentbutton{
   width: 100%;
     display: flex;
-    justify-content: space-around;
+    justify-content:center;
 }
 .TOP_ploduct_contentbutton a{
   text-decoration: none;
 }
 .TOP_ploduct_detail{
   color: white;
-    margin: 0;
-    font-size: 4.5vw;
-    text-align: center;
-    background: linear-gradient(#B1ACAC, gray);
-    padding: 2vw 5vw;
-}
-.TOP_ploduct_buy{
-      color: white;
       margin: 0;
       font-size: 4.5vw;
       text-align: center;
-    background: linear-gradient(#B1ACAC, gray);
-      padding: 2vw 14vw;
+      background: linear-gradient(#B1ACAC, gray);
+      padding: 2vw 5vw;
+      margin-right: 3.5vw;
+}
+.TOP_ploduct_buy{
+  color: white;
+  margin: 0;
+  font-size: 4.5vw;
+  text-align: center;
+  background: linear-gradient(#B1ACAC, gray);
+  padding: 2vw 14vw;
+  margin-left: 3.5vw;
 }
 .c-container {
   position: relative;
@@ -417,7 +419,12 @@ font-size: 3.5vw;
 .pl7{
   padding-left: 7vw;
 }
-
+/* 試しに */
+.s{
+  width: 80%;
+    margin: 0 auto;
+    box-shadow: 2px 2px 2vw grey;;
+}
 /* 商品ページ */
 .product_revert {
     text-align: center;
@@ -971,7 +978,7 @@ header {
 .header_rogo {
   padding-top: 3vw;
     height: 8vw;
-    padding-left: 24.1vw;
+    padding-left: 25vw;
 
 }
 .TOP_ploduct_subname {
