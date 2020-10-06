@@ -963,7 +963,6 @@ header {
     cursor: pointer;
 }
 #nav-drawer {
-  border-left: solid white;
     padding-top: 4%;
     position: relative;
     width: 12%;
