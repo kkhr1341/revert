@@ -6,13 +6,10 @@ font-family: "HiraMinProN-W6";
 /* ヘッダー */
 .header_rogo {
   width: auto;
-      padding-right: 24vw;
       padding-top: 1.5vw;
-      /* width: 18%; */
       height: 8vw;
-      padding-left: 39.5vw;
-      padding-right: 25vw;
-}
+      padding-left: 25.4vw;
+        }
 header {
   width: 100%;
   background-color: black;
@@ -20,10 +17,10 @@ header {
 }
 
 #nav-drawer {
-    border-left: solid white;
+  border-right: solid white;
     padding-top: 2.5%;
     position: relative;
-    width: 29%;
+    width: 11%;
     padding-left: 3.2%;
 }
 /*チェックボックス等は非表示に*/
@@ -188,14 +185,14 @@ header .bx-wrapper {
       width: 36%;
       font-size: 4vw;
       text-align: center;
-      color: gray;
+      color: #666666;
       padding-top: 2vw;
       border-bottom: solid 0.3vw;
       height: 5vw;
 }
 .TOP_content_text{
   position: relative;
-      color: gray;
+      color: #666666;
       font-size: 3vw;
       text-align: center;
       line-height: 2;
@@ -235,7 +232,7 @@ header .bx-wrapper {
 }
 .twitter{
   width: 8vw;
-  margin-block-end: 9px;
+    margin-block-end: 0.35vw;
 }
 .instagram{
   padding-left: 4vw;
@@ -245,7 +242,7 @@ header .bx-wrapper {
 }
 .youtube{
   width: 8.2vw;
-      margin-block-end: 4px;
+      margin-block-end: 0.2vw;
 }
 .TOP_slider2_bolder {
   margin: 5vw auto 0;
@@ -266,7 +263,7 @@ header .bx-wrapper {
 }
 .TOP_content_toothbrush{
   width: 100%;
-  margin-bottom: 10vw;
+  margin-bottom: 12vw;
 }
 .TOP_Product_buttun{
   display: flex;
@@ -284,7 +281,7 @@ header .bx-wrapper {
     padding:2vw 8vw;
 }
 .TOP_genre_leftbutton{
-  background-color: gray;
+  background-color: #666666;
 }
 .TOP_genre_rightbutton{
   background-color: lightgrey;
@@ -296,6 +293,10 @@ header .bx-wrapper {
       margin-bottom: 7vw;
 }
 .slider_content1{
+  width: 100%;
+  transition: 1s;
+}
+.slider_content2{
   width: 100%;
   transition: 1s;
 }
@@ -314,15 +315,17 @@ header .bx-wrapper {
 }
 .TOP_ploduct_name{
   width: 100%;
-  color: gray;
-  font-size: 8vw;
-  margin: 0;
+    color: #666666;
+    font-size: 4vw;
+}
+.TOP_ploduct_subname{
+font-size: 3.5vw;
 }
 .TOP_ploduct_subtitle{
   margin-block-start: 8vw;
-      margin-bottom: 4vw;
-      font-size: 4.5vw;
-      color: gray;
+    margin-bottom: 4vw;
+    font-size: 3vw;
+    color: #666666;
 }
 .TOP_ploduct_contentbutton{
   width: 100%;
@@ -345,7 +348,7 @@ header .bx-wrapper {
       margin: 0;
       font-size: 4.5vw;
       text-align: center;
-      background:gray;
+    background: linear-gradient(#B1ACAC, gray);
       padding: 2vw 14vw;
 }
 .c-container {
@@ -366,6 +369,7 @@ header .bx-wrapper {
 .undermenu{
   display: flex;
     justify-content: space-around;
+    margin-top: 7vw;
 }
 .undermenu a{
 
@@ -374,27 +378,30 @@ header .bx-wrapper {
   border-bottom: solid gray 0.4vw;
 }
 .TOP_new{
-  margin-bottom: 5vw;
+  height: 4.5vw;
   padding: 0 8vw;
 }
  .undermenu p{
-   color: gray;
+   color: #666666;
   margin: 0 0 0 0;
 }
 .TOP_online{
-  margin-bottom: 5vw;
-  padding: 0px 4vw;
+  height: 4.5vw;
+    padding: 0px 10vw;
 }
 .TOP_service{
+  height: 4.5vw;
   padding: 0 11.2vw;
 }
 .TOP_contact{
+  height: 4.5vw;
   padding: 0 7vw;
 }
 .TOP_address{
-  color: gray;
-  font-size: 3.2vw;
+  color: #666666;
+    font-size: 3.2vw;
     margin-inline-start: 10vw;
+    margin-block-start: 7vw;
 }
 .TOP_under_icon{
   text-align: center;
@@ -429,11 +436,11 @@ header .bx-wrapper {
 .product_sonic_name{
   margin: 0;
   font-size: 7vw;
-  color: gray;
+  color: #666666;
 }
 .product_sonic_maney{
 font-size: 6vw;
-color: gray;
+color: #666666;
 }
 .product_sonic_button{
   margin: 0 auto;
@@ -453,11 +460,11 @@ color: gray;
 .product_sonic_subtitle {
     font-size: 4.5vw;
     width: 90%;
-    color: gray;
+    color: #666666;
     margin: 0 auto;
 }
 .product_sonic_explanation{
-  color: gray;
+  color: #666666;
 }
 .product_sonic_explanation h2{
   margin: 12vw 0 0 0;
@@ -502,7 +509,7 @@ color: gray;
   border-top: solid gray 4.5px;
 }
 .product_sonic_under p {
-    color: gray;
+    color: #666666;
     width: 50%;
     text-align: center;
     font-size: 4vw;
@@ -514,7 +521,7 @@ color: gray;
 width: 100%;
 }
 .product_sonic_set{
-  color: gray;
+  color: #666666;
   margin: 0 auto;
   width: 90%;
       gap: 2%;
@@ -614,7 +621,7 @@ width: 100%;
 }
 .products_step_purchase_text{
   margin-block-start: 6vw;
-  color: gray;
+  color: #666666;
 }
 .products_step_purchase_text_name{
   font-size: 3vw;
@@ -670,7 +677,7 @@ width: 100%;
 }
 .products_step_deletebutton{
   padding: 0;
-    color: gray;
+    color: #666666;
     border: none;
     background: none;
     font-size: 3vw;
@@ -752,11 +759,11 @@ width: 100%;
     margin: 0 auto;
     text-align: center;
     border-bottom: solid gray 0.4vw;
-    color: gray;
+    color: #666666;
 }
 .beginners_text {
     font-size: 3vw;
-    color: gray;
+    color: #666666;
     width: 66vw;
     margin: 0 auto;
 }
@@ -784,7 +791,7 @@ width: 100%;
       text-align: center;
       margin: 0 auto;
       font-size: 6vw;
-      color: gray;
+      color: #666666;
 }
 .diagnosis_title_top{
   border-bottom: solid gray 1.3vw;
@@ -797,7 +804,7 @@ width: 100%;
   margin: 3% auto 6%;
   text-align: center;
   font-size: 4.5vw;
-  background-color: gray;
+  background-color: #666666;
   color: white;
 }
 .diagnosis_cheak{
@@ -816,7 +823,7 @@ width: 100%;
     font-size: 4vw;
     margin: 0 auto;
     width: 70%;
-    color: gray;
+    color: #666666;
 }
 .diagnosis_cheak ul{
   display: flex;
@@ -827,7 +834,7 @@ width: 100%;
 }
 .box_border{
   position: relative;
-    color: gray;
+    color: #666666;
     font-size: 4vw;
     margin: 0;
     text-align: center;
@@ -929,7 +936,6 @@ margin-block-start: 8%;
 /* スマホ版 */
 @media screen and (max-width:480px) {
   .header_rogo {
-    padding-inline-start: 41vw;
     width: 23%;
 }
 header {
@@ -957,23 +963,36 @@ header {
     cursor: pointer;
 }
 #nav-drawer {
-    border-left: solid white;
+  border-left: solid white;
     padding-top: 4%;
     position: relative;
-    width: 29%;
+    width: 12%;
     padding-left: 3.2%;
 }
 .header_rogo {
-    padding-top: 3vw;
-    /* width: 18%; */
+  padding-top: 3vw;
     height: 8vw;
-    /* padding-left: 23vw; */
-    padding-right: 20vw;
+    padding-left: 24.1vw;
+
+}
+.TOP_ploduct_subname {
+    font-size: 5.5vw;
+}
+.TOP_ploduct_name {
+    width: 100%;
+    color: #666666;
+    font-size: 5.4vw;
+}
+.TOP_ploduct_subtitle {
+    margin-block-start: 8vw;
+    margin-bottom: 4vw;
+    font-size: 5vw;
+    color: #666666;
 }
 /* 商品詳細ページ */
 　.product_sonic_subtitle {
     font-size: 1.4vw;
-    color: gray;
+    color: #666666;
 }
 .product_sonic_explanation h2 {
     margin: 12vw 0 0 0;
@@ -1055,7 +1074,7 @@ header {
 
 .products_step_purchase_text{
   margin-block-start:0;
-  color: gray;
+  color: #666666;
 }
 .products_step_purchase_text_name{
   font-size: 2.8vw;
@@ -1149,7 +1168,7 @@ header {
 /* 初めての方へページ */
 .beginners_text {
     font-size: 2.5vw;
-    color: gray;
+    color: #666666;
     width: 70vw;
     margin: 0 auto;
 }
