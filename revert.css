@@ -446,6 +446,7 @@ font-size: 3.5vw;
 }
 .product_revert {
   width: 100%;
+  margin-bottom: 10vw;
 }
 .product_revert_img{
   width: 100%;
@@ -540,7 +541,7 @@ margin-left: 3.8vw;
 }
 .product_sonic_under p {
     color: #666666;
-    width: 38.1%;
+    width: 39%;
     text-align: center;
     font-size: 4vw;
     margin-top: 6vw;
@@ -549,6 +550,7 @@ margin-left: 3.8vw;
 }
 .products_content{
 width: 100%;
+margin-bottom: 11vw;
 }
 .product_sonic_set{
   color: #666666;
@@ -578,6 +580,9 @@ width: 100%;
 }
 .ORALPEACE img {
     width: 100%;
+}
+.purasheight{
+  height: 27.845vw;
 }
 .ORALPEACE_name{
   margin-top: 0;
@@ -1043,14 +1048,14 @@ bottom: -1.8vw;
     font-size: 4vw;
 }
 .product_sonic_under {
-    border-top: solid gray 3.5px;
+    border-top: solid gray 0.7vw;
 }
 .product_sonic_under p {
   width: 47.1%;
     text-align: center;
     font-size: 5vw;
     margin-top: 6vw;
-    border-bottom: solid #666 3.5px;
+    border-bottom: solid #666 0.7vw;
     margin: 10vw auto;
 }
 .product_sonic_set {
@@ -1070,7 +1075,17 @@ bottom: -1.8vw;
 .APAGARDRENAMEL_name{
   font-size: 2vw;
 }
-
+.purasheight {
+    height: 26.87vw;
+}
+.APAGARDRENAMEL img {
+    width: 100%;
+    height: 26.87vw;
+}
+.ORALPEACE img {
+    width: 100%;
+    height: 26.87vw;
+}
 /* stepページ */
 .products_step{
   width: 100%;
@@ -1242,4 +1257,9 @@ margin-block-start: 0;
   #nav-open span:after {
     bottom: -3.6vw;
     }
+    .APAGARDRENAMEL img {
+        width: 90.2%;
+        height: 26.87vw;
+    }
+
 }
