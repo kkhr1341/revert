@@ -334,9 +334,9 @@ header .bx-wrapper {
 font-size: 3.5vw;
 }
 .TOP_ploduct_subtitle{
-  margin-block-start: 8vw;
+  margin-block-start: 5vw;
     margin-bottom: 4vw;
-    font-size: 3vw;
+    font-size: 4vw;
     color: #666666;
 }
 .TOP_ploduct_contentbutton{
@@ -1006,7 +1006,7 @@ bottom: -1.8vw;
   width: 100%;
       color: #666666;
       font-size: 4.6vw;
-      margin-top: 0;
+      margin-top: -11%;
       line-height: 1.3;
 }
 .TOP_ploduct_subtitle {
