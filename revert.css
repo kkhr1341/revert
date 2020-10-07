@@ -1,7 +1,7 @@
 body{
   margin: 0;
   padding: 0;
-font-family: "HiraMinProN-W6";
+font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
 }
 /* ヘッダー */
 .header_rogo {
@@ -51,7 +51,7 @@ header {
 bottom: -1.8vw;
   }
 #nav-open span:after {
-  bottom: -3.6vw;
+  bottom: -3.4vw;
   }
 
 /*閉じる用の薄黒カバー*/
@@ -175,6 +175,7 @@ header .bx-wrapper {
     margin: 0;
     text-align: center;
     font-size: 3.5vw;
+    font-family: "HiraMinProN-W6","HiraMinProN-W6";
   }
   .corporate_philosophy{
     font-size: 6.5vw;
@@ -322,6 +323,9 @@ header .bx-wrapper {
   width: 100%;
 }
 .TOP_ploduct_name{
+  font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
+
+  margin: 0;
   width: 100%;
     color: #666666;
     font-size: 4vw;
@@ -983,6 +987,12 @@ header {
     width: 12%;
     padding-left: 3.2%;
 }
+#nav-open span:before {
+bottom: -1.8vw;
+  }
+#nav-open span:after {
+  bottom: -3.4vw;
+  }
 .header_rogo {
   padding-top: 3vw;
     height: 8vw;
@@ -990,19 +1000,20 @@ header {
 
 }
 .TOP_ploduct_subname {
-    font-size: 4.2vw;
+  font-size: 3.7vw;
 }
 .TOP_ploduct_name {
   width: 100%;
-  color: #666666;
-  font-size: 4.9vw;
-  margin-top: 0;
+      color: #666666;
+      font-size: 4.6vw;
+      margin-top: 0;
+      line-height: 1.3;
 }
 .TOP_ploduct_subtitle {
   margin-block-start: 7vw;
     margin-bottom: 4vw;
-    font-size: 4vw;
-    color: #666666
+    font-size: 4.3vw;
+    color: #666666;
 }
 /* 商品詳細ページ */
 　.product_sonic_subtitle {
@@ -1206,4 +1217,12 @@ margin-block-start: 0;
   width: 90%;
     margin-right: 4%;
 }
+}
+@media screen and (max-width:320px) {
+  #nav-open span:before {
+  bottom: -1.8vw;
+    }
+  #nav-open span:after {
+    bottom: -3.6vw;
+    }
 }
