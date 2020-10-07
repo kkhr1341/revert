@@ -256,7 +256,7 @@ header .bx-wrapper {
   width: 100%;
 }
 .bx-wrapper .bx-pager {
-  margin-bottom: 58%!important;
+  margin-bottom: 66%!important;
 }
 .bx-wrapper .bx-pager.bx-default-pager a{
   width: 2vw!important;
@@ -303,6 +303,12 @@ header .bx-wrapper {
 .slider_content2{
   width: 100%;
   transition: 1s;
+}
+.TOP_slider2 .bx-wrapper .bx-viewport .slider2 li img{
+  height: 51vw!important;
+    width: 100%!important;
+    max-width: 100%!important;
+    display: block!important;
 }
 .TOP_ploduct_slider{
   width: 100%;
@@ -431,12 +437,6 @@ font-size: 3.5vw;
 }
 .pl7{
   padding-left: 7vw;
-}
-/* 試しに */
-.s{
-  width: 80%;
-    margin: 0 auto;
-    box-shadow: 2px 2px 2vw grey;;
 }
 /* 商品ページ */
 .product_revert_icon{
