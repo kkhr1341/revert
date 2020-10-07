@@ -274,16 +274,18 @@ header .bx-wrapper {
 }
 
 .TOP_genre_leftbutton,.TOP_genre_rightbutton{
-   border: none;
-  outline: none;
-  color: white;
-  font-size: 3vw;
-    padding:2vw 8vw;
+  border: none;
+    outline: none;
+    color: white;
+    font-size: 4vw;
+    padding: 3vw 9vw;
 }
 .TOP_genre_leftbutton{
+  margin-right: 1%;
   background-color: #666666;
 }
 .TOP_genre_rightbutton{
+  margin-left: 1  %;
   background-color: lightgrey;
 }
 .TOP_content_slider{
@@ -308,7 +310,7 @@ header .bx-wrapper {
 .TOP_content_shadow{
   width: 85%;
     margin: 0 auto;
-    box-shadow: 2px 2px 57px grey;
+    box-shadow: 2px 2px 30px grey;
     padding-bottom: 3%;
 }
 .TOP_ploduct{
@@ -348,7 +350,7 @@ font-size: 3.5vw;
       text-align: center;
       background: linear-gradient(#B1ACAC, gray);
       padding: 2vw 5vw;
-      margin-right: 3.5vw;
+      margin-right: 2vw;
 }
 .TOP_ploduct_buy{
   color: white;
@@ -357,7 +359,7 @@ font-size: 3.5vw;
   text-align: center;
   background: linear-gradient(#B1ACAC, gray);
   padding: 2vw 14vw;
-  margin-left: 3.5vw;
+  margin-left: 2vw;
 }
 .c-container {
   position: relative;
@@ -988,18 +990,19 @@ header {
 
 }
 .TOP_ploduct_subname {
-    font-size: 5.5vw;
+    font-size: 4.2vw;
 }
 .TOP_ploduct_name {
-    width: 100%;
-    color: #666666;
-    font-size: 5.4vw;
+  width: 100%;
+  color: #666666;
+  font-size: 4.9vw;
+  margin-top: 0;
 }
 .TOP_ploduct_subtitle {
-    margin-block-start: 8vw;
+  margin-block-start: 7vw;
     margin-bottom: 4vw;
-    font-size: 5vw;
-    color: #666666;
+    font-size: 4vw;
+    color: #666666
 }
 /* 商品詳細ページ */
 　.product_sonic_subtitle {
