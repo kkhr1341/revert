@@ -167,7 +167,7 @@ header .bx-wrapper {
     font-weight: 500;
     color: #666666;
     text-align: center;
-    margin-left: -4vw;
+    margin-left: -3vw;
     font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
 }
 .TOP_content_subtitle{
@@ -998,7 +998,7 @@ bottom: -1.8vw;
 .header_rogo {
   padding-top: 3vw;
     height: 8vw;
-    padding-left: 25vw;
+    padding-left: 23vw;
 
 }
 .TOP_ploduct_subname {
