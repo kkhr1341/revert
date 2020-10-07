@@ -316,6 +316,7 @@ header .bx-wrapper {
     padding-bottom: 3%;
 }
 .TOP_ploduct{
+  margin-top: 10vw;
   width: 100%;
 }
 .TOP_ploduct_text{
@@ -452,10 +453,14 @@ font-size: 3.5vw;
 .product_sonic_text{
   text-align: center;
 }
+.ploduct_subname{
+font-size: 3.5vw;
+}
 .product_sonic_name{
   margin: 0;
-  font-size: 7vw;
-  color: #666666;
+    font-size: 7vw;
+    color: #666666;
+    line-height: 1.3;
 }
 .product_sonic_maney{
 font-size: 6vw;
@@ -484,7 +489,12 @@ color: #666666;
     margin: 0 auto;
 }
 .product_sonic_explanation{
-  color: #666666;
+  width: 87%;
+    color: #666666;
+    margin: 0 auto
+}
+.pc_product_gml{
+margin-left: 3.8vw;
 }
 .product_sonic_explanation h2{
   margin: 12vw 0 0 0;
@@ -523,18 +533,18 @@ color: #666666;
 }
 .product_sonic_bolder{
   margin-top: 4vw;
-    padding: 0 10vw;
+    padding: 0 7.5vw;
 }
 .product_sonic_under{
-  border-top: solid gray 4.5px;
+  border-top: solid gray 0.5vw;
 }
 .product_sonic_under p {
     color: #666666;
-    width: 50%;
+    width: 38.1%;
     text-align: center;
     font-size: 4vw;
     margin-top: 6vw;
-    border-bottom: solid gray 4.5px;
+    border-bottom: solid gray 0.5vw;
     margin: 10vw auto;
 }
 .products_content{
@@ -955,6 +965,9 @@ margin-block-start: 8%;
 }
 /* スマホ版 */
 @media screen and (max-width:480px) {
+.pc_product_gml{
+  margin-left: 0;
+}
   .header_rogo {
     width: 23%;
 }
@@ -1030,14 +1043,14 @@ bottom: -1.8vw;
     font-size: 4vw;
 }
 .product_sonic_under {
-    border-top: solid gray 1.5px;
+    border-top: solid gray 3.5px;
 }
 .product_sonic_under p {
-    width: 60%;
+  width: 47.1%;
     text-align: center;
     font-size: 5vw;
     margin-top: 6vw;
-    border-bottom: solid gray 1.5px;
+    border-bottom: solid #666 3.5px;
     margin: 10vw auto;
 }
 .product_sonic_set {
@@ -1047,6 +1060,9 @@ bottom: -1.8vw;
   gap: 2%;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+}
+.product_gml{
+  margin-left: 4vw;
 }
 .APAGARDRENAMEL {
   width: 100%;
