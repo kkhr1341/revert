@@ -574,6 +574,7 @@ margin-bottom: 11vw;
 }
 .APAGARDRENAMEL img {
   width: 100%;
+  height: 21.6vw;
 }
 .ORALPEACE{
   width: 100%;
@@ -581,8 +582,12 @@ margin-bottom: 11vw;
 .ORALPEACE img {
     width: 100%;
 }
+.hgt216{
+  height: 21.6vw;
+}
+
 .purasheight{
-  height: 27.845vw;
+  height: 28.845vw;
 }
 .ORALPEACE_name{
   margin-top: 0;
