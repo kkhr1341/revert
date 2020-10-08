@@ -346,7 +346,7 @@ header .bx-wrapper {
     padding-bottom: 12%;
 }
 .TOP_ploduct{
-  margin-top: 12vw;
+  margin-top: 10vw;
   width: 100%;
 }
 .TOP_ploduct_text{
@@ -470,6 +470,7 @@ font-size: 3.5vw;
 }
 .product_revert {
   width: 100%;
+  margin-bottom: 10vw;
 }
 .product_revert_img{
   width: 100%;
@@ -477,10 +478,14 @@ font-size: 3.5vw;
 .product_sonic_text{
   text-align: center;
 }
+.ploduct_subname{
+font-size: 3.5vw;
+}
 .product_sonic_name{
   margin: 0;
-  font-size: 7vw;
-  color: #666666;
+    font-size: 7vw;
+    color: #666666;
+    line-height: 1.3;
 }
 .product_sonic_maney{
 font-size: 6vw;
@@ -509,7 +514,12 @@ color: #666666;
     margin: 0 auto;
 }
 .product_sonic_explanation{
-  color: #666666;
+  width: 87%;
+    color: #666666;
+    margin: 0 auto
+}
+.pc_product_gml{
+margin-left: 3.8vw;
 }
 .product_sonic_explanation h2{
   margin: 12vw 0 0 0;
@@ -548,22 +558,23 @@ color: #666666;
 }
 .product_sonic_bolder{
   margin-top: 4vw;
-    padding: 0 10vw;
+    padding: 0 7.5vw;
 }
 .product_sonic_under{
-  border-top: solid gray 4.5px;
+  border-top: solid gray 0.5vw;
 }
 .product_sonic_under p {
     color: #666666;
-    width: 50%;
+    width: 39%;
     text-align: center;
     font-size: 4vw;
     margin-top: 6vw;
-    border-bottom: solid gray 4.5px;
+    border-bottom: solid gray 0.5vw;
     margin: 10vw auto;
 }
 .products_content{
 width: 100%;
+margin-bottom: 11vw;
 }
 .product_sonic_set{
   color: #666666;
@@ -587,12 +598,20 @@ width: 100%;
 }
 .APAGARDRENAMEL img {
   width: 100%;
+  height: 21.6vw;
 }
 .ORALPEACE{
   width: 100%;
 }
 .ORALPEACE img {
     width: 100%;
+}
+.hgt216{
+  height: 21.6vw;
+}
+
+.purasheight{
+  height: 28.845vw;
 }
 .ORALPEACE_name{
   margin-top: 0;
@@ -983,6 +1002,9 @@ margin-block-start: 8%;
 }
 /* スマホ版 */
 @media screen and (max-width:480px) {
+.pc_product_gml{
+  margin-left: 0;
+}
   .header_rogo {
     width: 23%;
 }
@@ -1060,14 +1082,14 @@ bottom: -1.8vw;
     font-size: 4vw;
 }
 .product_sonic_under {
-    border-top: solid gray 1.5px;
+    border-top: solid gray 0.7vw;
 }
 .product_sonic_under p {
-    width: 60%;
+  width: 47.1%;
     text-align: center;
     font-size: 5vw;
     margin-top: 6vw;
-    border-bottom: solid gray 1.5px;
+    border-bottom: solid #666 0.7vw;
     margin: 10vw auto;
 }
 .product_sonic_set {
@@ -1078,13 +1100,26 @@ bottom: -1.8vw;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
 }
+.product_gml{
+  margin-left: 4vw;
+}
 .APAGARDRENAMEL {
   width: 100%;
 }
 .APAGARDRENAMEL_name{
   font-size: 2vw;
 }
-
+.purasheight {
+    height: 26.87vw;
+}
+.APAGARDRENAMEL img {
+    width: 100%;
+    height: 26.87vw;
+}
+.ORALPEACE img {
+    width: 100%;
+    height: 26.87vw;
+}
 /* stepページ */
 .products_step{
   width: 100%;
@@ -1256,4 +1291,9 @@ margin-block-start: 0;
   #nav-open span:after {
     bottom: -3.6vw;
     }
+    .APAGARDRENAMEL img {
+        width: 90.2%;
+        height: 26.87vw;
+    }
+
 }
