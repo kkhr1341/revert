@@ -67,8 +67,14 @@ bottom: -1.8vw;
   opacity: 0;
   transition: .3s ease-in-out;
 }
-
 /*中身*/
+.nav-content-img{
+  width: 40%;
+      margin: 0px auto 5vw;
+}
+.nav-content-img img{
+  width: 100%;
+}
 #nav-content {
   overflow: auto;
   position: fixed;
@@ -76,12 +82,12 @@ bottom: -1.8vw;
   left: 0;
   z-index: 9999;/*最前面に*/
   width: 90%;/*右側に隙間を作る（閉じるカバーを表示）*/
-  max-width: 40%;/*最大幅（調整してください）*/
+  max-width: 50%;/*最大幅（調整してください）*/
   height: 100%;
-  background: #fff;/*背景色*/
-  transition: .3s ease-in-out;/*滑らかに表示*/
-  -webkit-transform: translateX(-105%);
-  transform: translateX(-105%);/*左に隠しておく*/
+  background: black;/*背景色*/
+  transition: .5s ease-in-out;/*滑らかに表示*/
+  -webkit-transform: translateY(-105%);
+  transform: translateY(105%);/*左に隠しておく*/
 }
 #nav-content ul{
   list-style: none;
@@ -91,15 +97,15 @@ bottom: -1.8vw;
 #nav-content ul li{
   position: relative;
     margin: 0;
-    border-bottom: 1px solid #333;
+    border-bottom: 1px solid white;
 }
 #nav-content ul li a{
   display: block;
-    color: #333;
+    color: white;
     font-size: 3vw;
-    padding: 1em;
     text-decoration: none;
     transition-duration: 0.2s;
+    padding-bottom: 1vw;
 }
 /*チェックが入ったらもろもろ表示*/
 #nav-input:checked ~ #nav-close {
@@ -161,30 +167,47 @@ header .bx-wrapper {
   width: 100%;
   margin: 0;
 }
+.loading_content{
+}
+
 .TOP_content_title{
   font-size: 8vw;
     width: 100%;
     font-weight: 500;
     color: #666666;
     text-align: center;
-    margin-left: -3vw;
     font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
 }
-.TOP_content_subtitle{
-  color: #666666;
-    font-weight: bold;
-    margin: 0;
-    text-align: center;
-    font-size: 3.5vw;
-    font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+.TOP_content_subtitle1{
+  width: 50%;
+      background-color: white;
+      position: relative;
+      color: #666666;
+      font-weight: bold;
+      margin: 0 auto;
+      text-align: center;
+      font-size: 3.5vw;
+      font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+      top: -6vw;
   }
+  .TOP_content_subtitle2{
+    background-color: white;
+    position: relative;
+      color: #666666;
+      font-weight: bold;
+      margin: 0;
+      text-align: center;
+      font-size: 3.5vw;
+      font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+    }
+
   .corporate_philosophy{
     font-size: 6.5vw;
     line-height: 2;
   }
 .TOP_content_youtube{
   margin: 0 auto;
-      width: 36%;
+      width: 40%;
       font-size: 3.5vw;
       text-align: center;
       color: #666666;
@@ -194,10 +217,10 @@ header .bx-wrapper {
 }
 .TOP_content_text{
   position: relative;
-      color: #666666;
-      font-size: 3.8vw;
-      text-align: center;
-      line-height: 1.7;
+    color: #666666;
+    font-size: 4vw;
+    text-align: center;
+    line-height: 1.7;
   }
 .TOP_content_bgimg1{
   position: relative;
@@ -207,10 +230,10 @@ header .bx-wrapper {
 }
 .TOP_content_bgimg1 img{
   width: 100%;
-      position: absolute;
-      margin: 0 auto;
-      height: 38vw;
-      border: solid gray 0.3vw;
+    position: absolute;
+    margin: 0 auto;
+    height: 40vw;
+    border: solid gray 0.3vw;
   }
 .TOP_diagnosis{
   position: relative;
@@ -320,7 +343,7 @@ header .bx-wrapper {
   width: 85%;
     margin: 0 auto;
     box-shadow: 2px 2px 30px grey;
-    padding-bottom: 3%;
+    padding-bottom: 12%;
 }
 .TOP_ploduct{
   margin-top: 12vw;
@@ -884,6 +907,9 @@ width: 100%;
 .mgb-10vw{
   margin-bottom: 10vw
 }
+.fs19{
+  font-size: 1.9vw;
+}
 .diagnosis_result{
   width: 100%;
 }
@@ -1002,6 +1028,8 @@ bottom: -1.8vw;
     padding-left: 23vw;
 
 }
+.loading_content {
+  }
 .TOP_ploduct_subname {
   font-size: 3.5vw;
 }
