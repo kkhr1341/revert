@@ -102,7 +102,7 @@ bottom: -1.8vw;
 #nav-content ul li a{
   display: block;
     color: white;
-    font-size: 3vw;
+    font-size: 4.5vw;
     text-decoration: none;
     transition-duration: 0.2s;
     padding-bottom: 1vw;
@@ -588,12 +588,12 @@ margin-bottom: 11vw;
     width: 100%;
 }
 .APAGARDRENAMEL{
-  font-size: 1.9vw;
+  font-size: 3vw;
   width: 100%;
 }
 .APAGARDRENAMEL_text{
   text-align: center;
-  font-size: 2.5vw;
+  font-size: 2.9vw;
   margin-top: 0;
 }
 .APAGARDRENAMEL img {
@@ -616,12 +616,12 @@ margin-bottom: 11vw;
 .ORALPEACE_name{
   margin-top: 0;
   text-align: center;
-  font-size: 2.5vw;
+  font-size: 3vw;
 }
 .ORALPEACE_text{
   padding: 0px 5px;
     font-size: 2vw;
-  font-size: 1.9vw;
+  font-size: 2.9vw;
 }
 .ORALPEACE2{
   width: 100%;
@@ -927,7 +927,7 @@ margin-bottom: 11vw;
   margin-bottom: 10vw
 }
 .fs19{
-  font-size: 1.9vw;
+  font-size: 3.9vw;
 }
 .diagnosis_result{
   width: 100%;
