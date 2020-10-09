@@ -168,6 +168,7 @@ header .bx-wrapper {
   margin: 0;
 }
 .loading_content{
+  margin-top: 9%;
 }
 
 .TOP_content_title{
@@ -192,28 +193,29 @@ header .bx-wrapper {
   }
   .TOP_content_subtitle2{
     background-color: white;
-    position: relative;
-      color: #666666;
-      font-weight: bold;
-      margin: 0;
-      text-align: center;
-      font-size: 3.5vw;
-      font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
-    }
+        position: relative;
+        color: #666666;
+        font-weight: bold;
+        margin: auto;
+        text-align: center;
+        font-size: 4.5vw;
+        font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+  }
 
   .corporate_philosophy{
     font-size: 6.5vw;
     line-height: 2;
   }
 .TOP_content_youtube{
-  margin: 0 auto;
-      width: 40%;
+  margin-top: 0;
+      width: 100%;
       font-size: 3.5vw;
-      text-align: center;
+      text-align: end;
       color: #666666;
-      padding-top: 2vw;
-      border-bottom: solid 0.3vw;
       height: 5vw;
+  }
+.TOP_content_youtube_border{
+  border: solid 0.3vw #666666;
 }
 .TOP_content_text{
   position: relative;
