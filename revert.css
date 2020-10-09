@@ -1340,5 +1340,22 @@ margin-block-start: 0;
         width: 90.2%;
         height: 26.87vw;
     }
-
+    .diagnosis_result_content_type {
+        font-size: 3vw;
+        margin: 0 auto;
+        border-bottom: solid grey 0.5vw;
+        width: 22.5vw;
+        height: 3.3vw;
+        margin-bottom: 5vw;
+    }
+    #clickTest {
+    border: solid gray 0.7vw;
+    width: 32%;
+    text-align: center;
+    background-image: url(./revert/背景(1).jpg);
+}
+#clickTest p {
+    color: #666666;
+    font-size: 2.8vw;
+    letter-spacing: -1px;
 }
