@@ -1,6 +1,7 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html>
 <head>
+<link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
 <meta http-equiv="content-Type" content="text/html; charset=UTF-8" />
 <meta http-equiv="Content-Script-Type" content="text/javascript" />
 <meta charset="utf-8">
@@ -21,7 +22,7 @@ window.onload=function() {
   document.getElementById("box"+i).style.display="none";
 }
 document.getElementById(back);
- // // 結果(初期状態)
+  // 結果(初期状態)
   document.getElementById("kekka1").style.display="none";
   document.getElementById("kekka2").style.display="none";
   document.getElementById("kekka3").style.display="none";
@@ -348,7 +349,7 @@ console.log(array1);
 <div class="diagnosis">
   <div id="answer_none">
 <div class="diagnosis_title">
-  <p><span class="diagnosis_title_top">12問で分かる</span></p>
+  <p class="diagnosis_title_toptext"><span class="diagnosis_title_top">12問で分かる</span></p>
   <p class="diagnosis_title_bottom">適正診断</p>
   </div>
   <p id="diagnosis_count">01/12</p>
@@ -362,9 +363,9 @@ console.log(array1);
 <p class="box_title">Q.歯磨きは何回？</p>
 <p class="box_border">‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾</p>
 <ul>
- <li  id="clickTest" onClick='clickTest1(event),clickTest0(event);' ><p>■ しない</p></li>
- <li  id="clickTest" onClick='clickTest1(event),clickTest0(event);' ><p>■ 1回〜2回</p></li>
- <li  id="clickTest" onClick='clickTest1(event),clickTest0(event);' ><p>■ 3回以上</p></li>
+ <li  id="clickTest" onClick='clickTest1(event),clickTest0(event);' ><p>■しない</p></li>
+ <li  id="clickTest" onClick='clickTest1(event),clickTest0(event);' ><p>■1回〜2回</p></li>
+ <li  id="clickTest" onClick='clickTest1(event),clickTest0(event);' ><p>■3回以上</p></li>
 </ul>
 </div>
 
@@ -375,11 +376,11 @@ console.log(array1);
 <p class="box_title">Q.歯磨き後にフロスは使用している？</p>
 <p class="box_border">‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾</p>
 <ul>
- <li  id="clickTest" onClick='clickTest2(event),clickTest0(event);' ><p>■ してる</p></li>
- <li class="two" id="clickTest" onClick='clickTest2(event),clickTest0(event);' ><p>■ たまに</p></li>
- <li class="three" id="clickTest" onClick='clickTest2(event),clickTest0(event);' ><p>■ してない</p></li>
+ <li  id="clickTest" onClick='clickTest2(event),clickTest0(event);'><p>■してる</p></li>
+<li class="two" id="clickTest" onClick='clickTest2(event),clickTest0(event);' ><p class="two">■たまに</p></li>
+ <li class="three" id="clickTest" onClick='clickTest2(event),clickTest0(event);' ><p class="three">■してない</p></li>
 </ul>
-<button id="back" onclick="backclick()">戻る</buttan>
+<button id="back" onclick="backclick()"><i class="fas fa-arrow-alt-circle-left"></i></buttan>
 </div>
 
 <div id="box3">
@@ -389,11 +390,17 @@ console.log(array1);
 <p class="box_title">Q.虫歯経験</p>
 <p class="box_border">‾‾‾‾‾‾‾‾‾</p>
 <ul>
- <li class="one" id="clickTest" onClick='clickTest3(event),clickTest0(event);' ><p>■ なったことがない</p></li>
- <li class="two" id="clickTest" onClick='clickTest3(event),clickTest0(event);' ><p>■ 1〜3本</p></li>
- <li class="three" id="clickTest" onClick='clickTest3(event),clickTest0(event);' ><p>■ 4本以上</p></li>
+ <li class="one" id="clickTest" onClick='clickTest3(event),clickTest0(event);'>
+   <p class="one">■なったことがない</p>
+ </li>
+ <li class="two" id="clickTest" onClick='clickTest3(event),clickTest0(event);'>
+   <p class="two">■1〜3本</p>
+ </li>
+ <li class="three" id="clickTest" onClick='clickTest3(event),clickTest0(event);'>
+   <p class="three">■4本以上</p>
+ </li>
 </ul>
-<button id="back" onclick="backclick()">戻る</buttan>
+<button id="back" onclick="backclick()"><i class="fas fa-arrow-alt-circle-left"></i></buttan>
 </div>
 
 <div id="box4">
@@ -403,11 +410,15 @@ console.log(array1);
 <p class="box_title">Q.お菓子や甘いものをよく食べる？</p>
 <p class="box_border">‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾</p>
 <ul>
- <li class="three" id="clickTest" onClick='clickTest4(event),clickTest0(event);' ><p>■ よく食べる</p></li>
- <li class="two" id="clickTest" onClick='clickTest4(event),clickTest0(event);' ><p>■ たまに</p></li>
- <li class="one" id="clickTest" onClick='clickTest4(event),clickTest0(event);' ><p>■ 食べない</p></li>
+ <li class="three" id="clickTest" onClick='clickTest4(event),clickTest0(event);'>
+   <p class="three">■よく食べる</p>
+ </li>
+ <li class="two" id="clickTest" onClick='clickTest4(event),clickTest0(event);'>
+   <p class="two">■たまに</p></li>
+ <li class="one" id="clickTest" onClick='clickTest4(event),clickTest0(event);'>
+   <p class="one">■食べない</p></li>
 </ul>
-<button id="back" onclick="backclick()">戻る</buttan>
+<button id="back" onclick="backclick()"><i class="fas fa-arrow-alt-circle-left"></i></buttan>
 </div>
 
 <div id="box5">
@@ -417,11 +428,14 @@ console.log(array1);
 <p class="box_title">Q.冷たいものや熱いものがしみる</p>
 <p class="box_border">‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾</p>
 <ul>
- <li class="one" id="clickTest" onClick='clickTest5(event),clickTest0(event);' ><p>■ しみる</p></li>
- <li class="two" id="clickTest" onClick='clickTest5(event),clickTest0(event);' ><p>■ たまにしみる</p></li>
- <li class="three" id="clickTest" onClick='clickTest5(event),clickTest0(event);' ><p>■ しみない</p></li>
+ <li class="one" id="clickTest" onClick='clickTest5(event),clickTest0(event);'>
+   <p class="one">■しみる</p></li>
+ <li class="two" id="clickTest" onClick='clickTest5(event),clickTest0(event);'>
+   <p class="two">■たまにしみる</p></li>
+ <li class="three" id="clickTest" onClick='clickTest5(event),clickTest0(event);'>
+   <p class="three">■しみない</p></li>
 </ul>
-<button id="back" onclick="backclick()">戻る</buttan>
+<button id="back" onclick="backclick()"><i class="fas fa-arrow-alt-circle-left"></i></buttan>
 </div>
 
 <div id="box6">
@@ -431,11 +445,14 @@ console.log(array1);
 <p class="box_title">Q.1日辺りタバコを吸う本数は</p>
 <p class="box_border">‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾</p>
 <ul>
- <li class="one" id="clickTest" onClick='clickTest6(event),clickTest0(event);' ><p>■ 吸わない</p></li>
- <li class="two" id="clickTest" onClick='clickTest6(event),clickTest0(event);' ><p>■ 5本未満</p></li>
- <li class="three" id="clickTest" onClick='clickTest6(event),clickTest0(event);' ><p>■ 5本以上</p></li>
+ <li class="one" id="clickTest" onClick='clickTest6(event),clickTest0(event);'>
+   <p class="one">■ 吸わない</p></li>
+ <li class="two" id="clickTest" onClick='clickTest6(event),clickTest0(event);' >
+   <p class="two">■ 5本未満</p></li>
+ <li class="three" id="clickTest" onClick='clickTest6(event),clickTest0(event);' >
+   <p class="three">■ 5本以上</p></li>
 </ul>
-<button id="back" onclick="backclick()">戻る</buttan>
+<button id="back" onclick="backclick()"><i class="fas fa-arrow-alt-circle-left"></i></buttan>
 </div>
 
 <div id="box7">
@@ -445,11 +462,14 @@ console.log(array1);
 <p class="box_title">Q.歯の黄ばみが気になる</p>
 <p class="box_border">‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾</p>
 <ul>
- <li class="two"  id="clickTest" onClick='clickTest7(event),clickTest0(event);' ><p>■ わからない</p></li>
- <li  id="clickTest" onClick='clickTest7(event),clickTest0(event);' ><p>■ 気にならない</p></li>
- <li class="three" id="clickTest" onClick='clickTest7(event),clickTest0(event);'><p>■ 気になる</p></li>
+ <li class="two"  id="clickTest" onClick='clickTest7(event),clickTest0(event);'>
+   <p class="two">■ わからない</p></li>
+ <li  id="clickTest" onClick='clickTest7(event),clickTest0(event);' >
+   <p>■ 気にならない</p></li>
+ <li class="three" id="clickTest" onClick='clickTest7(event),clickTest0(event);'>
+   <p class="three">■ 気になる</p></li>
 </ul>
-<button id="back" onclick="backclick()">戻る</buttan>
+<button id="back" onclick="backclick()"><i class="fas fa-arrow-alt-circle-left"></i></buttan>
 </div>
 
 <div id="box8">
@@ -459,11 +479,17 @@ console.log(array1);
 <p class="box_title">Q.自身の口臭が気になる</p>
 <p class="box_border">‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾</p>
 <ul>
- <li class="two" id="clickTest" onClick='clickTest8(event),clickTest0(event);' ><p>■ わからない</p></li>
- <li id="clickTest" onClick='clickTest8(event),clickTest0(event);' ><p>■ 気にならない</p></li>
- <li class="three" id="clickTest" onClick='clickTest8(event),clickTest0(event);' ><p>■ 気になる</p></li>
+ <li class="two" id="clickTest" onClick='clickTest8(event),clickTest0(event);' >
+   <p class="two">■ わからない</p>
+ </li>
+ <li id="clickTest" onClick='clickTest8(event),clickTest0(event);' >
+   <p>■ 気にならない</p>
+ </li>
+ <li class="three" id="clickTest" onClick='clickTest8(event),clickTest0(event);' >
+   <p class="three">■ 気になる</p>
+ </li>
 </ul>
-<button id="back" onclick="backclick()">戻る</buttan>
+<button id="back" onclick="backclick()"><i class="fas fa-arrow-alt-circle-left"></i></buttan>
 </div>
 
 <div id="box9">
@@ -473,11 +499,15 @@ console.log(array1);
 <p class="box_title">Q.歯磨きの時の出血頻度</p>
 <p class="box_border">‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾</p>
 <ul>
- <li class="three" id="clickTest" onClick='clickTest9(event),clickTest0(event);' ><p>■ いつも</p></li>
- <li class="two" id="clickTest" onClick='clickTest9(event),clickTest0(event);' ><p>■ たまに</p></li>
- <li class="one" id="clickTest" onClick='clickTest9(event),clickTest0(event);' ><p>■ ない</p></li>
+ <li class="three" id="clickTest" onClick='clickTest9(event),clickTest0(event);' >
+   <p class="three">■ いつも</p>
+ </li>
+ <li class="two" id="clickTest" onClick='clickTest9(event),clickTest0(event);' >
+   <p class="two">■ たまに</p></li>
+ <li class="one" id="clickTest" onClick='clickTest9(event),clickTest0(event);' >
+   <p class="one">■ ない</p></li>
 </ul>
-<button id="back" onclick="backclick()">戻る</buttan>
+<button id="back" onclick="backclick()"><i class="fas fa-arrow-alt-circle-left"></i></buttan>
 </div>
 
 <div id="box10">
@@ -487,11 +517,14 @@ console.log(array1);
 <p class="box_title">Q.口の中の乾燥が気になる</p>
 <p class="box_border">‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾</p>
 <ul>
-  <li class="three" id="clickTest" onClick='clickTest10(event),clickTest0(event);' ><p>■ いつも</p></li>
-  <li class="two" id="clickTest" onClick='clickTest10(event),clickTest0(event);' ><p>■ たまに</p></li>
-  <li class="one" id="clickTest" onClick='clickTest10(event),clickTest0(event);' ><p>■ 気にならない</p></li>
+  <li class="three" id="clickTest" onClick='clickTest10(event),clickTest0(event);' >
+    <p class="three">■ いつも</p></li>
+  <li class="two" id="clickTest" onClick='clickTest10(event),clickTest0(event);' >
+    <p class="two">■ たまに</p></li>
+  <li class="one" id="clickTest" onClick='clickTest10(event),clickTest0(event);' >
+    <p class="one">■ 気にならない</p></li>
 </ul>
-<button id="back" onclick="backclick()">戻る</buttan>
+<button id="back" onclick="backclick()"><i class="fas fa-arrow-alt-circle-left"></i></buttan>
 </div>
 
 <div id="box11">
@@ -505,7 +538,7 @@ console.log(array1);
  <li  id="clickTest" onClick='clickTest11(event),clickTest0(event);' ><p>■ 1〜3分</p></li>
  <li  id="clickTest" onClick='clickTest11(event),clickTest0(event);' ><p>■ 3分以上</p></li>
 </ul>
-<button id="back" onclick="backclick()">戻る</buttan>
+<button id="back" onclick="backclick()"><i class="fas fa-arrow-alt-circle-left"></i></buttan>
 </div>
 
 <div id="box12">
@@ -519,65 +552,76 @@ console.log(array1);
  <li  id="clickTest" onClick='clickTest12(event),clickTest0(event);' ><p>■ 1年に数回</p></li>
  <li   id="clickTest" onClick='clickTest12(event),clickTest0(event);' ><p>■ 行ったことがない</p></li>
 </ul>
-<button id="back" onclick="backclick()">戻る</buttan>
+<button id="back" onclick="backclick()"><i class="fas fa-arrow-alt-circle-left"></i></buttan>
 
 </div>
 
 <div id="kekka1">
-<h2 class="product_revert">Revert</h2>
+  <div class="product_revert_icon">
+  <img class="product_revert"src="revert\フッターロゴ.png" alt="">
+  </div>
 <div class="diagnosis_result">
   <div class="diagnosis_result_content">
     <p class="diagnosis_result_content_text1">診断お疲れ様です。</p>
     <p class="diagnosis_result_content_text2">○○さんのご希望あった<br>歯磨きセット</p>
-    <p class="diagnosis_result_content_type">ホワイトニングタイプ</p>
+    <p class="diagnosis_result_content_type_white">ホワイトニングタイプ</p>
     <img src="revert\ソニッケアー×ルシェロホワイト.png" alt="">
-      <p class="diagnosis_result_content_name">ソニッケアー<br>×<br>ルシェロホワイト</p>
+      <p class="diagnosis_result_content_name"><span class="ploduct_subname">PHILIPS 電動歯ブラシ</span><br><span class="">ソニッケアー<br>
+        <span class="TOP_ploduct_subname2">ダイヤモンドクリーン</span><br>×<br><span class="TOP_ploduct_subname">GC 歯磨きペースト</span><br>ルシェロ ホワイト</p>
       <p class="diagnosis_result_content_praice">￥34,950</p>
       <div class="diagnosis_step_">
       <a href="revert_prodact_Sonicare×ruscellowhite_step.html">
-        <button class="diagnosis_step_button">ご購入</button>
+        <h1 class="diagnosis_step_button">ご購入</h1>
       </a>
-      <button class="diagnosis_step_button2">買い物を続ける</button>
-      </div>
+      <a><h1 class="diagnosis_step_button2">買い物を続ける</h1></a>
+
+              </div>
   </div>
 </div>
 </div>
 
 <div id="kekka2">
-  <h2 class="product_revert">Revert</h2>
+  <div class="product_revert_icon">
+  <img class="product_revert"src="revert\フッターロゴ.png" alt="">
+  </div>
   <div class="diagnosis_result">
     <div class="diagnosis_result_content">
       <p class="diagnosis_result_content_text1">診断お疲れ様です。</p>
       <p class="diagnosis_result_content_text2">○○さんのご希望あった<br>歯磨きセット</p>
       <p class="diagnosis_result_content_type">虫歯予防タイプ</p>
       <img src="revert\テペ×アパガード.png" alt="">
-        <p class="diagnosis_result_content_name">テぺ<br>×<br>アパガード</p>
+        <p class="diagnosis_result_content_name"><span class="TOP_ploduct_subname">Cross Field 歯ブラシ</span><br>TePe セレクト
+        <br>×<br><span class="TOP_ploduct_subname">Oral Care 歯磨剤</span><br>アパガードリナメル</p>
         <p class="diagnosis_result_content_praice">￥2,240</p>
         <div class="diagnosis_step_">
         <a href="revert_prodact_tepe×APAGARD_step.html">
-          <button class="diagnosis_step_button">ご購入</button>
+          <h1 class="diagnosis_step_button">ご購入</h1>
         </a>
-        <button class="diagnosis_step_button2">買い物を続ける</button>
+        <a><h1 class="diagnosis_step_button2">買い物を続ける</h1></a>
         </div>
     </div>
   </div>
 </div>
 
 <div id="kekka3">
-  <h2 class="product_revert">Revert</h2>
+  <div class="product_revert_icon">
+  <img class="product_revert"src="revert\フッターロゴ.png" alt="">
+  </div>
   <div class="diagnosis_result">
     <div class="diagnosis_result_content">
       <p class="diagnosis_result_content_text1">診断お疲れ様です。</p>
       <p class="diagnosis_result_content_text2">○○さんのご希望あった<br>歯磨きセット</p>
       <p class="diagnosis_result_content_type">虫歯予防タイプ</p>
       <img src="revert\クラプロックス×オラピ.png" alt="">
-        <p class="diagnosis_result_content_name">クラブロックス<br>×<br>オーラルピース</p>
+        <p class="diagnosis_result_content_name"><span class="TOP_ploduct_subname">CURAPROX 歯ブラシ</span><br>クラプロックス CS5460
+          <br>×<br><span class="TOP_ploduct_subname">トライフ 口腔ケア製品</span><br>ORALPEACE
+            <br>オーラルピース クリーン＆モイスチュア</p>
         <p class="diagnosis_result_content_praice">￥2,150</p>
         <div class="diagnosis_step_">
         <a href="revert_prodact_CURAPROX×ORALPEACE_step.html">
-          <button class="diagnosis_step_button">ご購入</button>
+          <h1 class="diagnosis_step_button">ご購入</h1>
         </a>
-        <button class="diagnosis_step_button2">買い物を続ける</button>
+        <a><h1 class="diagnosis_step_button2">買い物を続ける</h1></a>
         </div>
     </div>
   </div>

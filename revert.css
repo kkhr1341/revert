@@ -847,6 +847,7 @@ margin-bottom: 11vw;
   width: 100%;
     height: auto;
     margin-top: 12%;
+    margin-bottom: 12%;
 }
 .diagnosis_title{
       height: auto;
@@ -862,12 +863,15 @@ margin-bottom: 11vw;
 .diagnosis_title_top{
   border-bottom: solid gray 1.3vw;
 }
+.diagnosis_title_toptext{
+  margin-block-end: 4%;
+}
 .diagnosis_title_bottom{
-  margin-bottom: 3%;
+  margin-top: 0;
 }
 #diagnosis_count{
   width: 17%;
-  margin: 3% auto 6%;
+  margin: 7% auto 6%;
   text-align: center;
   font-size: 4.5vw;
   background-color: #666666;
@@ -886,34 +890,45 @@ margin-bottom: 11vw;
 }
 .box_title{
   text-align: center;
-    font-size: 4vw;
+    font-size: 4.7vw;
     margin: 0 auto;
-    width: 70%;
+    width: 100%;
     color: #666666;
 }
 .diagnosis_cheak ul{
   display: flex;
     justify-content: space-around;
-    font-size: 3vw;
     list-style: none;
     padding: 0;
 }
 .box_border{
   position: relative;
     color: #666666;
-    font-size: 4vw;
+    font-size: 5.7vw;
     margin: 0;
     text-align: center;
     bottom: 1vw;
+    font-weight: bold;
 }
 #clickTest{
   border: solid gray 1vw;
-      width: 28%;
+      width: 29%;
       text-align: center;
       background-image: url("./revert/背景(1).jpg");
   }
   #clickTest p{
     color: #666666;
+      font-size: 2.8vw;
+}
+#back{
+  background: none;
+  border: none;
+}
+#back i{
+  font-size: 11vw;
+    padding-inline-start: 52%;
+    margin-block-start: 27%;
+    color: grey;
 }
 /* 微調整 */
 .mrg-40{
@@ -950,16 +965,28 @@ margin-bottom: 11vw;
   font-size: 4vw;
 }
 .diagnosis_result_content_type{
-  font-size: 2.5vw;
-    margin: 0;
-}
+  font-size: 3vw;
+    margin: 0 auto;
+    border-bottom: solid grey 0.5vw;
+    width: 21.5vw;
+    height: 3.3vw;
+    margin-bottom: 5vw;
+  }
+  .diagnosis_result_content_type_white{
+    font-size: 3vw;
+    margin: 0 auto;
+    border-bottom: solid grey 0.5vw;
+    width: 32vw;
+    height: 3.3vw;
+    margin-bottom: 5vw;
+  }
 .diagnosis_result_content img{
-  width: 100%;
+  width: 85%;
 }
 .diagnosis_result_content_name{
   margin-bottom: 0;
   margin-top: 0;
-  font-size: 4vw;
+  font-size: 6vw;
 }
 .diagnosis_result_content_praice{
   font-size: 5vw;
@@ -971,6 +998,7 @@ margin-bottom: 11vw;
   text-align: center;
 }
 .diagnosis_step_button{
+  margin: 0 auto;
     border: none;
     outline: none;
     color: white;
@@ -983,6 +1011,8 @@ margin-bottom: 11vw;
 }
 .diagnosis_step_button2{
 margin-block-start: 8%;
+margin-left: auto;
+margin-right: auto;
     border: none;
     outline: none;
     color: white;
@@ -1002,6 +1032,9 @@ margin-block-start: 8%;
   width: 100%;
     margin-bottom: 20%;
     height: 34.55vw;
+}
+.diagnosis_step_ a{
+  text-decoration: none;
 }
 /* スマホ版 */
 @media screen and (max-width:480px) {
