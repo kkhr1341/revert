@@ -923,9 +923,12 @@ margin-bottom: 11vw;
       font-size: 2.8vw;
 }
 #back{
-  padding: 0;
-  background: none;
-  border: none;
+  text-align: start;
+    width: 100%;
+    background: none;
+    border: none;
+    padding-inline-start: 11%;
+    margin-block-start: 8%;
 }
 #back i{
   font-size: 10vw;
