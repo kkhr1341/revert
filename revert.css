@@ -913,9 +913,9 @@ margin-bottom: 11vw;
     font-weight: bold;
 }
 #clickTest{
-  border: solid gray 1vw;
-      width: 29%;
-      text-align: center;
+  border: solid gray 0.7vw;
+    width: 31%;
+    text-align: center;
       background-image: url("./revert/背景(1).jpg");
   }
   #clickTest p{
@@ -929,9 +929,12 @@ margin-bottom: 11vw;
 #back i{
   font-size: 11vw;
     padding-inline-start: 52%;
-    margin-block-start: 27%;
     color: grey;
 }
+.box_title_border{
+  border-bottom: solid #666666 0.7vw
+}
+.box2,.box3,.box4,.box2,.box2,.box2
 /* 微調整 */
 .mrg-40{
   margin-bottom: 16%;

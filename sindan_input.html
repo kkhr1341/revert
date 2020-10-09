@@ -21,11 +21,11 @@ window.onload=function() {
   for(var i =2; i<=12; i++){
   document.getElementById("box"+i).style.display="none";
 }
-document.getElementById(back);
-  // 結果(初期状態)
-  document.getElementById("kekka1").style.display="none";
-  document.getElementById("kekka2").style.display="none";
-  document.getElementById("kekka3").style.display="none";
+ document.getElementById(back);
+//   // 結果(初期状態)
+   document.getElementById("kekka1").style.display="none";
+   document.getElementById("kekka2").style.display="none";
+   document.getElementById("kekka3").style.display="none";
 }
 // 点数を追加していく
 var one = 0;
@@ -360,8 +360,8 @@ console.log(array1);
   <div class="diagnosis_img">
     <img src="revert\12659258319120.jpg">
   </div>
-<p class="box_title">Q.歯磨きは何回？</p>
-<p class="box_border">‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾</p>
+<p class="box_title"><span class="box_title_border">Q.歯磨きは何回？<span></p>
+<!-- <p class="box_border">‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾</p> -->
 <ul>
  <li  id="clickTest" onClick='clickTest1(event),clickTest0(event);' ><p>■しない</p></li>
  <li  id="clickTest" onClick='clickTest1(event),clickTest0(event);' ><p>■1回〜2回</p></li>
@@ -373,8 +373,8 @@ console.log(array1);
   <div class="diagnosis_img">
     <img src="revert\12659258329007.jpg">
   </div>
-<p class="box_title">Q.歯磨き後にフロスは使用している？</p>
-<p class="box_border">‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾</p>
+<p class="box_title"><span class="box_title_border">Q.歯磨き後にフロスは使用している？</span></p>
+<!-- <p class="box_border">‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾</p> -->
 <ul>
  <li  id="clickTest" onClick='clickTest2(event),clickTest0(event);'><p>■してる</p></li>
 <li class="two" id="clickTest" onClick='clickTest2(event),clickTest0(event);' ><p class="two">■たまに</p></li>
@@ -387,8 +387,8 @@ console.log(array1);
   <div class="diagnosis_img">
     <img src="revert\12659258323088.jpg">
   </div>
-<p class="box_title">Q.虫歯経験</p>
-<p class="box_border">‾‾‾‾‾‾‾‾‾</p>
+<p class="box_title"><span class="box_title_border">Q.虫歯経験</span></p>
+<!-- <p class="box_border">‾‾‾‾‾‾‾‾‾</p> -->
 <ul>
  <li class="one" id="clickTest" onClick='clickTest3(event),clickTest0(event);'>
    <p class="one">■なったことがない</p>
@@ -407,8 +407,8 @@ console.log(array1);
   <div class="diagnosis_img">
     <img src="revert\12659258352823.jpg">
   </div>
-<p class="box_title">Q.お菓子や甘いものをよく食べる？</p>
-<p class="box_border">‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾</p>
+<p class="box_title"><span class="box_title_border">Q.お菓子や甘いものをよく食べる？</span></p>
+<!-- <p class="box_border">‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾</p> -->
 <ul>
  <li class="three" id="clickTest" onClick='clickTest4(event),clickTest0(event);'>
    <p class="three">■よく食べる</p>
@@ -425,8 +425,8 @@ console.log(array1);
   <div class="diagnosis_img">
     <img src="revert\12659258363497.jpg">
   </div>
-<p class="box_title">Q.冷たいものや熱いものがしみる</p>
-<p class="box_border">‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾</p>
+<p class="box_title"><span class="box_title_border">Q.冷たいものや熱いものがしみる</span></p>
+<!-- <p class="box_border">‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾</p> -->
 <ul>
  <li class="one" id="clickTest" onClick='clickTest5(event),clickTest0(event);'>
    <p class="one">■しみる</p></li>
@@ -442,15 +442,15 @@ console.log(array1);
   <div class="diagnosis_img">
     <img src="revert\12659258352827.jpg">
   </div>
-<p class="box_title">Q.1日辺りタバコを吸う本数は</p>
-<p class="box_border">‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾</p>
+<p class="box_title"><span class="box_title_border">Q.1日辺りタバコを吸う本数は</span></p>
+<!-- <p class="box_border">‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾</p> -->
 <ul>
  <li class="one" id="clickTest" onClick='clickTest6(event),clickTest0(event);'>
-   <p class="one">■ 吸わない</p></li>
+   <p class="one">■吸わない</p></li>
  <li class="two" id="clickTest" onClick='clickTest6(event),clickTest0(event);' >
-   <p class="two">■ 5本未満</p></li>
+   <p class="two">■5本未満</p></li>
  <li class="three" id="clickTest" onClick='clickTest6(event),clickTest0(event);' >
-   <p class="three">■ 5本以上</p></li>
+   <p class="three">■5本以上</p></li>
 </ul>
 <button id="back" onclick="backclick()"><i class="fas fa-arrow-alt-circle-left"></i></buttan>
 </div>
@@ -459,15 +459,18 @@ console.log(array1);
   <div class="horizontal">
     <img src="revert\12659258348337.jpg">
   </div>
-<p class="box_title">Q.歯の黄ばみが気になる</p>
-<p class="box_border">‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾</p>
+<p class="box_title"><span class="box_title_border">Q.歯の黄ばみが気になる</span></p>
+<!-- <p class="box_border">‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾</p> -->
 <ul>
  <li class="two"  id="clickTest" onClick='clickTest7(event),clickTest0(event);'>
-   <p class="two">■ わからない</p></li>
+   <p class="two">■わからない</p>
+ </li>
  <li  id="clickTest" onClick='clickTest7(event),clickTest0(event);' >
-   <p>■ 気にならない</p></li>
+   <p>■気にならない</p>
+ </li>
  <li class="three" id="clickTest" onClick='clickTest7(event),clickTest0(event);'>
-   <p class="three">■ 気になる</p></li>
+   <p class="three">■気になる</p>
+ </li>
 </ul>
 <button id="back" onclick="backclick()"><i class="fas fa-arrow-alt-circle-left"></i></buttan>
 </div>
@@ -476,17 +479,17 @@ console.log(array1);
   <div class="diagnosis_img">
     <img src="revert\12659258337686.jpg">
   </div>
-<p class="box_title">Q.自身の口臭が気になる</p>
-<p class="box_border">‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾</p>
+<p class="box_title"><span class="box_title_border">Q.自身の口臭が気になる</span></p>
+<!-- <p class="box_border">‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾</p> -->
 <ul>
  <li class="two" id="clickTest" onClick='clickTest8(event),clickTest0(event);' >
-   <p class="two">■ わからない</p>
+   <p class="two">■わからない</p>
  </li>
  <li id="clickTest" onClick='clickTest8(event),clickTest0(event);' >
-   <p>■ 気にならない</p>
+   <p>■気にならない</p>
  </li>
  <li class="three" id="clickTest" onClick='clickTest8(event),clickTest0(event);' >
-   <p class="three">■ 気になる</p>
+   <p class="three">■気になる</p>
  </li>
 </ul>
 <button id="back" onclick="backclick()"><i class="fas fa-arrow-alt-circle-left"></i></buttan>
@@ -496,16 +499,16 @@ console.log(array1);
   <div class="diagnosis_img">
     <img src="revert\12659258313792.jpg">
   </div>
-<p class="box_title">Q.歯磨きの時の出血頻度</p>
-<p class="box_border">‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾</p>
+<p class="box_title"><span class="box_title_border">Q.歯磨きの時の出血頻度</span></p>
+<!-- <p class="box_border">‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾</p> -->
 <ul>
  <li class="three" id="clickTest" onClick='clickTest9(event),clickTest0(event);' >
-   <p class="three">■ いつも</p>
+   <p class="three">■いつも</p>
  </li>
  <li class="two" id="clickTest" onClick='clickTest9(event),clickTest0(event);' >
-   <p class="two">■ たまに</p></li>
+   <p class="two">■たまに</p></li>
  <li class="one" id="clickTest" onClick='clickTest9(event),clickTest0(event);' >
-   <p class="one">■ ない</p></li>
+   <p class="one">■ない</p></li>
 </ul>
 <button id="back" onclick="backclick()"><i class="fas fa-arrow-alt-circle-left"></i></buttan>
 </div>
@@ -514,15 +517,15 @@ console.log(array1);
   <div class="horizontal">
     <img src="revert\12659258324106.jpg">
   </div>
-<p class="box_title">Q.口の中の乾燥が気になる</p>
-<p class="box_border">‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾</p>
+<p class="box_title"><span class="box_title_border">Q.口の中の乾燥が気になる</span></p>
+<!-- <p class="box_border">‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾</p> -->
 <ul>
   <li class="three" id="clickTest" onClick='clickTest10(event),clickTest0(event);' >
-    <p class="three">■ いつも</p></li>
+    <p class="three">■いつも</p></li>
   <li class="two" id="clickTest" onClick='clickTest10(event),clickTest0(event);' >
-    <p class="two">■ たまに</p></li>
+    <p class="two">■たまに</p></li>
   <li class="one" id="clickTest" onClick='clickTest10(event),clickTest0(event);' >
-    <p class="one">■ 気にならない</p></li>
+    <p class="one">■気にならない</p></li>
 </ul>
 <button id="back" onclick="backclick()"><i class="fas fa-arrow-alt-circle-left"></i></buttan>
 </div>
@@ -531,12 +534,12 @@ console.log(array1);
   <div class="diagnosis_img">
     <img src="revert\12659258346727.jpg">
   </div>
-<p class="box_title">Q.歯磨きにかける時間</p>
-<p class="box_border">‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾</p>
+<p class="box_title"><span class="box_title_border">Q.歯磨きにかける時間</span></p>
+<!-- <p class="box_border">‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾</p> -->
 <ul>
- <li  id="clickTest" onClick='clickTest11(event),clickTest0(event);' ><p>■ 1分程</p></li>
- <li  id="clickTest" onClick='clickTest11(event),clickTest0(event);' ><p>■ 1〜3分</p></li>
- <li  id="clickTest" onClick='clickTest11(event),clickTest0(event);' ><p>■ 3分以上</p></li>
+ <li  id="clickTest" onClick='clickTest11(event),clickTest0(event);' ><p>■1分程</p></li>
+ <li  id="clickTest" onClick='clickTest11(event),clickTest0(event);' ><p>■1〜3分</p></li>
+ <li  id="clickTest" onClick='clickTest11(event),clickTest0(event);' ><p>■3分以上</p></li>
 </ul>
 <button id="back" onclick="backclick()"><i class="fas fa-arrow-alt-circle-left"></i></buttan>
 </div>
@@ -545,12 +548,12 @@ console.log(array1);
   <div class="diagnosis_img">
     <img src="revert\12659258337686.jpg">
   </div>
-<p class="box_title">Q.定期的メンテナンス</p>
-<p class="box_border">‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾</p>
+<p class="box_title"><span class="box_title_border">Q.定期的メンテナンス</span></p>
+<!-- <p class="box_border">‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾</p> -->
 <ul>
- <li  id="clickTest" onClick='clickTest12(event),clickTest0(event);' ><p>■ 定期的に通っている</p></li>
- <li  id="clickTest" onClick='clickTest12(event),clickTest0(event);' ><p>■ 1年に数回</p></li>
- <li   id="clickTest" onClick='clickTest12(event),clickTest0(event);' ><p>■ 行ったことがない</p></li>
+ <li  id="clickTest" onClick='clickTest12(event),clickTest0(event);' ><p>■定期的に通っている</p></li>
+ <li  id="clickTest" onClick='clickTest12(event),clickTest0(event);' ><p>■1年に数回</p></li>
+ <li   id="clickTest" onClick='clickTest12(event),clickTest0(event);' ><p>■行ったことがない</p></li>
 </ul>
 <button id="back" onclick="backclick()"><i class="fas fa-arrow-alt-circle-left"></i></buttan>
 
