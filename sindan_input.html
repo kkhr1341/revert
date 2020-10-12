@@ -16,19 +16,18 @@
 </head>
 <script type="text/javascript">
 
-window.onload=function() {
-  // 質問
+  // 質問取得
    for(var i =2; i<=12; i++){
    var box =document.getElementById("box"+i);
 console.log(box);
  }
  document.getElementById(back);
-//   // 結果(初期状態)
+  // 結果取得
    document.getElementById("kekka1");
    document.getElementById("kekka2");
    document.getElementById("kekka3");
    document.getElementById('clickTest')
-}
+
 // 点数を追加していく
 var one = 0;
 var two = 0;
@@ -166,6 +165,7 @@ if(document.getElementById("box2").style.display== "block"){
   var diagnosis_count = document.getElementById('diagnosis_count');
   diagnosis_count.innerHTML='01/12';
   document.getElementById("box1").style.display="block";  // １問目に戻る処理ここまで
+// 点数削除
 if(array1[0] != question1[0]){
   array1[0] = question1[0];
 }else if(array1[1] != question1[1]){
@@ -178,6 +178,7 @@ if(array1[0] != question1[0]){
     var diagnosis_count = document.getElementById('diagnosis_count');
     diagnosis_count.innerHTML='02/12';
     document.getElementById("box2").style.display="block";// ２問目に戻る処理ここまで
+// 点数削除
     if(array1[0] != question2[0]){
       array1[0] = question2[0];
     }else if(array1[1] != question2[1]){
@@ -190,6 +191,7 @@ if(array1[0] != question1[0]){
       var diagnosis_count = document.getElementById('diagnosis_count');
       diagnosis_count.innerHTML='03/12';
       document.getElementById("box3").style.display="block";// ３問目に戻る処理ここまで
+// 点数削除
       if(array1[0] != question3[0]){
         array1[0] = question3[0];
       }else if(array1[1] != question3[1]){
@@ -202,6 +204,7 @@ if(array1[0] != question1[0]){
         var diagnosis_count = document.getElementById('diagnosis_count');
         diagnosis_count.innerHTML='04/12';
         document.getElementById("box4").style.display="block";// ４問目に戻る処理ここまで
+// 点数削除
         if(array1[0] != question4[0]){
           array1[0] = question4[0];
         }else if(array1[1] != question4[1]){
@@ -214,6 +217,7 @@ if(array1[0] != question1[0]){
         var diagnosis_count = document.getElementById('diagnosis_count');
         diagnosis_count.innerHTML='05/12';
         document.getElementById("box5").style.display="block";// ５問目に戻る処理ここまで
+// 点数削除
         if(array1[0] != question5[0]){
           array1[0] = question5[0];
         }else if(array1[1] != question5[1]){
@@ -226,6 +230,7 @@ if(array1[0] != question1[0]){
           var diagnosis_count = document.getElementById('diagnosis_count');
           diagnosis_count.innerHTML='06/12';
           document.getElementById("box6").style.display="block";// ６問目に戻る処理ここまで
+// 点数削除
           if(array1[0] != question6[0]){
             array1[0] = question6[0];
           }else if(array1[1] != question6[1]){
@@ -238,6 +243,7 @@ if(array1[0] != question1[0]){
             var diagnosis_count = document.getElementById('diagnosis_count');
             diagnosis_count.innerHTML='07/12';
             document.getElementById("box7").style.display="block";// ７問目に戻る処理ここまで
+// 点数削除
             if(array1[0] != question7[0]){
               array1[0] = question7[0];
             }else if(array1[1] != question7[1]){
@@ -250,6 +256,7 @@ if(array1[0] != question1[0]){
               var diagnosis_count = document.getElementById('diagnosis_count');
               diagnosis_count.innerHTML='08/12';
               document.getElementById("box8").style.display="block";// ８問目に戻る処理ここまで
+// 点数削除
               if(array1[0] != question8[0]){
                 array1[0] = question8[0];
               }else if(array1[1] != question8[1]){
@@ -262,6 +269,7 @@ if(array1[0] != question1[0]){
                 var diagnosis_count = document.getElementById('diagnosis_count');
                 diagnosis_count.innerHTML='09/12';
                 document.getElementById("box9").style.display="block";// ９問目に戻る処理ここまで
+// 点数削除
                 if(array1[0] != question9[0]){
                   array1[0] = question9[0];
                 }else if(array1[1] != question9[1]){
@@ -274,6 +282,7 @@ if(array1[0] != question1[0]){
                   var diagnosis_count = document.getElementById('diagnosis_count');
                   diagnosis_count.innerHTML='10/12';
                   document.getElementById("box10").style.display="block";// １０問目に戻る処理ここまで
+// 点数削除
                   if(array1[0] != question10[0]){
                     array1[0] = question10[0];
                   }else if(array1[1] != question10[1]){
@@ -286,6 +295,7 @@ if(array1[0] != question1[0]){
                     var diagnosis_count = document.getElementById('diagnosis_count');
                     diagnosis_count.innerHTML='11/12';
                     document.getElementById("box11").style.display="block";// １１問目に戻る処理ここまで
+// 点数削除
                     if(array1[0] != question11[0]){
                       array1[0] = question11[0];
                     }else if(array1[1] != question11[1]){
