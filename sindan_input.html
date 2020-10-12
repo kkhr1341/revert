@@ -18,14 +18,16 @@
 
 window.onload=function() {
   // 質問
-  for(var i =2; i<=12; i++){
-  document.getElementById("box"+i).style.display="none";
-}
+   for(var i =2; i<=12; i++){
+   var box =document.getElementById("box"+i);
+console.log(box);
+ }
  document.getElementById(back);
 //   // 結果(初期状態)
-   document.getElementById("kekka1").style.display="none";
-   document.getElementById("kekka2").style.display="none";
-   document.getElementById("kekka3").style.display="none";
+   document.getElementById("kekka1");
+   document.getElementById("kekka2");
+   document.getElementById("kekka3");
+   document.getElementById('clickTest')
 }
 // 点数を追加していく
 var one = 0;
@@ -56,7 +58,7 @@ function clickTest1(evt){
  document.getElementById("box1").style.display="none";
  var diagnosis_count = document.getElementById('diagnosis_count');
  diagnosis_count.innerHTML='02/12';
- document.getElementById("box2").style.display="";
+ document.getElementById("box2").style.display="block";
  var q1 = []
 question1 = q1.concat(array1);
 }
@@ -65,7 +67,7 @@ function clickTest2(evt){
  document.getElementById("box2").style.display="none";
  var diagnosis_count = document.getElementById('diagnosis_count');
  diagnosis_count.innerHTML='03/12';
- document.getElementById("box3").style.display="";
+ document.getElementById("box3").style.display="block";
  var q2 = []
 question2 = q2.concat(array1);
  }
@@ -74,7 +76,7 @@ function clickTest3(evt){
  document.getElementById("box3").style.display="none";
  var diagnosis_count = document.getElementById('diagnosis_count');
  diagnosis_count.innerHTML='04/12';
- document.getElementById("box4").style.display="";
+ document.getElementById("box4").style.display="block";
  var q3 = []
 question3 = q3.concat(array1);
 }
@@ -83,7 +85,7 @@ function clickTest4(evt){
  document.getElementById("box4").style.display="none";
  var diagnosis_count = document.getElementById('diagnosis_count');
  diagnosis_count.innerHTML='05/12';
- document.getElementById("box5").style.display="";
+ document.getElementById("box5").style.display="block";
  var q4 = []
 question4 = q4.concat(array1);
 }
@@ -92,7 +94,7 @@ function clickTest5(evt){
  document.getElementById("box5").style.display="none";
  var diagnosis_count = document.getElementById('diagnosis_count');
  diagnosis_count.innerHTML='06/12';
- document.getElementById("box6").style.display="";
+ document.getElementById("box6").style.display="block";
  var q5 = []
 question5 = q5.concat(array1);
 }
@@ -101,7 +103,7 @@ function clickTest6(evt){
  document.getElementById("box6").style.display="none";
  var diagnosis_count = document.getElementById('diagnosis_count');
  diagnosis_count.innerHTML='07/12';
- document.getElementById("box7").style.display="";
+ document.getElementById("box7").style.display="block";
  var q6 = []
 question6 = q6.concat(array1);
 }
@@ -110,7 +112,7 @@ function clickTest7(evt){
  document.getElementById("box7").style.display="none";
  var diagnosis_count = document.getElementById('diagnosis_count');
  diagnosis_count.innerHTML='08/12';
- document.getElementById("box8").style.display="";
+ document.getElementById("box8").style.display="block";
  var q7 = []
 question7 = q7.concat(array1);
 }
@@ -119,7 +121,7 @@ function clickTest8(evt){
  document.getElementById("box8").style.display="none";
  var diagnosis_count = document.getElementById('diagnosis_count');
  diagnosis_count.innerHTML='09/12';
- document.getElementById("box9").style.display="";
+ document.getElementById("box9").style.display="block";
  var q8 = []
 question8 = q8.concat(array1);
 }
@@ -128,7 +130,7 @@ function clickTest9(evt){
  document.getElementById("box9").style.display="none";
  var diagnosis_count = document.getElementById('diagnosis_count');
  diagnosis_count.innerHTML='10/12';
- document.getElementById("box10").style.display="";
+ document.getElementById("box10").style.display="block";
  var q9 = []
 question9 = q9.concat(array1);
 }
@@ -137,7 +139,7 @@ function clickTest10(evt){
  document.getElementById("box10").style.display="none";
  var diagnosis_count = document.getElementById('diagnosis_count');
  diagnosis_count.innerHTML='11/12';
- document.getElementById("box11").style.display="";
+ document.getElementById("box11").style.display="block";
  var q10 = []
 question10 = q10.concat(array1);
 }
@@ -146,7 +148,7 @@ function clickTest11(evt){
  document.getElementById("box11").style.display="none";
  var diagnosis_count = document.getElementById('diagnosis_count');
  diagnosis_count.innerHTML='12/12';
- document.getElementById("box12").style.display="";
+ document.getElementById("box12").style.display="block";
  var q11 = []
 question11 = q11.concat(array1);
 }
@@ -159,11 +161,11 @@ function backclick(){
 // console.log(array1[1]);
 // console.log(array1[2]);
 // 画面
-if(document.getElementById("box2").style.display== ""){
+if(document.getElementById("box2").style.display== "block"){
   document.getElementById("box2").style.display="none";
   var diagnosis_count = document.getElementById('diagnosis_count');
   diagnosis_count.innerHTML='01/12';
-  document.getElementById("box1").style.display="";  // １問目に戻る処理ここまで
+  document.getElementById("box1").style.display="block";  // １問目に戻る処理ここまで
 if(array1[0] != question1[0]){
   array1[0] = question1[0];
 }else if(array1[1] != question1[1]){
@@ -171,11 +173,11 @@ if(array1[0] != question1[0]){
 }else if (array1[2] != question1[2]) {
   array1[2] = question1[2];
 }
-  }else if(document.getElementById("box3").style.display== ""){
+}else if(document.getElementById("box3").style.display== "block"){
     document.getElementById("box3").style.display="none";
     var diagnosis_count = document.getElementById('diagnosis_count');
     diagnosis_count.innerHTML='02/12';
-    document.getElementById("box2").style.display="";// ２問目に戻る処理ここまで
+    document.getElementById("box2").style.display="block";// ２問目に戻る処理ここまで
     if(array1[0] != question2[0]){
       array1[0] = question2[0];
     }else if(array1[1] != question2[1]){
@@ -183,11 +185,11 @@ if(array1[0] != question1[0]){
     }else if (array1[2] != question2[2]) {
       array1[2] = question2[2];
     }
-    }else if(document.getElementById("box4").style.display== ""){
+  }else if(document.getElementById("box4").style.display== "block"){
       document.getElementById("box4").style.display="none";
       var diagnosis_count = document.getElementById('diagnosis_count');
       diagnosis_count.innerHTML='03/12';
-      document.getElementById("box3").style.display="";// ３問目に戻る処理ここまで
+      document.getElementById("box3").style.display="block";// ３問目に戻る処理ここまで
       if(array1[0] != question3[0]){
         array1[0] = question3[0];
       }else if(array1[1] != question3[1]){
@@ -195,11 +197,11 @@ if(array1[0] != question1[0]){
       }else if (array1[2] != question3[2]) {
         array1[2] = question3[2];
       }
-    }else if(document.getElementById("box5").style.display== ""){
+    }else if(document.getElementById("box5").style.display== "block"){
         document.getElementById("box5").style.display="none";
         var diagnosis_count = document.getElementById('diagnosis_count');
         diagnosis_count.innerHTML='04/12';
-        document.getElementById("box4").style.display="";// ４問目に戻る処理ここまで
+        document.getElementById("box4").style.display="block";// ４問目に戻る処理ここまで
         if(array1[0] != question4[0]){
           array1[0] = question4[0];
         }else if(array1[1] != question4[1]){
@@ -207,11 +209,11 @@ if(array1[0] != question1[0]){
         }else if (array1[2] != question4[2]) {
           array1[2] = question4[2];
         }
-      }else if(document.getElementById("box6").style.display== ""){
+      }else if(document.getElementById("box6").style.display== "block"){
         document.getElementById("box6").style.display="none";
         var diagnosis_count = document.getElementById('diagnosis_count');
         diagnosis_count.innerHTML='05/12';
-        document.getElementById("box5").style.display="";// ５問目に戻る処理ここまで
+        document.getElementById("box5").style.display="block";// ５問目に戻る処理ここまで
         if(array1[0] != question5[0]){
           array1[0] = question5[0];
         }else if(array1[1] != question5[1]){
@@ -219,11 +221,11 @@ if(array1[0] != question1[0]){
         }else if (array1[2] != question5[2]) {
           array1[2] = question5[2];
         }
-      }else if(document.getElementById("box7").style.display== ""){
+      }else if(document.getElementById("box7").style.display== "block"){
           document.getElementById("box7").style.display="none";
           var diagnosis_count = document.getElementById('diagnosis_count');
           diagnosis_count.innerHTML='06/12';
-          document.getElementById("box6").style.display="";// ６問目に戻る処理ここまで
+          document.getElementById("box6").style.display="block";// ６問目に戻る処理ここまで
           if(array1[0] != question6[0]){
             array1[0] = question6[0];
           }else if(array1[1] != question6[1]){
@@ -231,11 +233,11 @@ if(array1[0] != question1[0]){
           }else if (array1[2] != question6[2]) {
             array1[2] = question6[2];
           }
-        }else if(document.getElementById("box8").style.display== ""){
+        }else if(document.getElementById("box8").style.display== "block"){
             document.getElementById("box8").style.display="none";
             var diagnosis_count = document.getElementById('diagnosis_count');
             diagnosis_count.innerHTML='07/12';
-            document.getElementById("box7").style.display="";// ７問目に戻る処理ここまで
+            document.getElementById("box7").style.display="block";// ７問目に戻る処理ここまで
             if(array1[0] != question7[0]){
               array1[0] = question7[0];
             }else if(array1[1] != question7[1]){
@@ -243,11 +245,11 @@ if(array1[0] != question1[0]){
             }else if (array1[2] != question7[2]) {
               array1[2] = question7[2];
             }
-          }else if(document.getElementById("box9").style.display== ""){
+          }else if(document.getElementById("box9").style.display== "block"){
               document.getElementById("box9").style.display="none";
               var diagnosis_count = document.getElementById('diagnosis_count');
               diagnosis_count.innerHTML='08/12';
-              document.getElementById("box8").style.display="";// ８問目に戻る処理ここまで
+              document.getElementById("box8").style.display="block";// ８問目に戻る処理ここまで
               if(array1[0] != question8[0]){
                 array1[0] = question8[0];
               }else if(array1[1] != question8[1]){
@@ -255,11 +257,11 @@ if(array1[0] != question1[0]){
               }else if (array1[2] != question8[2]) {
                 array1[2] = question8[2];
               }
-            }else if(document.getElementById("box10").style.display== ""){
+            }else if(document.getElementById("box10").style.display== "block"){
                 document.getElementById("box10").style.display="none";
                 var diagnosis_count = document.getElementById('diagnosis_count');
                 diagnosis_count.innerHTML='09/12';
-                document.getElementById("box9").style.display="";// ９問目に戻る処理ここまで
+                document.getElementById("box9").style.display="block";// ９問目に戻る処理ここまで
                 if(array1[0] != question9[0]){
                   array1[0] = question9[0];
                 }else if(array1[1] != question9[1]){
@@ -267,11 +269,11 @@ if(array1[0] != question1[0]){
                 }else if (array1[2] != question9[2]) {
                   array1[2] = question9[2];
                 }
-              }else if(document.getElementById("box11").style.display== ""){
+              }else if(document.getElementById("box11").style.display== "block"){
                   document.getElementById("box11").style.display="none";
                   var diagnosis_count = document.getElementById('diagnosis_count');
                   diagnosis_count.innerHTML='10/12';
-                  document.getElementById("box10").style.display="";// １０問目に戻る処理ここまで
+                  document.getElementById("box10").style.display="block";// １０問目に戻る処理ここまで
                   if(array1[0] != question10[0]){
                     array1[0] = question10[0];
                   }else if(array1[1] != question10[1]){
@@ -279,11 +281,11 @@ if(array1[0] != question1[0]){
                   }else if (array1[2] != question10[2]) {
                     array1[2] = question10[2];
                   }
-                }else if(document.getElementById("box12").style.display== ""){
+                }else if(document.getElementById("box12").style.display== "block"){
                     document.getElementById("box12").style.display="none";
                     var diagnosis_count = document.getElementById('diagnosis_count');
                     diagnosis_count.innerHTML='11/12';
-                    document.getElementById("box11").style.display="";// １１問目に戻る処理ここまで
+                    document.getElementById("box11").style.display="block";// １１問目に戻る処理ここまで
                     if(array1[0] != question11[0]){
                       array1[0] = question11[0];
                     }else if(array1[1] != question11[1]){
@@ -301,13 +303,13 @@ function clickTest12(evt){
  document.getElementById("box12").style.display="none";
  document.getElementById("answer_none").style.display="none";
   if( array1[1] < array1[0] && array1[2] < array1[0]){
-   document.getElementById("kekka1").style.display="";
+   document.getElementById("kekka1").style.display="block";
  } else if (array1[0] < array1[1] && array1[2] < array1[1]) {
-   document.getElementById("kekka2").style.display="";
+   document.getElementById("kekka2").style.display="block";
  }  else if (array1[0] < array1[2] && array1[1] < array1[2]){
-   document.getElementById("kekka3").style.display="";
+   document.getElementById("kekka3").style.display="block";
  }else{
-      document.getElementById("kekka1").style.display="";
+      document.getElementById("kekka1").style.display="block";
  }
 }
 console.log(array1);

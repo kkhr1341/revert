@@ -937,7 +937,9 @@ margin-bottom: 11vw;
 .box_title_border{
   border-bottom: solid #666666 0.7vw
 }
-.box2,.box3,.box4,.box2,.box2,.box2
+#box2,#box3,#box4,#box5,#box6,#box7,#box8,#box9,#box10,#box11,#box12,#kekka1,#kekka2,#kekka3{
+  display: none;
+}
 /* 微調整 */
 .mrg-40{
   margin-bottom: 16%;
