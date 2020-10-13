@@ -168,7 +168,7 @@ header .bx-wrapper {
   margin: 0;
 }
 .loading_content{
-  margin-top: 9%;
+  margin-top: -1%;
 }
 
 .TOP_content_title{
@@ -180,7 +180,7 @@ header .bx-wrapper {
     font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
 }
 .TOP_content_subtitle1{
-  width: 50%;
+  width: 33%;
       background-color: white;
       position: relative;
       color: #666666;
@@ -198,12 +198,12 @@ header .bx-wrapper {
         font-weight: bold;
         margin: auto;
         text-align: center;
-        font-size: 4.5vw;
+        font-size: 3.5vw;
         font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
   }
 
   .corporate_philosophy{
-    font-size: 6.5vw;
+    font-size: 4.5vw;
     line-height: 2;
   }
 .TOP_content_youtube{
@@ -218,25 +218,27 @@ header .bx-wrapper {
   border: solid 0.3vw #666666;
 }
 .TOP_content_text{
-  position: relative;
+  margin-bottom: 2%;
+    position: relative;
     color: #666666;
-    font-size: 4vw;
+    font-size: 5vw;
     text-align: center;
     line-height: 1.7;
+    margin-top: 3%;
   }
 .TOP_content_bgimg1{
   position: relative;
     margin: 0 auto;
-    width: 65%;
+    width: 80%;
     padding-top: 6vw;
 }
 .TOP_content_bgimg1 img{
   width: 100%;
-    position: absolute;
-    margin: 0 auto;
-    height: 40vw;
-    border: solid gray 0.3vw;
-  }
+      position: absolute;
+      margin: 0 auto;
+      height: 43vw;
+      border: solid gray 0.3vw;
+      }
 .TOP_diagnosis{
   position: relative;
       margin: 0 auto;
@@ -595,7 +597,7 @@ margin-bottom: 11vw;
 }
 .APAGARDRENAMEL_text{
   text-align: center;
-  font-size: 2vw;
+  font-size: 3vw;
   margin-top: 0;
 }
 .APAGARDRENAMEL img {
@@ -609,7 +611,7 @@ margin-bottom: 11vw;
     width: 100%;
 }
 .hgt216{
-  height: 21.6vw;
+  height: 26.87vw;;
 }
 
 .purasheight{
