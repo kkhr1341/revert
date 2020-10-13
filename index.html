@@ -7,6 +7,8 @@
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
       <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/vivus@latest/dist/vivus.min.js"></script>
+
       <script type="text/javascript">
       $(document).ready(function(){
 
@@ -26,6 +28,14 @@ controls: false,
 });
 window.onload=function(){
   document.getElementById("slider_content2").style.display="none";
+  // const spinner = document.getElementById('loading');
+  // spinner.classList.add('loaded');
+  new Vivus('move', {
+    type: 'scenario-sync',
+    duration: 100,
+    forceRender: false,
+    animTimingFunction: Vivus.EASE
+  })
 }
 function TOP_genre_rightbutton_click(){
   document.getElementById("slider_content1").style.display="none";
@@ -45,6 +55,38 @@ function TOP_genre_rightbutton_click(){
     <title></title>
   </head>
   <body>
+    <!-- <div id="loading">
+  <div class="spinner"></div>
+</div> -->
+<div class="svgall">
+  <svg class="mask" viewBox="0 0 1920 1080" id="move">
+    <defs>
+      <!-- アニメーション画像 -->
+      <mask id="clipMask">
+        <!--マスクのpath-->
+        <g id="レイヤー_2">
+          <polyline class="st1" points="302.9,253.64 302.9,752.64 352.99,752.64 352.99,253.64 396.74,253.64 396.74,318.73 434.08,318.73
+        		434.08,253.64 484.24,253.64 484.24,364.04 418.9,364.04 418.9,411.64 512.93,411.64 512.93,463.2 423.99,463.2 423.99,503.14
+        		489.7,503.14 489.7,535.64 378.26,535.64 378.26,482.26 406.17,482.26 456.1,752.64 488.1,750.93 453.9,555.64 	"/>
+        	<polyline class="st2" points="610.48,573.15 690.69,573.15 690.69,468.95 652.34,430.6 610.48,430.6 581.14,459.93 581.14,524.95
+        		581.14,628.24 581.14,711.95 612.01,742.82 656.32,742.82 680.04,719.1 679.04,637.07 	"/>
+        	<polyline class="st3" points="772.31,386.21 826.51,777.5 863.31,777.5 919.56,386.21 	"/>
+        	<polyline class="st2" points="1058.48,572.15 1138.69,572.15 1138.69,467.95 1100.34,429.6 1058.48,429.6 1029.14,458.93
+        		1029.14,523.95 1029.14,627.24 1029.14,710.95 1060.01,741.82 1104.32,741.82 1128.04,718.1 1127.04,636.07 	"/>
+        	<polyline class="st0" points="1253.67,406.07 1253.67,771.86 1270.33,771.86 1270.33,457.82 1309.92,457.82 1327.87,439.87
+        		1354.19,439.87 	"/>
+        	<polyline class="st0" points="1393.48,430.6 1506.35,430.6 1450,429.6 1450,315 1450,717.83 1450,742.82 1507.35,742.82 	"/>
+        	<polyline class="st0" points="1497.42,315 645,315 645,270.71 545.33,314.66 645,373.22 637,328.71 	"/>
+
+                  </g>
+
+              </mask>
+    </defs>
+    <!-- ベース画像 -->
+    <image xlink:href="C:\研修\HP作成\revert\revert_html\rogo-3.svg" width="100%" height="100%" mask="url(#clipMask)"></image>
+  </svg>
+
+</div>
     <!-- ヘッター -->
     <header>
       <h1 class="header_rogo">Revert</h1>
