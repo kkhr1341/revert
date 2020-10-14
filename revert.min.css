@@ -21,17 +21,3 @@
 
 }
 }
-  /* .loading::after {
-  　　border-top: 35px solid;
-  　　border-right: 40px solid transparent;
-  　　border-left: 40px solid transparent;
-  }
-  .loading:after{
-  position: absolute; /* 三角形の位置指定 */
-  content: ""; /* 三角形のコンテンツ */
-  top: -10px; /* 上部から配置の基準位置を決める */
-  right: -40px; /* 右から配置の基準位置を決める */
-  border:20px solid; /* 境界線を指定する */
-  border-color:transparent; /* 境界線の色をなしにする */
-  border-left: 20px solid #666666;/* 境界線の上部を実線で指定する */
-  } */
