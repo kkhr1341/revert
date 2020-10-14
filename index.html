@@ -9,9 +9,16 @@
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
       <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
-      <script type="text/javascript">
-      $(document).ready(function(){
+      <script src="https://cdn.jsdelivr.net/npm/vivus@latest/dist/vivus.min.js"></script>
 
+      <script type="text/javascript">
+
+      $(document).ready(function(){
+        $(function(){
+          $(".anime:not(:animated)").fadeIn("slow",function(){
+            $(this).delay(15000).fadeOut("slow");
+          });
+        });
 $('.slider').bxSlider({
  auto: true,
  pause: 4000,
@@ -27,7 +34,16 @@ controls: false,
 });
 });
 window.onload=function(){
+  new Vivus('move', {
+    type: 'scenario-sync',
+    duration: 100,
+    forceRender: false,
+    animTimingFunction: Vivus.EASE
+  })
+
   document.getElementById("slider_content2").style.display="none";
+  const spinner = document.getElementById('loading');
+  spinner.classList.add('loaded');
 }
 function TOP_genre_rightbutton_click(){
   document.getElementById("slider_content1").style.display="none";
@@ -47,7 +63,45 @@ function TOP_genre_rightbutton_click(){
     <title></title>
   </head>
   <body>
-    <!-- ヘッター -->
+ <!-- <div id="loading">
+  <div class="spinner"> -->
+<div class="anime">
+<div class="svgall">
+  <svg class="mask" viewBox="0 0 1920 1080" id="move">
+    <defs>
+      <!-- アニメーション画像 -->
+      <mask id="clipMask">
+        <!--マスクのpath-->
+        <polygon class="st2" points="466.23,338 466.23,731 485.46,731 485.46,364.16 541.23,364.16 573.92,413 593,445 593,489.17
+          552.75,534.5 505.14,550.54 505.14,588.5 552.75,587 581.62,734 618,733 580,545.56 573.92,329.38 	"/>
+        <polygon class="st2" points="683.54,587 760.46,587 760.46,489.17 718.26,464 668.15,498.7 668.15,687.08 714,722 736.8,722
+          760.46,675.54 760.46,636.37 797,639 797,587 	"/>
+        <polygon class="st2" points="837,445 854.69,560 884,706 910.46,706 931.62,566.26 948.92,445 	"/>
+        <polygon class="st2" points="1022,575.5 1122,575.5 1122,489.17 1091.15,458.32 1020.12,489.17 1022,557.44 1022,669.77
+          1054.86,706 1075,706 1122,683.23 1114.31,628.28 1157,626 1147.12,575.5 	"/>
+        <polygon class="st2" points="1226,445 1226,731 1253.83,734 1253.88,489.17 1278,476 1297,476 1297,445 	"/>
+        <polyline class="st2" points="1338.03,471.69 1447.88,471.69 1392.95,471.69 1392.95,689 1392.95,722 1437.38,722 1462.38,722
+          1462.38,683.23 1400.21,683.23 1400.21,388.96 652,388.96 	"/>
+        </mask>
+    </defs>
+    <!-- ベース画像 -->
+    <image xlink:href="C:\研修\HP作成\revert\revert_html\revertrogo-2.svg" width="100%" height="100%" mask="url(#clipMask)"></image>
+  </svg>
+
+</div>
+</div>
+<!-- <script src="https://cdn.jsdelivr.net/npm/vivus@latest/dist/vivus.min.js"></script> -->
+<!-- <script>
+  new Vivus('move', {
+    type: 'scenario-sync',
+    duration: 100,
+    forceRender: false,
+    animTimingFunction: Vivus.EASE
+  })
+</script> -->
+
+<div class="mainSite">
+  <!-- ヘッター -->
     <header>
   <div id="nav-drawer">
       <input id="nav-input" type="checkbox" class="nav-unshown">
@@ -236,5 +290,6 @@ function TOP_genre_rightbutton_click(){
 
 </div>
 <!-- フッターここまで -->
+</div>
   </body>
 </html>
