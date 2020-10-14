@@ -60,9 +60,14 @@ font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothi
  top: 42%;
  left: 40%;
 } */
-.st0{fill:none;}
+/* .st0{fill:none;}
 .st1{fill:#FFFFFF;}
-.st2{fill:none;stroke:#FFFFFF;stroke-width:60;stroke-miterlimit:10;}
+.st2{fill:none;stroke:#FFFFFF;stroke-width:60;stroke-miterlimit:10;} */
+/* .st0{fill:#FFFFFF;}
+.st1{fill:#FFFFFF;}
+.st2{fill:none;stroke:#FF0000;stroke-width:70;stroke-miterlimit:10;}
+.st3{fill:none;stroke:#FF0000;stroke-width:60;stroke-miterlimit:10;} */
+
 .anime{
   background: gray;
   position: fixed;
