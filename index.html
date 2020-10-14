@@ -13,12 +13,12 @@
 
       <script type="text/javascript">
 
-      $(document).ready(function(){
-        $(function(){
-          $(".anime:not(:animated)").fadeIn("slow",function(){
-            $(this).delay(15000).fadeOut("slow");
-          });
+      $(function(){
+        $(".anime:not(:animated)").fadeIn("slow",function(){
+          $(this).delay(13800).fadeOut("slow");
         });
+      });
+      $(document).ready(function(){
 $('.slider').bxSlider({
  auto: true,
  pause: 4000,
@@ -42,9 +42,9 @@ window.onload=function(){
   })
 
   document.getElementById("slider_content2").style.display="none";
-  const spinner = document.getElementById('loading');
-  spinner.classList.add('loaded');
-}
+//   const spinner = document.getElementById('loading');
+//   spinner.classList.add('loaded');
+ }
 function TOP_genre_rightbutton_click(){
   document.getElementById("slider_content1").style.display="none";
   document.getElementById("slider_content2").style.display="block";
