@@ -462,11 +462,11 @@ font-size: 3.5vw;
 .undermenu a{
 
   text-decoration: none;
-  font-size: 3vw;
+  font-size: 5vw;
   border-bottom: solid gray 0.4vw;
 }
 .TOP_new{
-  height: 4.5vw;
+  height: 6vw;
   padding: 0 8vw;
 }
  .undermenu p{
@@ -474,21 +474,21 @@ font-size: 3.5vw;
   margin: 0 0 0 0;
 }
 .TOP_online{
-  height: 4.5vw;
+  height: 6vw;
     padding: 0px 10vw;
 }
 .TOP_service{
-  height: 4.5vw;
+  height: 6vw;
   padding: 0 11.2vw;
 }
 .TOP_contact{
-  height: 4.5vw;
+  height: 6vw;
   padding: 0 7vw;
 }
 .TOP_address{
-  color: #666666;
-    font-size: 3.2vw;
-    margin-inline-start: 10vw;
+    color: #666666;
+    font-size: 3.7vw;
+    margin-inline-start: 4vw;
     margin-block-start: 7vw;
 }
 .TOP_under_icon{
@@ -646,6 +646,7 @@ margin-bottom: 11vw;
 }
 .APAGARDRENAMEL_text{
   font-size: 3vw;
+  padding: 0 5px;
 }
 .APAGARDRENAMEL img {
   width: 100%;
