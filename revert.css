@@ -567,12 +567,12 @@ color: #666666;
     color: #666666;
     margin: 0 auto;
 }
-.pc_product_gml{
-margin-left: 3.8vw;
-}
 .product_sonic_explanation h2{
   margin: 12vw 0 0 0;
     font-size: 5.3vw;
+}
+.pc_product_gml{
+margin-left: 3.8vw;
 }
 .product_sonic_explanationtext {
     margin-left: 1vw;
@@ -1381,6 +1381,9 @@ bottom: -1.8vw;
     margin: 0 auto;
 }
 /* 微調整 */
+.br{
+  display: none;
+}
 .hgt216{
   height: 26.87vw;;
 }
