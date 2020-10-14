@@ -639,12 +639,12 @@ margin-bottom: 11vw;
 .APAGARDRENAMEL{
   width: 100%;
 }
-.APAGARDRENAMEL_text,.ORALPEACE_name{
+.APAGARDRENAMEL_name,.ORALPEACE_name{
   text-align: center;
   font-size: 3vw;
   margin-top: 0;
 }
-.APAGARDRENAMEL_text2{
+.APAGARDRENAMEL_text{
   font-size: 3vw;
 }
 .APAGARDRENAMEL img {
@@ -656,9 +656,6 @@ margin-bottom: 11vw;
 }
 .ORALPEACE img {
     width: 100%;
-}
-.hgt216{
-  height: 26.87vw;;
 }
 
 .purasheight{
@@ -1219,6 +1216,7 @@ bottom: -1.8vw;
   width: 100%;
 }
 .APAGARDRENAMEL_name{
+  text-align: center;
   font-size: 2vw;
 }
 .purasheight {
@@ -1377,6 +1375,10 @@ bottom: -1.8vw;
     margin: 0 auto;
 }
 /* 微調整 */
+.hgt216{
+  height: 26.87vw;;
+}
+
 .mrg-40{
   margin-bottom: 16%;
     margin-top: 10%;
