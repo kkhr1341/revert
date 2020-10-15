@@ -238,8 +238,7 @@ position: relative;
         position: absolute;
         background: white;
         border: solid #666666 0.5vw;
-        opacity: 0.89;
-  }
+    }
   .TOP_content_subcontent img{
     width: 60%;
     margin-left: 34vw;
