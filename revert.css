@@ -997,6 +997,7 @@ margin-bottom: 11vw;
     color: #666666;
 }
 .diagnosis_cheak ul{
+  margin: 20vw 2vw;
   display: flex;
     justify-content: space-around;
     list-style: none;
@@ -1047,9 +1048,9 @@ margin-bottom: 11vw;
   font-size: 4vw;
   font-weight: bold;
 }
-/* #box2,#box3,#box4,#box5,#box6,#box7,#box8,#box9,#box10,#box11,#box12,#kekka1,#kekka2,#kekka3{
+#box2,#box3,#box4,#box5,#box6,#box7,#box8,#box9,#box10,#box11,#box12,#kekka1,#kekka2,#kekka3{
   display: none;
-} */
+}
 /* 微調整 */
 .mrg-40{
   margin-bottom: 16%;
