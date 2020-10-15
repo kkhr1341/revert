@@ -372,14 +372,24 @@ position: relative;
     outline: none;
     color: white;
     font-size: 4vw;
-    padding: 3vw 9vw;
+    padding: 3vw 6.9vw;
+}
+.TOP_genre_setbutton{
+  border: none;
+    outline: none;
+    color: white;
+    font-size: 4vw;
+    padding: 3vw 7.9vw;
 }
 .TOP_genre_leftbutton{
-  margin-right: 1%;
   background-color: #666666;
 }
 .TOP_genre_rightbutton{
+  margin-right: 1%;
   margin-left: 1%;
+  background-color: lightgrey;
+}
+.TOP_genre_setbutton{
   background-color: lightgrey;
 }
 .TOP_content_slider{
@@ -395,6 +405,20 @@ position: relative;
 .slider_content2{
   width: 100%;
   transition: 1s;
+}
+.slider_content3{
+  width: 100%;
+  transition: 1s;
+}
+.TOP_content_type{
+  padding-top: 10vw;
+  margin: 0;
+  font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+  color: #666666;
+  font-size: 5vw;
+}
+.TOP_ploductset{
+  width: 100%;
 }
 .TOP_slider2 .bx-wrapper .bx-viewport .slider2 li img{
   height: 51vw!important;
