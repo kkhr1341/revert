@@ -12,12 +12,15 @@
       <script src="https://cdn.jsdelivr.net/npm/vivus@latest/dist/vivus.min.js"></script>
 
       <script type="text/javascript">
-
       // $(function(){
       //   $(".anime:not(:animated)").fadeIn("slow",function(){
       //     $(this).delay(10000).fadeOut("slow");
       //   });
       // });
+      var url =location.href;
+      console.log(url);
+      if(url == url){
+        }
 $(document).ready(function(){
 $('.slider').bxSlider({
  auto: true,
@@ -45,6 +48,18 @@ window.onload=function(){
   document.getElementById("slider_content3").style.display="none";
 //   const spinner = document.getElementById('loading');
 //   spinner.classList.add('loaded');
+setTimeout(function () {
+      var s = window.location.search;
+      if (s == '?1') {
+        nav_slider_content1click();
+      }
+      if (s == '?2') {
+        nav_slider_content2click();
+      }
+      if (s == '?3') {
+        nav_slider_content3click();
+      }
+    }, 200);
  }
  function nav_slider_content1click(){
    document.getElementById("slider_content2").style.display="none";
@@ -154,12 +169,12 @@ function TOP_genre_rightbutton_click(){
     <ul>
         <li><a href="BeginnersGuide.html">Corporate philosophy</a>
           <a href="BeginnersGuide.html"><span class="fs19">初めての方へ</span></a></li>
-        <li><a href="#slider_content1" id="nav_slider_content1" onclick="nav_slider_content1click()">Toothbrush</a>
-        <a href="#slider_content1" id="nav_slider_content1" onclick="nav_slider_content1click()"><span class="fs19">歯ブラシ</span></a></li>
-        <li><a id="nav_slider_content2" onclick="nav_slider_content2click()" href="#slider_content2">Tooth paste</a>
-        <a href="#slider_content2" id="nav_slider_content2" onclick="nav_slider_content2click()"><span class="fs19">歯磨き粉</span></a></li>
-        <li><a href="#slider_content3" id="nav_slider_content3" onclick="nav_slider_content3click()">Set item</a>
-        <a href="#slider_content3" id="nav_slider_content3" onclick="nav_slider_content3click()"><span class="fs19">セットアイテム</span></a></li>
+        <li><a href="?1#slider_content1" id="nav_slider_content1" onclick="nav_slider_content1click()">Toothbrush</a>
+        <a href="?1#slider_content1" id="nav_slider_content1" onclick="nav_slider_content1click()"><span class="fs19">歯ブラシ</span></a></li>
+        <li><a id="nav_slider_content2" onclick="nav_slider_content2click()" href="?2#slider_content2">Tooth paste</a>
+        <a href="?2#slider_content2" id="nav_slider_content2" onclick="nav_slider_content2click()"><span class="fs19">歯磨き粉</span></a></li>
+        <li><a href="?3#slider_content3" id="nav_slider_content3" onclick="nav_slider_content3click()">Set item</a>
+        <a href="?3#slider_content3" id="nav_slider_content3" onclick="nav_slider_content3click()"><span class="fs19">セットアイテム</span></a></li>
         <li><a href="sindan_input.html">Diagnosis</a>
         <a href="sindan_input.html"><span class="fs19">適正診断</span></a></li>
         <li><a href="contact.html">Contact</a>
@@ -212,11 +227,13 @@ function TOP_genre_rightbutton_click(){
   </ul>
 </div>
   </div>
+<!-- ジャンル変更ボタン -->
 <div class="TOP_Product_buttun">
   <button class="TOP_genre_leftbutton" id="TOP_genre_leftbutton" onclick="TOP_genre_leftbutton_click()">歯ブラシ</button>
   <button class="TOP_genre_rightbutton" id="TOP_genre_rightbutton" onclick="TOP_genre_rightbutton_click()">歯磨き粉</button>
   <button class="TOP_genre_setbutton" id="TOP_genre_setbutton" onclick="TOP_genre_setbutton_click()">セット</button>
 </div>
+<!-- 商品一覧 -->
 <div class="TOP_content_slider">
 <div id="slider_content1" class="slider_content1">
 <div class="TOP_content_toothbrush">
@@ -227,6 +244,7 @@ function TOP_genre_rightbutton_click(){
       <span class="TOP_ploduct_subname2">ダイヤモンドクリーン</span></p>
       <p class="TOP_ploduct_subtitle">お家でもプロ級の歯磨きを！<br>日本の歯科医推奨率NO.1ブランド</p>
     </div>
+
       <div class="TOP_ploduct_contentbutton">
       <a href="revert_prodact_Sonicare.html"><h1 class="TOP_ploduct_detail">さらに詳しく</h1></a>
       <a href="revert_prodact_Sonicare_step.html"><h1 class="TOP_ploduct_buy">購入</h1></a>

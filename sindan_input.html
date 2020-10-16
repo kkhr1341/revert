@@ -15,52 +15,6 @@
 
 </head>
 <script type="text/javascript">
-if(urlHash){
-    // タブの<a>タグのhref属性の値にアンカーの値と同じ値が含まれている要素を選択
-    var targetTabHash = $('.tab-list li a[href$="' + urlHash + '"]');
-
-    if(targetTabHash.length > 0){
-      // HTML側でデフォルトで設定している'active'というクラスを削除する
-      $('.tab-list li a').removeClass('active');
-      // <a>タグのhref属性の値とアンカーが同じだった場合、そのタブの<a>タグに'active'というクラスを付与する
-      targetTabHash.addClass('active');
-    }
-  }
-
-  // タブ切り替えを実行
-  $('.tab-body li:not('+$('.tab-list li a.active').attr('href')+')').hide();
-  $('.tab-list li a').click(function(){
-    $('.tab-list li a').removeClass('active');
-    $(this).addClass('active');
-    $('.tab-body li').hide();
-    $($(this).attr('href')).fadeIn();
-    return false;
-  });
-
-function nav_slider_content1click(){
-  document.getElementById("slider_content2").style.display="none";
-  document.getElementById("slider_content1").style.display="block";
-  document.getElementById("slider_content3").style.display="none";
-  document.getElementById('TOP_genre_rightbutton').style.backgroundColor = "lightgrey";
-  document.getElementById('TOP_genre_leftbutton').style.backgroundColor = "gray";
-  document.getElementById('TOP_genre_setbutton').style.backgroundColor = "lightgrey";
-   }
-function nav_slider_content2click(){
-  document.getElementById("slider_content1").style.display="none";
-  document.getElementById("slider_content2").style.display="block";
-  document.getElementById("slider_content3").style.display="none";
-  document.getElementById('TOP_genre_rightbutton').style.backgroundColor = "gray";
-  document.getElementById('TOP_genre_leftbutton').style.backgroundColor = "lightgrey";
-  document.getElementById('TOP_genre_setbutton').style.backgroundColor = "lightgrey";
-}
-function nav_slider_content3click(){
-  document.getElementById("slider_content2").style.display="none";
-  document.getElementById("slider_content1").style.display="none";
-  document.getElementById("slider_content3").style.display="block";
-  document.getElementById('TOP_genre_rightbutton').style.backgroundColor = "lightgrey";
-  document.getElementById('TOP_genre_leftbutton').style.backgroundColor = "lightgrey";
-  document.getElementById('TOP_genre_setbutton').style.backgroundColor = "gray";
-   }
 
   // 質問取得
    for(var i =2; i<=12; i++){
@@ -385,18 +339,19 @@ console.log(array1);
   <div class="nav-border"></div>
   <h1 id="nav-close">marubatu</h1>
     <ul>
-        <li><a href="BeginnersGuide.html">Corporate philosophy</a>
-          <a href="BeginnersGuide.html"><span class="fs19">初めての方へ</span></a></li>
-        <li><a href="index.html#slider_content1" id="nav_slider_content1" onclick="nav_slider_content1click()">Toothbrush</a>
-        <a href="index.html#slider_content1" id="nav_slider_content1" onclick="nav_slider_content1click()"><span class="fs19">歯ブラシ</span></a></li>
-        <li><a id="nav_slider_content2" onclick="nav_slider_content2click()" href="index.html#slider_content2">Tooth paste</a>
-        <a href="index.html#slider_content2" id="nav_slider_content2" onclick="nav_slider_content2click()"><span class="fs19">歯磨き粉</span></a></li>
-        <li><a href="index.html#slider_content3" id="nav_slider_content3" onclick="nav_slider_content3click()">Set item</a>
-        <a href="index.html#slider_content3" id="nav_slider_content3" onclick="nav_slider_content3click()"><span class="fs19">セットアイテム</span></a></li>
-        <li><a href="sindan_input.html">Diagnosis</a>
-        <a href="sindan_input.html"><span class="fs19">適正診断</span></a></li>
-        <li><a href="contact.html">Contact</a>
-          <a href="contact.html"><span class="fs19">お問い合わせ</span></a></li>
+      <li><a href="BeginnersGuide.html">Corporate philosophy</a>
+        <a href="BeginnersGuide.html"><span class="fs19">初めての方へ</span></a></li>
+      <li><a href="index.html?1#slider_content1" id="nav_slider_content1" onclick="nav_slider_content1click()">Toothbrush</a>
+      <a href="index.html?1#slider_content1" id="nav_slider_content1" onclick="nav_slider_content1click()"><span class="fs19">歯ブラシ</span></a></li>
+      <li><a id="nav_slider_content2"  href="index.html?2#slider_content2">Tooth paste</a>
+      <a href="index.html?2#slider_content2" id="nav_slider_content2"><span class="fs19">歯磨き粉</span></a></li>
+      <li><a href="index.html?3#slider_content3" id="nav_slider_content3" onclick="nav_slider_content3click()">Set item</a>
+      <a href="index.html?3#slider_content3" id="nav_slider_content3" onclick="nav_slider_content3click()"><span class="fs19">セットアイテム</span></a></li>
+      <li><a href="sindan_input.html">Diagnosis</a>
+      <a href="sindan_input.html"><span class="fs19">適正診断</span></a></li>
+      <li><a href="contact.html">Contact</a>
+        <a href="contact.html"><span class="fs19">お問い合わせ</span></a></li>
+
 
     </ul>
   </div>
