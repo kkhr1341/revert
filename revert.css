@@ -1026,7 +1026,7 @@ margin-bottom: 11vw;
   #clickTest p{
     color: #666666;
     font-size: 3.2vw;
-    letter-spacing: -1;
+    letter-spacing: -6;
 }
 #back{
   text-align: start;
@@ -1056,6 +1056,11 @@ margin-bottom: 11vw;
 }
 #box2,#box3,#box4,#box5,#box6,#box7,#box8,#box9,#box10,#box11,#box12,#kekka1,#kekka2,#kekka3{
   display: none;
+}
+#horizontal_bigimg{
+  width: 85.715%;
+      height: 30vw;
+      margin: auto auto 17.2%;
 }
 /* 微調整 */
 .mrg-40{
