@@ -8,27 +8,69 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    <script type="text/javascript">
+    function nav_slider_content1click(){
+      document.getElementById("slider_content2").style.display="none";
+      document.getElementById("slider_content1").style.display="block";
+      document.getElementById("slider_content3").style.display="none";
+      document.getElementById('TOP_genre_rightbutton').style.backgroundColor = "lightgrey";
+      document.getElementById('TOP_genre_leftbutton').style.backgroundColor = "gray";
+      document.getElementById('TOP_genre_setbutton').style.backgroundColor = "lightgrey";
+       }
+    function nav_slider_content2click(){
+      document.getElementById("slider_content1").style.display="none";
+      document.getElementById("slider_content2").style.display="block";
+      document.getElementById("slider_content3").style.display="none";
+      document.getElementById('TOP_genre_rightbutton').style.backgroundColor = "gray";
+      document.getElementById('TOP_genre_leftbutton').style.backgroundColor = "lightgrey";
+      document.getElementById('TOP_genre_setbutton').style.backgroundColor = "lightgrey";
+    }
+    function nav_slider_content3click(){
+      document.getElementById("slider_content2").style.display="none";
+      document.getElementById("slider_content1").style.display="none";
+      document.getElementById("slider_content3").style.display="block";
+      document.getElementById('TOP_genre_rightbutton').style.backgroundColor = "lightgrey";
+      document.getElementById('TOP_genre_leftbutton').style.backgroundColor = "lightgrey";
+      document.getElementById('TOP_genre_setbutton').style.backgroundColor = "gray";
+       }
+
+    </script>
+
     <title></title>
   </head>
   <body>
     <!-- ヘッター -->
-    <header>
-  <div id="nav-drawer">
-      <input id="nav-input" type="checkbox" class="nav-unshown">
-      <label id="nav-open" for="nav-input"><span></span></label>
-      <label class="nav-unshown" id="nav-close" for="nav-input"></label>
-      <div id="nav-content">
-        <ul>
-        <li><a href="#">適正診断</a></li>
-        <li><a href="#">利用規約</a></li>
-        <li><a href="http://127.0.0.1:3000/HP%E4%BD%9C%E6%88%90/revert/revert_html/contact.html">お問い合わせ</a></li>
-        <li><a href="#">初めての方へ</a></li>
-    </ul>
-  </div>
-  </div>
-  <img class="header_rogo"src="revert\ヘッターロゴ.png" alt="">
-</header>
-<!-- ヘッターここまで -->
+      <header>
+    <div id="nav-drawer">
+        <input id="nav-input" type="checkbox" class="nav-unshown">
+        <label id="nav-open" for="nav-input"><span></span></label>
+        <label class="nav-unshown" id="nav-close" for="nav-input"><h1>marubatu</h1></label>
+    <div id="nav-content">
+      <div class="nav-content-img">
+      <img src="revert\ヘッターロゴ.png" alt="">
+    </div>
+    <div class="nav-border"></div>
+    <h1 id="nav-close">marubatu</h1>
+      <ul>
+          <li><a href="BeginnersGuide.html">Corporate philosophy</a>
+            <a href="BeginnersGuide.html"><span class="fs19">初めての方へ</span></a></li>
+          <li><a href="index.html#slider_content1" id="nav_slider_content1" onclick="nav_slider_content1click()">Toothbrush</a>
+          <a href="index.html#slider_content1" id="nav_slider_content1" onclick="nav_slider_content1click()"><span class="fs19">歯ブラシ</span></a></li>
+          <li><a id="nav_slider_content2" onclick="nav_slider_content2click()" href="index.html#slider_content2">Tooth paste</a>
+          <a href="index.html#slider_content2" id="nav_slider_content2" onclick="nav_slider_content2click()"><span class="fs19">歯磨き粉</span></a></li>
+          <li><a href="index.html#slider_content3" id="nav_slider_content3" onclick="nav_slider_content3click()">Set item</a>
+          <a href="index.html#slider_content3" id="nav_slider_content3" onclick="nav_slider_content3click()"><span class="fs19">セットアイテム</span></a></li>
+          <li><a href="sindan_input.html">Diagnosis</a>
+          <a href="sindan_input.html"><span class="fs19">適正診断</span></a></li>
+          <li><a href="http://127.0.0.1:3000/HP%E4%BD%9C%E6%88%90/revert/revert_html/contact.html">Contact</a>
+            <a href="http://127.0.0.1:3000/HP%E4%BD%9C%E6%88%90/revert/revert_html/contact.html"><span class="fs19">お問い合わせ</span></a></li>
+
+      </ul>
+    </div>
+    </div>
+    <img class="header_rogo"src="revert\ヘッターロゴ.png" alt="">
+  </header>
+  <!-- ヘッターここまで -->
 
     <div class="products_step">
     <div class="products_step_bar">
@@ -68,19 +110,20 @@
          <button class="products_step_boybutton">ご購入の手続きへ</button>
          <button class="products_step_boybutton2">買い物を続ける</button>
          </div>
+         <!-- フッター -->
          <div class="TOP_under">
            <div class="TOP_under_img">
          <img class="TOP_under_text" src="revert\フッターロゴ.png">
          </div>
          <div class="undermenu">
-         <a href="#" class="TOP_new"><p>初めての方へ</p></a>
-         <a href="#" class="TOP_online"><p>適正診断</p></a>
+         <a href="BeginnersGuide.html" class="TOP_new"><p>初めての方へ</p></a>
+         <a href="sindan_input.html" class="TOP_online"><p>適正診断</p></a>
          </div>
          <div class="undermenu mgt-120">
          <a href="#" class="TOP_service"><p>利用規約</p></a>
          <a href="http://127.0.0.1:3000/HP%E4%BD%9C%E6%88%90/revert/revert_html/contact.html" class="TOP_contact"><p>お問い合わせ</p></a>
          </div>
-         <p class="TOP_address mgt-120">住所 ： 東京都中央区新富1-1-7 BizSQUARE銀座　6階<br>TEL : 03-4405-5679<p>
+         <p class="TOP_address mgt-120">住所 ： 東京都中央区新富1-1-7 BizSQUARE銀座　6階<br><span class="TEL">TEL ： 03-4405-5679</span><p>
            <div class="TOP_under_icon">
            <img class="youtube pr7" src="revert\ユーチューブ.png" alt="">
            <img class="instagram" src="revert\インスタ.png" alt="">

@@ -44,11 +44,11 @@ svg.text {
 }
 /* ヘッダー */
 .header_rogo {
-  width: auto;
-      padding-top: 1.5vw;
-      height: 8vw;
-      padding-left: 25.4vw;
-        }
+    /* width: 30%; */
+    padding-top: 1vw;
+    height: 6vw;
+    padding-left: 27.4vw;
+}
 header {
   width: 100%;
   background-color: black;
@@ -57,10 +57,10 @@ header {
 
 #nav-drawer {
   border-right: solid white;
-    padding-top: 2.5%;
-    position: relative;
-    width: 11%;
-    padding-left: 3.2%;
+      padding-top: 1.5%;
+      position: relative;
+      width: 11%;
+      padding-left: 3.2%;
 }
 /*チェックボックス等は非表示に*/
 .nav-unshown {
@@ -76,15 +76,25 @@ header {
 }
 
 /*ハンバーガーアイコンをCSSだけで表現*/
+#nav-open span:after {
+    position: absolute;
+    height: 0.6vw;
+    width: 6vw;
+    border-radius: 3px;
+    background: white;
+    display: block;
+    content: '';
+    cursor: pointer;
+}
 #nav-open span, #nav-open span:before, #nav-open span:after {
   position: absolute;
-      height: 0.7vw;
-      width: 7vw;
-      border-radius: 3px;
-      background: white;
-      display: block;
-      content: '';
-      cursor: pointer;
+    height: 0.6vw;
+    width: 6vw;
+    border-radius: 3px;
+    background: white;
+    display: block;
+    content: '';
+    cursor: pointer;
   }
 #nav-open span:before {
 bottom: -1.8vw;
@@ -641,21 +651,14 @@ margin-left: 3.8vw;
 .product_sonic_contentbutton a{
   text-decoration: none;
 }
-.product_sonic_review{
-  color: white;
-    margin: 0;
-    font-size: 3.5vw;
-    text-align: center;
-    background: linear-gradient(#B1ACAC, gray);
-    padding: 1.5vw 12vw;
-}
-.product_sonic_buy{
-  color: white;
-  margin: 0;
-  font-size: 3.5vw;
-  text-align: center;
-  background: linear-gradient(#B1ACAC, gray);
-  padding: 1.5vw 16vw;
+.product_sonic_review,.product_sonic_buy{
+  width: 35vw;
+      color: white;
+      margin: 0;
+      font-size: 5.5vw;
+      text-align: center;
+      background: linear-gradient(#B1ACAC, gray);
+      height: auto;
 }
 .product_sonic_bolder{
   margin-top: 4vw;
@@ -971,19 +974,21 @@ margin-bottom: 11vw;
   margin-top: 0;
 }
 #diagnosis_count{
-  width: 17%;
-  margin: 7% auto 6%;
-  text-align: center;
-  font-size: 4.5vw;
-  background-color: #666666;
-  color: white;
+  width: 12%;
+    margin: 7% auto 6%;
+    text-align: center;
+    font-size: 3.5vw;
+    background-color: #666666;
+    color: white;
 }
+
 .diagnosis_cheak{
   margin-top: 5%;
 }
-.diagnosis_img{
-  width: 35%;
-  margin: 0 auto;
+.diagnosis_img {
+    width: 30%;
+    margin: 0 auto;
+    text-align: center;
 }
 .diagnosis_img img{
   width: 100%;
@@ -996,9 +1001,9 @@ margin-bottom: 11vw;
     width: 100%;
     color: #666666;
 }
-.diagnosis_cheak ul{
-  margin: 20vw 2vw;
-  display: flex;
+.diagnosis_cheak ul {
+    margin: 11vw 2vw;
+    display: flex;
     justify-content: space-around;
     list-style: none;
     padding: 0;
@@ -1020,7 +1025,8 @@ margin-bottom: 11vw;
   }
   #clickTest p{
     color: #666666;
-      font-size: 2.8vw;
+    font-size: 3.2vw;
+    letter-spacing: -1;
 }
 #back{
   text-align: start;
@@ -1436,6 +1442,127 @@ bottom: -1.8vw;
     width: 70vw;
     margin: 0 auto;
 }
+.diagnosis{
+  width: 100%;
+    height: auto;
+    margin-top: 12%;
+    margin-bottom: 12%;
+}
+.diagnosis_title{
+      height: auto;
+      border: solid gray 1vw;
+      width: 50%;
+      text-align: center;
+      margin: 0 auto;
+      font-size: 6vw;
+      color: #666666;
+      background-image: url("./revert/背景(2).jpg");
+      background-size: cover;
+}
+.diagnosis_title_top{
+  border-bottom: solid gray 1.3vw;
+}
+.diagnosis_title_toptext{
+  margin-block-end: 4%;
+}
+.diagnosis_title_bottom{
+  margin-top: 0;
+}
+#diagnosis_count{
+  width: 17%;
+  margin: 7% auto 6%;
+  text-align: center;
+  font-size: 4.5vw;
+  background-color: #666666;
+  color: white;
+}
+.diagnosis_cheak{
+  margin-top: 5%;
+}
+.diagnosis_img{
+  width: 35%;
+  margin: 0 auto;
+}
+.diagnosis_img img{
+  width: 100%;
+    margin-bottom: 20%;
+}
+.box_title{
+  text-align: center;
+    font-size: 4.7vw;
+    margin: 0 auto;
+    width: 100%;
+    color: #666666;
+}
+.diagnosis_cheak ul{
+  margin: 20vw 2vw;
+  display: flex;
+    justify-content: space-around;
+    list-style: none;
+    padding: 0;
+}
+.box_border{
+  position: relative;
+    color: #666666;
+    font-size: 5.5vw;
+    margin: 0;
+    text-align: center;
+    bottom: 1vw;
+    font-weight: bold;
+}
+#clickTest{
+  border: solid gray 0.7vw;
+    width: 31%;
+    text-align: center;
+      background-image: url("./revert/背景(1).jpg");
+  }
+  #clickTest p{
+    color: #666666;
+    font-size: 3.2vw;
+    letter-spacing: -1;
+}
+#back{
+  text-align: start;
+    width: 100%;
+    background: none;
+    border: none;
+    padding-inline-start: 11%;
+    margin-block-start: 3%;
+}
+#back i{
+  font-size: 10vw;
+    color: grey;
+}
+.box_title_border{
+  border-bottom: solid #666666 0.7vw
+}
+.set_explanationtext p {
+  margin: 10% auto;
+    width: 70%;
+    text-align: left;
+    font-size: 3.5vw;
+    color: #666666;
+}
+.set_explanationtext_title{
+  font-size: 4vw;
+  font-weight: bold;
+}
+#box2,#box3,#box4,#box5,#box6,#box7,#box8,#box9,#box10,#box11,#box12,#kekka1,#kekka2,#kekka3{
+  display: none;
+}
+.diagnosis_cheak ul{
+  margin: 20vw 2vw;
+  display: flex;
+    justify-content: space-around;
+    list-style: none;
+    padding: 0;
+}
+.diagnosis_img{
+  width: 35%;
+  margin: 0 auto;
+}
+
+
 /* 微調整 */
 .br{
   display: none;

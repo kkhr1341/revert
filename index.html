@@ -46,6 +46,30 @@ window.onload=function(){
 //   const spinner = document.getElementById('loading');
 //   spinner.classList.add('loaded');
  }
+ function nav_slider_content1click(){
+   document.getElementById("slider_content2").style.display="none";
+   document.getElementById("slider_content1").style.display="block";
+   document.getElementById("slider_content3").style.display="none";
+   document.getElementById('TOP_genre_rightbutton').style.backgroundColor = "lightgrey";
+   document.getElementById('TOP_genre_leftbutton').style.backgroundColor = "gray";
+   document.getElementById('TOP_genre_setbutton').style.backgroundColor = "lightgrey";
+    }
+ function nav_slider_content2click(){
+   document.getElementById("slider_content1").style.display="none";
+   document.getElementById("slider_content2").style.display="block";
+   document.getElementById("slider_content3").style.display="none";
+   document.getElementById('TOP_genre_rightbutton').style.backgroundColor = "gray";
+   document.getElementById('TOP_genre_leftbutton').style.backgroundColor = "lightgrey";
+   document.getElementById('TOP_genre_setbutton').style.backgroundColor = "lightgrey";
+ }
+ function nav_slider_content3click(){
+   document.getElementById("slider_content2").style.display="none";
+   document.getElementById("slider_content1").style.display="none";
+   document.getElementById("slider_content3").style.display="block";
+   document.getElementById('TOP_genre_rightbutton').style.backgroundColor = "lightgrey";
+   document.getElementById('TOP_genre_leftbutton').style.backgroundColor = "lightgrey";
+   document.getElementById('TOP_genre_setbutton').style.backgroundColor = "gray";
+    }
 function TOP_genre_rightbutton_click(){
   document.getElementById("slider_content1").style.display="none";
   document.getElementById("slider_content2").style.display="block";
@@ -128,16 +152,16 @@ function TOP_genre_rightbutton_click(){
   <div class="nav-border"></div>
   <h1 id="nav-close">marubatu</h1>
     <ul>
-        <li><a href="#">Corporate philosophy</a>
-          <a href="#"><span class="fs19">初めての方へ</span></a></li>
-        <li><a href="#">Toothbrush</a>
-        <a href="#"><span class="fs19">歯ブラシ</span></a></li>
-        <li><a href="#">Tooth paste</a>
-        <a href="#"><span class="fs19">歯磨き粉</span></a></li>
-        <li><a href="#">Set item</a>
-        <a href="#"><span class="fs19">セットアイテム</span></a></li>
-        <li><a href="#">Diagnosis</a>
-        <a href="#"><span class="fs19">適正診断</span></a></li>
+        <li><a href="BeginnersGuide.html">Corporate philosophy</a>
+          <a href="BeginnersGuide.html"><span class="fs19">初めての方へ</span></a></li>
+        <li><a href="index.html#slider_content1" id="nav_slider_content1" onclick="nav_slider_content1click()">Toothbrush</a>
+        <a href="index.html#slider_content1" id="nav_slider_content1" onclick="nav_slider_content1click()"><span class="fs19">歯ブラシ</span></a></li>
+        <li><a id="nav_slider_content2" onclick="nav_slider_content2click()" href="index.html#slider_content2">Tooth paste</a>
+        <a href="index.html#slider_content2" id="nav_slider_content2" onclick="nav_slider_content2click()"><span class="fs19">歯磨き粉</span></a></li>
+        <li><a href="index.html#slider_content3" id="nav_slider_content3" onclick="nav_slider_content3click()">Set item</a>
+        <a href="index.html#slider_content3" id="nav_slider_content3" onclick="nav_slider_content3click()"><span class="fs19">セットアイテム</span></a></li>
+        <li><a href="sindan_input.html">Diagnosis</a>
+        <a href="sindan_input.html"><span class="fs19">適正診断</span></a></li>
         <li><a href="http://127.0.0.1:3000/HP%E4%BD%9C%E6%88%90/revert/revert_html/contact.html">Contact</a>
           <a href="http://127.0.0.1:3000/HP%E4%BD%9C%E6%88%90/revert/revert_html/contact.html"><span class="fs19">お問い合わせ</span></a></li>
 
@@ -233,7 +257,7 @@ function TOP_genre_rightbutton_click(){
 </div>
 <div class="TOP_ploduct_contentbutton">
   <a href="revert_prodact_tepe.html"><h1 class="TOP_ploduct_detail">さらに詳しく</h1></a>
-  <a href="#"><h1 class="TOP_ploduct_buy">購入</h1></a>
+  <a href="revert_prodact_tepe_step.html"><h1 class="TOP_ploduct_buy">購入</h1></a>
 </div>
 </div>
 </div>
@@ -299,7 +323,7 @@ function TOP_genre_rightbutton_click(){
   </div>
   <div class="TOP_ploduct_contentbutton">
     <a href="revert_prodact_Sonicare×ruscellowhite.html"><h1 class="TOP_ploduct_detail">さらに詳しく</h1></a>
-    <a href="#"><h1 class="TOP_ploduct_buy">購入</h1></a>
+    <a href="revert_prodact_Sonicare×ruscellowhite_step.html"><h1 class="TOP_ploduct_buy">購入</h1></a>
   </div>
   </div>
 </div>
@@ -318,7 +342,7 @@ function TOP_genre_rightbutton_click(){
   </div>
   <div class="TOP_ploduct_contentbutton">
     <a href="revert_prodact_tepe×APAGARD.html"><h1 class="TOP_ploduct_detail">さらに詳しく</h1></a>
-    <a href="#"><h1 class="TOP_ploduct_buy">購入</h1></a>
+    <a href="revert_prodact_tepe×APAGARD_step.html"><h1 class="TOP_ploduct_buy">購入</h1></a>
   </div>
   </div>
 </div>
@@ -339,22 +363,22 @@ function TOP_genre_rightbutton_click(){
   </div>
   <div class="TOP_ploduct_contentbutton">
     <a href="revert_prodact_CURAPROX×ORALPEACE.html"><h1 class="TOP_ploduct_detail">さらに詳しく</h1></a>
-    <a href="#"><h1 class="TOP_ploduct_buy">購入</h1></a>
+    <a href="revert_prodact_CURAPROX×ORALPEACE_step.html"><h1 class="TOP_ploduct_buy">購入</h1></a>
   </div>
   </div>
 </div>
 </div>
 
 </div>
-
+</div>
 <!-- フッター -->
 <div class="TOP_under">
   <div class="TOP_under_img">
 <img class="TOP_under_text" src="revert\フッターロゴ.png">
 </div>
 <div class="undermenu">
-<a href="#" class="TOP_new"><p>初めての方へ</p></a>
-<a href="#" class="TOP_online"><p>適正診断</p></a>
+<a href="BeginnersGuide.html" class="TOP_new"><p>初めての方へ</p></a>
+<a href="sindan_input.html" class="TOP_online"><p>適正診断</p></a>
 </div>
 <div class="undermenu mgt-120">
 <a href="#" class="TOP_service"><p>利用規約</p></a>
@@ -369,6 +393,5 @@ function TOP_genre_rightbutton_click(){
 
 </div>
 <!-- フッターここまで -->
-</div>
   </body>
 </html>
