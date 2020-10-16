@@ -669,7 +669,7 @@ margin-left: 3.8vw;
 }
 .product_sonic_under p {
     color: #666666;
-    width: 39%;
+    width: 40vw;
     text-align: center;
     font-size: 4vw;
     margin-top: 6vw;
@@ -920,6 +920,19 @@ margin-bottom: 11vw;
       font-size: 5vw;
   }
 /* 初めての方へページ */
+/* フェードイン */
+.js-fadein {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(40px);
+  transition: all 1s;
+}
+.js-fadein.is-show {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0px);
+}
+
 .beginners_title{
   font-size: 9vw;
     height: 12vw;
@@ -1267,7 +1280,7 @@ bottom: -1.8vw;
     border-top: solid gray 0.7vw;
 }
 .product_sonic_under p {
-  width: 41vw;
+  width: 50vw;
     text-align: center;
     font-size: 5vw;
     margin-top: 6vw;

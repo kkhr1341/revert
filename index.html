@@ -51,66 +51,36 @@ window.onload=function(){
 setTimeout(function () {
       var s = window.location.search;
       if (s == '?1') {
-        nav_slider_content1click();
+        TOP_genre_setbutton_click(1);
       }
       if (s == '?2') {
-        nav_slider_content2click();
+        TOP_genre_setbutton_click(2);
       }
       if (s == '?3') {
-        nav_slider_content3click();
+        TOP_genre_setbutton_click(3);
       }
     }, 200);
  }
- function nav_slider_content1click(){
-   document.getElementById("slider_content2").style.display="none";
-   document.getElementById("slider_content1").style.display="block";
-   document.getElementById("slider_content3").style.display="none";
-   document.getElementById('TOP_genre_rightbutton').style.backgroundColor = "lightgrey";
-   document.getElementById('TOP_genre_leftbutton').style.backgroundColor = "gray";
-   document.getElementById('TOP_genre_setbutton').style.backgroundColor = "lightgrey";
+ function TOP_genre_setbutton_click(cbn) {
+      var cont1 = document.getElementById("slider_content1").style;
+      var btn1 = document.getElementById('TOP_genre_leftbutton').style;
+      var cont2 = document.getElementById("slider_content2").style;
+      var btn2 = document.getElementById('TOP_genre_rightbutton').style;
+      var cont3 = document.getElementById("slider_content3").style;
+      var btn3 = document.getElementById('TOP_genre_setbutton').style;
+      cont1.display = "none"; btn1.backgroundColor = "lightgrey";
+      cont2.display = "none"; btn2.backgroundColor = "lightgrey";
+      cont3.display = "none"; btn3.backgroundColor = "lightgrey";
+      if (cbn == 1) {
+        cont1.display = "block"; btn1.backgroundColor = "gray";
+      }
+      if (cbn == 2) {
+        cont2.display = "block"; btn2.backgroundColor = "gray";
+      }
+      if (cbn == 3) {
+        cont3.display = "block"; btn3.backgroundColor = "gray";
+      }
     }
- function nav_slider_content2click(){
-   document.getElementById("slider_content1").style.display="none";
-   document.getElementById("slider_content2").style.display="block";
-   document.getElementById("slider_content3").style.display="none";
-   document.getElementById('TOP_genre_rightbutton').style.backgroundColor = "gray";
-   document.getElementById('TOP_genre_leftbutton').style.backgroundColor = "lightgrey";
-   document.getElementById('TOP_genre_setbutton').style.backgroundColor = "lightgrey";
- }
- function nav_slider_content3click(){
-   document.getElementById("slider_content2").style.display="none";
-   document.getElementById("slider_content1").style.display="none";
-   document.getElementById("slider_content3").style.display="block";
-   document.getElementById('TOP_genre_rightbutton').style.backgroundColor = "lightgrey";
-   document.getElementById('TOP_genre_leftbutton').style.backgroundColor = "lightgrey";
-   document.getElementById('TOP_genre_setbutton').style.backgroundColor = "gray";
-    }
-function TOP_genre_rightbutton_click(){
-  document.getElementById("slider_content1").style.display="none";
-  document.getElementById("slider_content2").style.display="block";
-  document.getElementById("slider_content3").style.display="none";
-  document.getElementById('TOP_genre_rightbutton').style.backgroundColor = "gray";
-  document.getElementById('TOP_genre_leftbutton').style.backgroundColor = "lightgrey";
-  document.getElementById('TOP_genre_setbutton').style.backgroundColor = "lightgrey";
- }
- function TOP_genre_leftbutton_click(){
-   document.getElementById("slider_content2").style.display="none";
-   document.getElementById("slider_content1").style.display="block";
-   document.getElementById("slider_content3").style.display="none";
-   document.getElementById('TOP_genre_rightbutton').style.backgroundColor = "lightgrey";
-   document.getElementById('TOP_genre_leftbutton').style.backgroundColor = "gray";
-   document.getElementById('TOP_genre_setbutton').style.backgroundColor = "lightgrey";
-  }
-  function TOP_genre_setbutton_click(){
-    document.getElementById("slider_content2").style.display="none";
-    document.getElementById("slider_content1").style.display="none";
-    document.getElementById("slider_content3").style.display="block";
-    document.getElementById('TOP_genre_rightbutton').style.backgroundColor = "lightgrey";
-    document.getElementById('TOP_genre_leftbutton').style.backgroundColor = "lightgrey";
-    document.getElementById('TOP_genre_setbutton').style.backgroundColor = "gray";
-   }
-
-
 </script>
     <title></title>
   </head>
@@ -229,9 +199,9 @@ function TOP_genre_rightbutton_click(){
   </div>
 <!-- ジャンル変更ボタン -->
 <div class="TOP_Product_buttun">
-  <button class="TOP_genre_leftbutton" id="TOP_genre_leftbutton" onclick="TOP_genre_leftbutton_click()">歯ブラシ</button>
-  <button class="TOP_genre_rightbutton" id="TOP_genre_rightbutton" onclick="TOP_genre_rightbutton_click()">歯磨き粉</button>
-  <button class="TOP_genre_setbutton" id="TOP_genre_setbutton" onclick="TOP_genre_setbutton_click()">セット</button>
+  <button class="TOP_genre_leftbutton" id="TOP_genre_leftbutton" onclick="TOP_genre_setbutton_click(1)">歯ブラシ</button>
+  <button class="TOP_genre_rightbutton" id="TOP_genre_rightbutton" onclick="TOP_genre_setbutton_click(2)">歯磨き粉</button>
+  <button class="TOP_genre_setbutton" id="TOP_genre_setbutton" onclick="TOP_genre_setbutton_click(3)">セット</button>
 </div>
 <!-- 商品一覧 -->
 <div class="TOP_content_slider">
