@@ -1030,14 +1030,14 @@ margin-bottom: 11vw;
     bottom: 1vw;
     font-weight: bold;
 }
-#clickTest{
+.clickTest{
   cursor: pointer;
   border: solid gray 0.7vw;
     width: 31%;
     text-align: center;
       background-image: url("./revert/背景(1).jpg");
   }
-  #clickTest p{
+  .clickTest p{
     color: #666666;
     font-size: 3.2vw;
     letter-spacing: -6;
@@ -1611,31 +1611,47 @@ margin-block-start: 0;
 }
 @media screen and (max-width:320px) {
   #nav-open span:before {
-  bottom: -1.8vw;
-    }
+    bottom: -1.8vw;
+  }
   #nav-open span:after {
     bottom: -3.6vw;
-    }
-    .APAGARDRENAMEL img {
-        width: 100%;
-        height: 26.87vw;
-    }
-    .diagnosis_result_content_type {
-        font-size: 3vw;
-        margin: 0 auto;
-        border-bottom: solid grey 0.5vw;
-        width: 22.5vw;
-        height: 3.3vw;
-        margin-bottom: 5vw;
-    }
-    #clickTest {
+  }
+  .APAGARDRENAMEL img {
+    width: 100%;
+    height: 26.87vw;
+  }
+  .diagnosis_result_content_type {
+    font-size: 3vw;
+    margin: 0 auto;
+    border-bottom: solid grey 0.5vw;
+    width: 22.5vw;
+    height: 3.3vw;
+    margin-bottom: 5vw;
+  }
+  #clickTest {
     border: solid gray 0.7vw;
     width: 32%;
     text-align: center;
-    background-image: url(./revert/背景(1).jpg);
-}
-#clickTest p {
+    background-image: url("./revert/背景(1).jpg");
+  }
+  #clickTest p {
     color: #666666;
     font-size: 2.8vw;
     letter-spacing: -1px;
+  }
+}
+.shop-submit {
+  color: white;
+  margin: 0;
+  font-size: 4.5vw;
+  text-align: center;
+  background: linear-gradient(#B1ACAC, gray);
+  padding: 2vw 14vw;
+  margin-left: 2vw;
+  border: 0;
+  appearance: none;
+}
+
+.shop-submit:focus {
+  outline: none;
 }

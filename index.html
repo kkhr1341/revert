@@ -1,67 +1,68 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
-      <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
-      <link rel="stylesheet" href="revert.css">
-      <link rel="stylesheet" href="revert.min.css">
-      <link rel="stylesheet" href="https://use.typekit.net/ngv6mfs.css">
-      <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-      <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
-      <script src="https://cdn.jsdelivr.net/npm/vivus@latest/dist/vivus.min.js"></script>
 
-      <script type="text/javascript">
-      // $(function(){
-      //   $(".anime:not(:animated)").fadeIn("slow",function(){
-      //     $(this).delay(10000).fadeOut("slow");
-      //   });
-      // });
-      var url =location.href;
-      console.log(url);
-      if(url == url){
+<head>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+  <link rel="stylesheet" href="revert.css">
+  <link rel="stylesheet" href="revert.min.css">
+  <link rel="stylesheet" href="https://use.typekit.net/ngv6mfs.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vivus@latest/dist/vivus.min.js"></script>
+
+  <script type="text/javascript">
+    // $(function(){
+    //   $(".anime:not(:animated)").fadeIn("slow",function(){
+    //     $(this).delay(10000).fadeOut("slow");
+    //   });
+    // });
+    var url = location.href;
+    console.log(url);
+    if (url == url) {
+    }
+    $(document).ready(function () {
+      $('.slider').bxSlider({
+        auto: true,
+        pause: 4000,
+        speed: 1000,
+        pager: false,
+        controls: false,
+      });
+      $('.slider2').bxSlider({
+        auto: true,
+        pause: 4000,
+        speed: 1000,
+        controls: false,
+      });
+    });
+    window.onload = function () {
+      // new Vivus('move', {
+      //   type: 'scenario-sync',
+      //   duration: 100,
+      //   forceRender: false,
+      //   animTimingFunction: Vivus.EASE
+      // })
+
+      document.getElementById("slider_content2").style.display = "none";
+      document.getElementById("slider_content3").style.display = "none";
+      //   const spinner = document.getElementById('loading');
+      //   spinner.classList.add('loaded');
+      setTimeout(function () {
+        var s = window.location.search;
+        if (s == '?1') {
+          TOP_genre_setbutton_click(1);
         }
-$(document).ready(function(){
-$('.slider').bxSlider({
- auto: true,
- pause: 4000,
- speed: 1000,
- pager: false,
- controls: false,
-});
-$('.slider2').bxSlider({
-auto: true,
-pause: 4000,
-speed: 1000,
-controls: false,
-});
-});
-window.onload=function(){
-  // new Vivus('move', {
-  //   type: 'scenario-sync',
-  //   duration: 100,
-  //   forceRender: false,
-  //   animTimingFunction: Vivus.EASE
-  // })
-
-  document.getElementById("slider_content2").style.display="none";
-  document.getElementById("slider_content3").style.display="none";
-//   const spinner = document.getElementById('loading');
-//   spinner.classList.add('loaded');
-setTimeout(function () {
-      var s = window.location.search;
-      if (s == '?1') {
-        TOP_genre_setbutton_click(1);
-      }
-      if (s == '?2') {
-        TOP_genre_setbutton_click(2);
-      }
-      if (s == '?3') {
-        TOP_genre_setbutton_click(3);
-      }
-    }, 200);
- }
- function TOP_genre_setbutton_click(cbn) {
+        if (s == '?2') {
+          TOP_genre_setbutton_click(2);
+        }
+        if (s == '?3') {
+          TOP_genre_setbutton_click(3);
+        }
+      }, 200);
+    }
+    function TOP_genre_setbutton_click(cbn) {
       var cont1 = document.getElementById("slider_content1").style;
       var btn1 = document.getElementById('TOP_genre_leftbutton').style;
       var cont2 = document.getElementById("slider_content2").style;
@@ -81,20 +82,21 @@ setTimeout(function () {
         cont3.display = "block"; btn3.backgroundColor = "gray";
       }
     }
-</script>
-    <title></title>
-  </head>
-  <body>
- <!-- <div id="loading">
+  </script>
+  <title></title>
+</head>
+
+<body>
+  <!-- <div id="loading">
   <div class="spinner"> -->
-<!-- <div class="anime">
+  <!-- <div class="anime">
 <div class="svgall">
   <svg class="mask" viewBox="0 0 1920 1080" id="move"> -->
-    <!-- <defs>
+  <!-- <defs>
       <!-- アニメーション画像 -->
-      <!-- <mask id="clipMask"> -->
-        <!--マスクのpath-->
-        	<!-- <polyline class="st2" points="466,338 469.35,733 411.96,377.66 528.95,364.16 575.18,395.67 583.18,440 583.18,472.72
+  <!-- <mask id="clipMask"> -->
+  <!--マスクのpath-->
+  <!-- <polyline class="st2" points="466,338 469.35,733 411.96,377.66 528.95,364.16 575.18,395.67 583.18,440 583.18,472.72
         		563.98,511.16 529.45,523.3 497.57,532.48 528.95,480.01 592.18,734 	"/>
         	<polyline class="st3" points="706.39,587 757.6,587 757.6,511.16 732,470.41 674.73,470.41 674.73,680.03 718.27,731 757.6,699.24
         		758.6,630.43 	"/>
@@ -106,15 +108,15 @@ setTimeout(function () {
         		1388.09,428.81 1388.09,517.07 1388.09,664 1392.95,682.4 1397.07,700.27 1410.13,710.67 1443.47,717.6 1463.73,717.6
         		1475.47,714.93 1475.47,378 650.9,378 	"/>
             </mask> -->
-          <!-- </defs> -->
-    <!-- ベース画像 -->
-    <!-- <image xlink:href="revertrogo.svg" width="100%" height="100%" mask="url(#clipMask)"></image>
+  <!-- </defs> -->
+  <!-- ベース画像 -->
+  <!-- <image xlink:href="revertrogo.svg" width="100%" height="100%" mask="url(#clipMask)"></image>
   </svg>
 
 </div>
 </div> -->
-<!-- <script src="https://cdn.jsdelivr.net/npm/vivus@latest/dist/vivus.min.js"></script> -->
-<!-- <script>
+  <!-- <script src="https://cdn.jsdelivr.net/npm/vivus@latest/dist/vivus.min.js"></script> -->
+  <!-- <script>
   new Vivus('move', {
     type: 'scenario-sync',
     duration: 100,
@@ -123,263 +125,346 @@ setTimeout(function () {
   })
 </script> -->
 
-<div class="mainSite">
-  <!-- ヘッター -->
+  <div class="mainSite">
+    <!-- ヘッター -->
     <header>
-  <div id="nav-drawer">
-      <input id="nav-input" type="checkbox" class="nav-unshown">
-      <label id="nav-open" for="nav-input"><span></span></label>
-      <label class="nav-unshown" id="nav-close" for="nav-input"><h1>marubatu</h1></label>
-  <div id="nav-content">
-    <div class="nav-content-img">
-    <img src="revert\ヘッターロゴ.png" alt="">
-  </div>
-  <div class="nav-border"></div>
-  <h1 id="nav-close">marubatu</h1>
-    <ul>
-        <li><a href="BeginnersGuide.html">Corporate philosophy</a>
-          <a href="BeginnersGuide.html"><span class="fs19">初めての方へ</span></a></li>
-        <li><a href="?1#slider_content1" id="nav_slider_content1" onclick="nav_slider_content1click()">Toothbrush</a>
-        <a href="?1#slider_content1" id="nav_slider_content1" onclick="nav_slider_content1click()"><span class="fs19">歯ブラシ</span></a></li>
-        <li><a id="nav_slider_content2" onclick="nav_slider_content2click()" href="?2#slider_content2">Tooth paste</a>
-        <a href="?2#slider_content2" id="nav_slider_content2" onclick="nav_slider_content2click()"><span class="fs19">歯磨き粉</span></a></li>
-        <li><a href="?3#slider_content3" id="nav_slider_content3" onclick="nav_slider_content3click()">Set item</a>
-        <a href="?3#slider_content3" id="nav_slider_content3" onclick="nav_slider_content3click()"><span class="fs19">セットアイテム</span></a></li>
-        <li><a href="sindan_input.html">Diagnosis</a>
-        <a href="sindan_input.html"><span class="fs19">適正診断</span></a></li>
-        <li><a href="contact.html">Contact</a>
-          <a href="contact.html"><span class="fs19">お問い合わせ</span></a></li>
+      <div id="nav-drawer">
+        <input id="nav-input" type="checkbox" class="nav-unshown">
+        <label id="nav-open" for="nav-input"><span></span></label>
+        <label class="nav-unshown" id="nav-close" for="nav-input">
+          <h1>marubatu</h1>
+        </label>
+        <div id="nav-content">
+          <div class="nav-content-img">
+            <img src="revert\ヘッターロゴ.png" alt="">
+          </div>
+          <div class="nav-border"></div>
+          <h1 id="nav-close">marubatu</h1>
+          <ul>
+            <li><a href="BeginnersGuide.html">Corporate philosophy</a>
+              <a href="BeginnersGuide.html"><span class="fs19">初めての方へ</span></a></li>
+            <li><a href="?1#slider_content1" id="nav_slider_content1"
+                onclick="nav_slider_content1click()">Toothbrush</a>
+              <a href="?1#slider_content1" id="nav_slider_content1" onclick="nav_slider_content1click()"><span
+                  class="fs19">歯ブラシ</span></a></li>
+            <li><a id="nav_slider_content2" onclick="nav_slider_content2click()" href="?2#slider_content2">Tooth
+                paste</a>
+              <a href="?2#slider_content2" id="nav_slider_content2" onclick="nav_slider_content2click()"><span
+                  class="fs19">歯磨き粉</span></a></li>
+            <li><a href="?3#slider_content3" id="nav_slider_content3" onclick="nav_slider_content3click()">Set item</a>
+              <a href="?3#slider_content3" id="nav_slider_content3" onclick="nav_slider_content3click()"><span
+                  class="fs19">セットアイテム</span></a></li>
+            <li><a href="sindan_input.html">Diagnosis</a>
+              <a href="sindan_input.html"><span class="fs19">適正診断</span></a></li>
+            <li><a href="contact.html">Contact</a>
+              <a href="contact.html"><span class="fs19">お問い合わせ</span></a></li>
 
-    </ul>
-  </div>
-  </div>
-  <img class="header_rogo"src="revert\ヘッターロゴ.png" alt="">
-</header>
-<!-- ヘッターここまで -->
-<div class="TOP_slider1">
-<ul class="slider">
-  <li><img src="revert\スクリーンショット (212).png" alt=""></li>
-  <li><img src="revert\スクリーンショット (210).png" alt=""></li>
-  <li><img id="TOP_slider1_icon" src="revert\ロゴ.png" alt=""></li>
-</ul>
+          </ul>
+        </div>
+      </div>
+      <img class="header_rogo" src="revert\ヘッターロゴ.png" alt="">
+    </header>
+    <!-- ヘッターここまで -->
+    <div class="TOP_slider1">
+      <ul class="slider">
+        <li><img src="revert\スクリーンショット (212).png" alt=""></li>
+        <li><img src="revert\スクリーンショット (210).png" alt=""></li>
+        <li><img id="TOP_slider1_icon" src="revert\ロゴ.png" alt=""></li>
+      </ul>
 
-</div>
-<div class="TOP_content">
-  <h1 class="TOP_content_title">“さぁ、健口に生きよう”</h1>
-  <div class="TOP_content_subcontent">
-    <div class="TOP_content_subcontent1">
-  <p class="TOP_content_subtitle1 corporate_philosophy">企業理念</p>
-    <p class="TOP_content_subtitle2">〝Revert〟は本当の意味での<br>【豊かな生活】を提供しております。</p>
-    <a class="TOP_content_Beginners"  href="BeginnersGuide.html"><p class="TOP_content_youtube">
-    詳しくはこちら</p></a>
-  </div>
-  <img src="revert\bg01.jpg" alt="">
-</div>
-    <div class="TOP_content_bgimg1">
-    <img src="revert\背景(1).jpg" alt="">
     </div>
-  <p class="TOP_content_text">まずは<br>あなたにオススメの商品を<br>診断します</p>
-  <div class="TOP_diagnosis">
-  <a href="sindan_input.html"><h1 class="TOP_content_diagnosis">診断</h1></a>
-</div>
+    <div class="TOP_content">
+      <h1 class="TOP_content_title">“さぁ、健口に生きよう”</h1>
+      <div class="TOP_content_subcontent">
+        <div class="TOP_content_subcontent1">
+          <p class="TOP_content_subtitle1 corporate_philosophy">企業理念</p>
+          <p class="TOP_content_subtitle2">〝Revert〟は本当の意味での<br>【豊かな生活】を提供しております。</p>
+          <a class="TOP_content_Beginners" href="BeginnersGuide.html">
+            <p class="TOP_content_youtube">
+              詳しくはこちら</p>
+          </a>
+        </div>
+        <img src="revert\bg01.jpg" alt="">
+      </div>
+      <div class="TOP_content_bgimg1">
+        <img src="revert\背景(1).jpg" alt="">
+      </div>
+      <p class="TOP_content_text">まずは<br>あなたにオススメの商品を<br>診断します</p>
+      <div class="TOP_diagnosis">
+        <a href="sindan_input.html">
+          <h1 class="TOP_content_diagnosis">診断</h1>
+        </a>
+      </div>
 
-<div class="TOP_SNS_icon">
-<img class="youtube" src="revert\ユーチューブ.png" alt="">
-<img class="instagram" src="revert\インスタ.png" alt="">
-<img class="twitter" src="revert\ツイッター.png" alt="">
-</div>
-  <div class="TOP_slider2_bolder">
-  <div class="TOP_slider2">
-  <ul class="slider2">
-    <li><img src="revert\スクリーンショット (205).png" alt=""></li>
-    <li><img src="revert\スクリーンショット (203).png" alt=""></li>
-    <li><img src="revert\スクリーンショット (204).png" alt=""></li>
-  </ul>
-</div>
-  </div>
-<!-- ジャンル変更ボタン -->
-<div class="TOP_Product_buttun">
-  <button class="TOP_genre_leftbutton" id="TOP_genre_leftbutton" onclick="TOP_genre_setbutton_click(1)">歯ブラシ</button>
-  <button class="TOP_genre_rightbutton" id="TOP_genre_rightbutton" onclick="TOP_genre_setbutton_click(2)">歯磨き粉</button>
-  <button class="TOP_genre_setbutton" id="TOP_genre_setbutton" onclick="TOP_genre_setbutton_click(3)">セット</button>
-</div>
-<!-- 商品一覧 -->
-<div class="TOP_content_slider">
-<div id="slider_content1" class="slider_content1">
-<div class="TOP_content_toothbrush">
-  <div class="TOP_content_shadow">
-    <img class="TOP_ploduct" src="revert\sonic2 (1).jpg" alt="">
-　  <div class="TOP_ploduct_text">
-      <p class="TOP_ploduct_name"><span class="TOP_ploduct_subname">PHILIPS 電動歯ブラシ</span><br>ソニッケアー<br>
-      <span class="TOP_ploduct_subname2">ダイヤモンドクリーン</span></p>
-      <p class="TOP_ploduct_subtitle">お家でもプロ級の歯磨きを！<br>日本の歯科医推奨率NO.1ブランド</p>
+      <div class="TOP_SNS_icon">
+        <img class="youtube" src="revert\ユーチューブ.png" alt="">
+        <img class="instagram" src="revert\インスタ.png" alt="">
+        <img class="twitter" src="revert\ツイッター.png" alt="">
+      </div>
+      <div class="TOP_slider2_bolder">
+        <div class="TOP_slider2">
+          <ul class="slider2">
+            <li><img src="revert\スクリーンショット (205).png" alt=""></li>
+            <li><img src="revert\スクリーンショット (203).png" alt=""></li>
+            <li><img src="revert\スクリーンショット (204).png" alt=""></li>
+          </ul>
+        </div>
+      </div>
+      <!-- ジャンル変更ボタン -->
+      <div class="TOP_Product_buttun">
+        <button class="TOP_genre_leftbutton" id="TOP_genre_leftbutton"
+          onclick="TOP_genre_setbutton_click(1)">歯ブラシ</button>
+        <button class="TOP_genre_rightbutton" id="TOP_genre_rightbutton"
+          onclick="TOP_genre_setbutton_click(2)">歯磨き粉</button>
+        <button class="TOP_genre_setbutton" id="TOP_genre_setbutton" onclick="TOP_genre_setbutton_click(3)">セット</button>
+      </div>
+      <!-- 商品一覧 -->
+      <div class="TOP_content_slider">
+        <div id="slider_content1" class="slider_content1">
+          <div class="TOP_content_toothbrush">
+            <div class="TOP_content_shadow">
+              <img class="TOP_ploduct" src="revert\sonic2 (1).jpg" alt="">
+              　 <div class="TOP_ploduct_text">
+                <p class="TOP_ploduct_name"><span class="TOP_ploduct_subname">PHILIPS 電動歯ブラシ</span><br>ソニッケアー<br>
+                  <span class="TOP_ploduct_subname2">ダイヤモンドクリーン</span></p>
+                <p class="TOP_ploduct_subtitle">お家でもプロ級の歯磨きを！<br>日本の歯科医推奨率NO.1ブランド</p>
+              </div>
+
+              <div class="TOP_ploduct_contentbutton">
+                <a href="revert_prodact_Sonicare.html">
+                  <h1 class="TOP_ploduct_detail">さらに詳しく</h1>
+                </a>
+                <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+                  <input type="hidden" name="cmd" value="_s-xclick">
+                  <input type="hidden" name="hosted_button_id" value="SJQWDBLU2H49G">
+                  <input class="shop-submit" type="submit" value="購入" name="submit" alt="PayPal - オンラインでより安全・簡単にお支払い">
+                </form>
+              </div>
+            </div>
+          </div>
+          <div class="TOP_content_toothbrush">
+            <div class="TOP_content_shadow">
+              <img class="TOP_ploduct" src="revert\クラプロ.jpg" alt="">
+              　<div class="TOP_ploduct_text">
+                <p class="TOP_ploduct_name"><span class="TOP_ploduct_subname">CURAPROX 歯ブラシ</span><br>クラプロックス CS5460</p>
+                <p class="TOP_ploduct_subtitle">ブラシの植毛数が世界最多！<br>むし歯も歯周病も<br>同時に予防できる唯一の歯ブラシ</p>
+              </div>
+              <div class="TOP_ploduct_contentbutton">
+                <a href="revert_prodact_CURAPROX.html">
+                  <h1 class="TOP_ploduct_detail">さらに詳しく</h1>
+                </a>
+                <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+                  <input type="hidden" name="cmd" value="_s-xclick">
+                  <input type="hidden" name="hosted_button_id" value="26MJAN5CLGV4U">
+                  <input class="shop-submit" type="submit" value="購入" name="submit" alt="PayPal - オンラインでより安全・簡単にお支払い">
+                </form>
+              </div>
+            </div>
+          </div>
+
+          <div class="TOP_content_toothbrush">
+            <div class="TOP_content_shadow">
+              <img class="TOP_ploduct" src="revert\tepe①.jpg" alt="">
+              　<div class="TOP_ploduct_text">
+                <p class="TOP_ploduct_name"><span class="TOP_ploduct_subname">Cross Field 歯ブラシ</span><br>TePe セレクト</p>
+                <p class="TOP_ploduct_subtitle">予防先進国スウェーデンで使用率が<br>約８割の圧倒的シェア！<br>
+                  台形型のブラシヘッドで奥歯まで<br>隅々キレイに。</p>
+              </div>
+              <div class="TOP_ploduct_contentbutton">
+                <a href="revert_prodact_tepe.html">
+                  <h1 class="TOP_ploduct_detail">さらに詳しく</h1>
+                </a>
+                <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+                  <input type="hidden" name="cmd" value="_s-xclick">
+                  <input type="hidden" name="hosted_button_id" value="DU7ZL7JSU2KS6">
+                  <input class="shop-submit" type="submit" value="購入" name="submit" alt="PayPal - オンラインでより安全・簡単にお支払い">
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="slider_content2" class="slider_content2">
+          <div class="TOP_content_toothbrush">
+            <div class="TOP_content_shadow">
+              <img class="TOP_ploduct" src="revert\アパカード①.jpg" alt="">
+              　<div class="TOP_ploduct_text">
+                <p class="TOP_ploduct_name"><span class="TOP_ploduct_subname">Oral Care 歯磨剤</span><br>アパガードリナメル</p>
+                <p class="TOP_ploduct_subtitle">歯にもトリートメントを！<br>より健康で、より綺麗な歯に</p>
+              </div>
+              <div class="TOP_ploduct_contentbutton">
+                <a href="revert_prodact_APAGARD.html">
+                  <h1 class="TOP_ploduct_detail">さらに詳しく</h1>
+                </a>
+                <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+                  <input type="hidden" name="cmd" value="_s-xclick">
+                  <input type="hidden" name="hosted_button_id" value="W9C9N2UU4298G">
+                  <input class="shop-submit" type="submit" value="購入" name="submit" alt="PayPal - オンラインでより安全・簡単にお支払い">
+                </form>
+              </div>
+            </div>
+          </div>
+
+          <div class="TOP_content_toothbrush">
+            <div class="TOP_content_shadow">
+              <img class="TOP_ploduct" src="revert\ルシェロ②.jpg" alt="">
+              　<div class="TOP_ploduct_text">
+                <p class="TOP_ploduct_name"><span class="TOP_ploduct_subname">GC 歯磨きペースト</span><br>ルシェロ ホワイト</p>
+                <p class="TOP_ploduct_subtitle">笑顔に自信を！<br>
+                  歯の黄ばみや黒ずみを落とし、光り輝け</p>
+              </div>
+              <div class="TOP_ploduct_contentbutton">
+                <a href="revert_prodact_ruscellowhite.html">
+                  <h1 class="TOP_ploduct_detail">さらに詳しく</h1>
+                </a>
+                <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+                  <input type="hidden" name="cmd" value="_s-xclick">
+                  <input type="hidden" name="hosted_button_id" value="SNUG3NR9SH38J">
+                  <input class="shop-submit" type="submit" value="購入" name="submit" alt="PayPal - オンラインでより安全・簡単にお支払い">
+                </form>
+              </div>
+            </div>
+          </div>
+
+          <div class="TOP_content_toothbrush">
+            <div class="TOP_content_shadow">
+              <img class="TOP_ploduct" src="revert\オーラル②.jpg" alt="">
+              　<div class="TOP_ploduct_text">
+                <p class="TOP_ploduct_name"><span class="TOP_ploduct_subname">トライフ 口腔ケア製品</span><br>ORALPEACE
+                  <br>オーラルピース クリーン＆モイスチュア</p>
+                <p class="TOP_ploduct_subtitle">オーラルケアにこそオーガニックを！<br>
+                  化学成分フリーで100%天然成分由来で<br>飲み込んでも安心な新感覚歯磨き粉</p>
+              </div>
+              <div class="TOP_ploduct_contentbutton">
+                <a href="revert_prodact_ORALPEACE.html">
+                  <h1 class="TOP_ploduct_detail">さらに詳しく</h1>
+                </a>
+                <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+                  <input type="hidden" name="cmd" value="_s-xclick">
+                  <input type="hidden" name="hosted_button_id" value="DKWWTMRK9MRCJ">
+                  <input class="shop-submit" type="submit" value="購入" name="submit" alt="PayPal - オンラインでより安全・簡単にお支払い">
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="slider_content3" class="slider_content2">
+
+          <div class="TOP_content_toothbrush">
+            <div class="TOP_content_shadow">
+              <p class="TOP_content_type">ホワイトニングタイプ</p>
+              <img class="TOP_ploductset" src="revert\ソニッケアー×ルシェロホワイト.png" alt="">
+              　<div class="TOP_ploduct_text">
+                <p class="TOP_ploduct_name"><span class="ploduct_subname">PHILIPS 電動歯ブラシ</span><br><span
+                    class="">ソニッケアー<br>
+                    <span class="TOP_ploduct_subname2">ダイヤモンドクリーン</span><br>×<br><span class="TOP_ploduct_subname">GC
+                      歯磨きペースト</span><br>ルシェロ ホワイト</p>
+                <p class="TOP_ploduct_subtitle">手磨きと比べて<br>
+                  最大5倍の着色汚れを落とす<br>ソニッケアーと<br>歯の表面汚れを浮かせて落とす<br>ルシェロホワイトで、<br>輝く白い歯に。</p>
+              </div>
+              <div class="TOP_ploduct_contentbutton">
+                <a href="revert_prodact_Sonicare×ruscellowhite.html">
+                  <h1 class="TOP_ploduct_detail">さらに詳しく</h1>
+                </a>
+                <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                  <input type="hidden" name="cmd" value="_s-xclick">
+                  <input type="hidden" name="hosted_button_id" value="P2FFQVQLVRNFE">
+                  <input class="shop-submit" type="submit" value="購読" name="submit" alt="PayPal - オンラインでより安全・簡単にお支払い">
+                </form>
+
+
+              </div>
+            </div>
+          </div>
+
+          <div class="TOP_content_toothbrush">
+            <div class="TOP_content_shadow">
+              <p class="TOP_content_type">虫歯予防タイプ</p>
+              <img class="TOP_ploductset" src="revert\テペ×アパガード.png" alt="">
+              　<div class="TOP_ploduct_text">
+                <p class="TOP_ploduct_name"><span class="TOP_ploduct_subname">Cross Field 歯ブラシ</span><br>TePe セレクト
+                  <br>×<br><span class="TOP_ploduct_subname">Oral Care 歯磨剤</span><br>アパガードリナメル</p>
+                <p class="TOP_ploduct_subtitle">奥歯まで隅々磨けるテペと<br>
+                  傷ついた歯の表面を修復しながら<br>
+                  むし歯予防できるアパガードで、<br>
+                  健康で艶やかな歯に。</p>
+              </div>
+              <div class="TOP_ploduct_contentbutton">
+                <a href="revert_prodact_tepe×APAGARD.html">
+                  <h1 class="TOP_ploduct_detail">さらに詳しく</h1>
+                </a>
+                <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                  <input type="hidden" name="cmd" value="_s-xclick">
+                  <input type="hidden" name="hosted_button_id" value="3YCZSTN8PU67N">
+                  <input class="shop-submit" type="submit" value="購読" name="submit" alt="PayPal - オンラインでより安全・簡単にお支払い">
+                </form>
+
+              </div>
+            </div>
+          </div>
+
+          <div class="TOP_content_toothbrush">
+            <div class="TOP_content_shadow">
+              <p class="TOP_content_type">口臭・汚れ・ネバ付き予防タイプ</p>
+              <img class="TOP_ploductset" src="revert\クラプロックス×オラピ.png" alt="">
+              　<div class="TOP_ploduct_text">
+                <p class="TOP_ploduct_name"><span class="TOP_ploduct_subname">CURAPROX 歯ブラシ</span><br>クラプロックス CS5460
+                  <br>×<br><span class="TOP_ploduct_subname">トライフ 口腔ケア製品</span><br>
+                  オーラルピース クリーン＆モイスチュア</p>
+                <p class="TOP_ploduct_subtitle"> 歯と歯ぐきに優しい使い心地の<br>
+                  クラプロックスと、<br>
+                  天然由来のオーガニックジェル、<br>
+                  オーラルピースで<br>
+                  お口全体を清潔で爽やかに。</p>
+              </div>
+              <div class="TOP_ploduct_contentbutton">
+                <a href="revert_prodact_CURAPROX×ORALPEACE.html">
+                  <h1 class="TOP_ploduct_detail">さらに詳しく</h1>
+                </a>
+                <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                  <input type="hidden" name="cmd" value="_s-xclick">
+                  <input type="hidden" name="hosted_button_id" value="SP482S5D9LSDA">
+                  <input class="shop-submit" type="submit" value="購読" name="submit" alt="PayPal - オンラインでより安全・簡単にお支払い">
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
     </div>
+    <!-- フッター -->
+    <div class="TOP_under">
+      <div class="TOP_under_img">
+        <img class="TOP_under_text" src="revert\フッターロゴ.png">
+      </div>
+      <div class="undermenu">
+        <a href="BeginnersGuide.html" class="TOP_new">
+          <p>初めての方へ</p>
+        </a>
+        <a href="sindan_input.html" class="TOP_online">
+          <p>適正診断</p>
+        </a>
+      </div>
+      <div class="undermenu mgt-120">
+        <a href="#" class="TOP_service">
+          <p>利用規約</p>
+        </a>
+        <a href="http://127.0.0.1:3000/HP作成/revert/revert_html/contact.html" class="TOP_contact">
+          <p>お問い合わせ</p>
+        </a>
+      </div>
+      <p class="TOP_address mgt-120">住所 ： 東京都中央区新富1-1-7 BizSQUARE銀座　6階<br><span class="TEL">TEL ： 03-4405-5679</span>
+      <p>
+      <div class="TOP_under_icon">
+        <img class="youtube pr7" src="revert\ユーチューブ.png" alt="">
+        <img class="instagram" src="revert\インスタ.png" alt="">
+        <img class="twitter pl7" src="revert\ツイッター.png" alt="">
+      </div>
 
-      <div class="TOP_ploduct_contentbutton">
-      <a href="revert_prodact_Sonicare.html"><h1 class="TOP_ploduct_detail">さらに詳しく</h1></a>
-      <a href="revert_prodact_Sonicare_step.html"><h1 class="TOP_ploduct_buy">購入</h1></a>
     </div>
-  </div>
-</div>
-<div class="TOP_content_toothbrush">
-  <div class="TOP_content_shadow">
-  <img class="TOP_ploduct" src="revert\クラプロ.jpg" alt="">
-　<div class="TOP_ploduct_text">
-  <p class="TOP_ploduct_name"><span class="TOP_ploduct_subname">CURAPROX 歯ブラシ</span><br>クラプロックス CS5460</p>
-  <p class="TOP_ploduct_subtitle">ブラシの植毛数が世界最多！<br>むし歯も歯周病も<br>同時に予防できる唯一の歯ブラシ</p>
-</div>
-<div class="TOP_ploduct_contentbutton">
-  <a href="revert_prodact_CURAPROX.html"><h1 class="TOP_ploduct_detail">さらに詳しく</h1></a>
-  <a href="revert_prodact_CURAPROX_step.html"><h1 class="TOP_ploduct_buy">購入</h1></a>
-</div>
-</div>
-</div>
+    <!-- フッターここまで -->
+</body>
 
-<div class="TOP_content_toothbrush">
-   <div class="TOP_content_shadow">
-  <img class="TOP_ploduct" src="revert\tepe①.jpg" alt="">
-　<div class="TOP_ploduct_text">
-  <p class="TOP_ploduct_name"><span class="TOP_ploduct_subname">Cross Field 歯ブラシ</span><br>TePe セレクト</p>
-  <p class="TOP_ploduct_subtitle">予防先進国スウェーデンで使用率が<br>約８割の圧倒的シェア！<br>
-    台形型のブラシヘッドで奥歯まで<br>隅々キレイに。</p>
-</div>
-<div class="TOP_ploduct_contentbutton">
-  <a href="revert_prodact_tepe.html"><h1 class="TOP_ploduct_detail">さらに詳しく</h1></a>
-  <a href="revert_prodact_tepe_step.html"><h1 class="TOP_ploduct_buy">購入</h1></a>
-</div>
-</div>
-</div>
-</div>
-
-<div id="slider_content2" class="slider_content2">
-  <div class="TOP_content_toothbrush">
-  <div class="TOP_content_shadow">
-    <img class="TOP_ploduct" src="revert\アパカード①.jpg" alt="">
-  　<div class="TOP_ploduct_text">
-    <p class="TOP_ploduct_name"><span class="TOP_ploduct_subname">Oral Care 歯磨剤</span><br>アパガードリナメル</p>
-    <p class="TOP_ploduct_subtitle">歯にもトリートメントを！<br>より健康で、より綺麗な歯に</p>
-  </div>
-  <div class="TOP_ploduct_contentbutton">
-    <a href="revert_prodact_APAGARD.html"><h1 class="TOP_ploduct_detail">さらに詳しく</h1></a>
-    <a href="revert_prodact_APAGARD_step.html"><h1 class="TOP_ploduct_buy">購入</h1></a>
-  </div>
-  </div>
-</div>
-
-  <div class="TOP_content_toothbrush">
-  <div class="TOP_content_shadow">
-    <img class="TOP_ploduct" src="revert\ルシェロ②.jpg" alt="">
-  　<div class="TOP_ploduct_text">
-    <p class="TOP_ploduct_name"><span class="TOP_ploduct_subname">GC 歯磨きペースト</span><br>ルシェロ ホワイト</p>
-    <p class="TOP_ploduct_subtitle">笑顔に自信を！<br>
-      歯の黄ばみや黒ずみを落とし、光り輝け</p>
-  </div>
-  <div class="TOP_ploduct_contentbutton">
-    <a href="revert_prodact_ruscellowhite.html"><h1 class="TOP_ploduct_detail">さらに詳しく</h1></a>
-    <a href="revert_prodact_ruscellowhite_step.html"><h1 class="TOP_ploduct_buy">購入</h1></a>
-  </div>
-  </div>
-</div>
-
-  <div class="TOP_content_toothbrush">
-  <div class="TOP_content_shadow">
-    <img class="TOP_ploduct" src="revert\オーラル②.jpg" alt="">
-  　<div class="TOP_ploduct_text">
-    <p class="TOP_ploduct_name"><span class="TOP_ploduct_subname">トライフ 口腔ケア製品</span><br>ORALPEACE
-      <br>オーラルピース クリーン＆モイスチュア</p>
-    <p class="TOP_ploduct_subtitle">オーラルケアにこそオーガニックを！<br>
-      化学成分フリーで100%天然成分由来で<br>飲み込んでも安心な新感覚歯磨き粉</p>
-  </div>
-  <div class="TOP_ploduct_contentbutton">
-    <a href="revert_prodact_ORALPEACE.html"><h1 class="TOP_ploduct_detail">さらに詳しく</h1></a>
-    <a href="revert_prodact_ORALPEACE_step.html"><h1 class="TOP_ploduct_buy">購入</h1></a>
-  </div>
-  </div>
-</div>
-</div>
-
-<div id="slider_content3" class="slider_content2">
-  <div class="TOP_content_toothbrush">
-  <div class="TOP_content_shadow">
-      <p class="TOP_content_type">ホワイトニングタイプ</p>
-    <img class="TOP_ploductset" src="revert\ソニッケアー×ルシェロホワイト.png" alt="">
-  　<div class="TOP_ploduct_text">
-    <p class="TOP_ploduct_name"><span class="ploduct_subname">PHILIPS 電動歯ブラシ</span><br><span class="">ソニッケアー<br>
-      <span class="TOP_ploduct_subname2">ダイヤモンドクリーン</span><br>×<br><span class="TOP_ploduct_subname">GC 歯磨きペースト</span><br>ルシェロ ホワイト</p>
-    <p class="TOP_ploduct_subtitle">手磨きと比べて<br>
-      最大5倍の着色汚れを落とす<br>ソニッケアーと<br>歯の表面汚れを浮かせて落とす<br>ルシェロホワイトで、<br>輝く白い歯に。</p>
-  </div>
-  <div class="TOP_ploduct_contentbutton">
-    <a href="revert_prodact_Sonicare×ruscellowhite.html"><h1 class="TOP_ploduct_detail">さらに詳しく</h1></a>
-    <a href="revert_prodact_Sonicare×ruscellowhite_step.html"><h1 class="TOP_ploduct_buy">購入</h1></a>
-  </div>
-  </div>
-</div>
-
-  <div class="TOP_content_toothbrush">
-  <div class="TOP_content_shadow">
-      <p class="TOP_content_type">虫歯予防タイプ</p>
-    <img class="TOP_ploductset" src="revert\テペ×アパガード.png" alt="">
-  　<div class="TOP_ploduct_text">
-    <p class="TOP_ploduct_name"><span class="TOP_ploduct_subname">Cross Field 歯ブラシ</span><br>TePe セレクト
-    <br>×<br><span class="TOP_ploduct_subname">Oral Care 歯磨剤</span><br>アパガードリナメル</p>
-    <p class="TOP_ploduct_subtitle">奥歯まで隅々磨けるテペと<br>
-      傷ついた歯の表面を修復しながら<br>
-      むし歯予防できるアパガードで、<br>
-      健康で艶やかな歯に。</p>
-  </div>
-  <div class="TOP_ploduct_contentbutton">
-    <a href="revert_prodact_tepe×APAGARD.html"><h1 class="TOP_ploduct_detail">さらに詳しく</h1></a>
-    <a href="revert_prodact_tepe×APAGARD_step.html"><h1 class="TOP_ploduct_buy">購入</h1></a>
-  </div>
-  </div>
-</div>
-
-  <div class="TOP_content_toothbrush">
-  <div class="TOP_content_shadow">
-      <p class="TOP_content_type">口臭・汚れ・ネバ付き予防タイプ</p>
-    <img class="TOP_ploductset" src="revert\クラプロックス×オラピ.png" alt="">
-  　<div class="TOP_ploduct_text">
-    <p class="TOP_ploduct_name"><span class="TOP_ploduct_subname">CURAPROX 歯ブラシ</span><br>クラプロックス CS5460
-      <br>×<br><span class="TOP_ploduct_subname">トライフ 口腔ケア製品</span><br>
-        オーラルピース クリーン＆モイスチュア</p>
-    <p class="TOP_ploduct_subtitle">  歯と歯ぐきに優しい使い心地の<br>
-      クラプロックスと、<br>
-      天然由来のオーガニックジェル、<br>
-      オーラルピースで<br>
-      お口全体を清潔で爽やかに。</p>
-  </div>
-  <div class="TOP_ploduct_contentbutton">
-    <a href="revert_prodact_CURAPROX×ORALPEACE.html"><h1 class="TOP_ploduct_detail">さらに詳しく</h1></a>
-    <a href="revert_prodact_CURAPROX×ORALPEACE_step.html"><h1 class="TOP_ploduct_buy">購入</h1></a>
-  </div>
-  </div>
-</div>
-</div>
-
-</div>
-</div>
-<!-- フッター -->
-<div class="TOP_under">
-  <div class="TOP_under_img">
-<img class="TOP_under_text" src="revert\フッターロゴ.png">
-</div>
-<div class="undermenu">
-<a href="BeginnersGuide.html" class="TOP_new"><p>初めての方へ</p></a>
-<a href="sindan_input.html" class="TOP_online"><p>適正診断</p></a>
-</div>
-<div class="undermenu mgt-120">
-<a href="#" class="TOP_service"><p>利用規約</p></a>
-<a href="http://127.0.0.1:3000/HP作成/revert/revert_html/contact.html" class="TOP_contact"><p>お問い合わせ</p></a>
-</div>
-<p class="TOP_address mgt-120">住所 ： 東京都中央区新富1-1-7 BizSQUARE銀座　6階<br><span class="TEL">TEL ： 03-4405-5679</span><p>
-  <div class="TOP_under_icon">
-  <img class="youtube pr7" src="revert\ユーチューブ.png" alt="">
-  <img class="instagram" src="revert\インスタ.png" alt="">
-  <img class="twitter pl7" src="revert\ツイッター.png" alt="">
-  </div>
-
-</div>
-<!-- フッターここまで -->
-  </body>
 </html>

@@ -1,698 +1,336 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html>
+
 <head>
-<link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
-<meta http-equiv="content-Type" content="text/html; charset=UTF-8" />
-<meta http-equiv="Content-Script-Type" content="text/javascript" />
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="revert.css">
-<link rel="stylesheet" href="https://use.typekit.net/ngv6mfs.css">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-<script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
-<title></title>
+  <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+  <meta http-equiv="content-Type" content="text/html; charset=UTF-8" />
+  <meta http-equiv="Content-Script-Type" content="text/javascript" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="revert.css">
+  <link rel="stylesheet" href="https://use.typekit.net/ngv6mfs.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+  <title></title>
 
 </head>
-<script type="text/javascript">
-
-  // 質問取得
-   for(var i =2; i<=12; i++){
-   var box =document.getElementById("box"+i);
-console.log(box);
- }
- document.getElementById(back);
-  // 結果取得
-   document.getElementById("kekka1");
-   document.getElementById("kekka2");
-   document.getElementById("kekka3");
-   document.getElementById('clickTest')
-
-// 点数を追加していく
-var one = 0;
-var two = 0;
-var three = 0;
-const array1 = [];
-const array2 = [];
-array1.push(one);
-array1.push(two);
-array1.push(three);
-function clickTest0(evt){
- t=evt.target || evt.srcElement;
- if(t.className == "one") {
-  array1[0] +=1;
- }
- else if(t.className == "two") {
-  array1[1] +=1;
- }
- else if(t.className == "three") {
-  array1[2]+=1;
- }
-console.log(array1);
- }
- console.log(array1);
-// 問題を表示するJS
-function clickTest1(evt){
- t=evt.target || evt.srcElement;
- document.getElementById("box1").style.display="none";
- var diagnosis_count = document.getElementById('diagnosis_count');
- diagnosis_count.innerHTML='02/12';
- document.getElementById("box2").style.display="block";
- var q1 = []
-question1 = q1.concat(array1);
-}
-function clickTest2(evt){
- t=evt.target || evt.srcElement;
- document.getElementById("box2").style.display="none";
- var diagnosis_count = document.getElementById('diagnosis_count');
- diagnosis_count.innerHTML='03/12';
- document.getElementById("box3").style.display="block";
- var q2 = []
-question2 = q2.concat(array1);
- }
-function clickTest3(evt){
- t=evt.target || evt.srcElement;
- document.getElementById("box3").style.display="none";
- var diagnosis_count = document.getElementById('diagnosis_count');
- diagnosis_count.innerHTML='04/12';
- document.getElementById("box4").style.display="block";
- var q3 = []
-question3 = q3.concat(array1);
-}
-function clickTest4(evt){
- t=evt.target || evt.srcElement;
- document.getElementById("box4").style.display="none";
- var diagnosis_count = document.getElementById('diagnosis_count');
- diagnosis_count.innerHTML='05/12';
- document.getElementById("box5").style.display="block";
- var q4 = []
-question4 = q4.concat(array1);
-}
-function clickTest5(evt){
- t=evt.target || evt.srcElement;
- document.getElementById("box5").style.display="none";
- var diagnosis_count = document.getElementById('diagnosis_count');
- diagnosis_count.innerHTML='06/12';
- document.getElementById("box6").style.display="block";
- var q5 = []
-question5 = q5.concat(array1);
-}
-function clickTest6(evt){
- t=evt.target || evt.srcElement;
- document.getElementById("box6").style.display="none";
- var diagnosis_count = document.getElementById('diagnosis_count');
- diagnosis_count.innerHTML='07/12';
- document.getElementById("box7").style.display="block";
- var q6 = []
-question6 = q6.concat(array1);
-}
-function clickTest7(evt){
- t=evt.target || evt.srcElement;
- document.getElementById("box7").style.display="none";
- var diagnosis_count = document.getElementById('diagnosis_count');
- diagnosis_count.innerHTML='08/12';
- document.getElementById("box8").style.display="block";
- var q7 = []
-question7 = q7.concat(array1);
-}
-function clickTest8(evt){
- t=evt.target || evt.srcElement;
- document.getElementById("box8").style.display="none";
- var diagnosis_count = document.getElementById('diagnosis_count');
- diagnosis_count.innerHTML='09/12';
- document.getElementById("box9").style.display="block";
- var q8 = []
-question8 = q8.concat(array1);
-}
-function clickTest9(evt){
- t=evt.target || evt.srcElement;
- document.getElementById("box9").style.display="none";
- var diagnosis_count = document.getElementById('diagnosis_count');
- diagnosis_count.innerHTML='10/12';
- document.getElementById("box10").style.display="block";
- var q9 = []
-question9 = q9.concat(array1);
-}
-function clickTest10(evt){
- t=evt.target || evt.srcElement;
- document.getElementById("box10").style.display="none";
- var diagnosis_count = document.getElementById('diagnosis_count');
- diagnosis_count.innerHTML='11/12';
- document.getElementById("box11").style.display="block";
- var q10 = []
-question10 = q10.concat(array1);
-}
-function clickTest11(evt){
- t=evt.target || evt.srcElement;
- document.getElementById("box11").style.display="none";
- var diagnosis_count = document.getElementById('diagnosis_count');
- diagnosis_count.innerHTML='12/12';
- document.getElementById("box12").style.display="block";
- var q11 = []
-question11 = q11.concat(array1);
-}
-// 戻るボタンをおして１問戻る処理
-var back =document.getElementById('back');
-function backclick(){
-// // 点数
-
-// console.log(array1);
-// console.log(array1[1]);
-// console.log(array1[2]);
-// 画面
-if(document.getElementById("box2").style.display== "block"){
-  document.getElementById("box2").style.display="none";
-  var diagnosis_count = document.getElementById('diagnosis_count');
-  diagnosis_count.innerHTML='01/12';
-  document.getElementById("box1").style.display="block";  // １問目に戻る処理ここまで
-// 点数削除
-if(array1[0] != question1[0]){
-  array1[0] = question1[0];
-}else if(array1[1] != question1[1]){
-  array1[1] = question1[1];
-}else if (array1[2] != question1[2]) {
-  array1[2] = question1[2];
-}
-}else if(document.getElementById("box3").style.display== "block"){
-    document.getElementById("box3").style.display="none";
-    var diagnosis_count = document.getElementById('diagnosis_count');
-    diagnosis_count.innerHTML='02/12';
-    document.getElementById("box2").style.display="block";// ２問目に戻る処理ここまで
-// 点数削除
-    if(array1[0] != question2[0]){
-      array1[0] = question2[0];
-    }else if(array1[1] != question2[1]){
-      array1[1] = question2[1];
-    }else if (array1[2] != question2[2]) {
-      array1[2] = question2[2];
-    }
-  }else if(document.getElementById("box4").style.display== "block"){
-      document.getElementById("box4").style.display="none";
-      var diagnosis_count = document.getElementById('diagnosis_count');
-      diagnosis_count.innerHTML='03/12';
-      document.getElementById("box3").style.display="block";// ３問目に戻る処理ここまで
-// 点数削除
-      if(array1[0] != question3[0]){
-        array1[0] = question3[0];
-      }else if(array1[1] != question3[1]){
-        array1[1] = question3[1];
-      }else if (array1[2] != question3[2]) {
-        array1[2] = question3[2];
-      }
-    }else if(document.getElementById("box5").style.display== "block"){
-        document.getElementById("box5").style.display="none";
-        var diagnosis_count = document.getElementById('diagnosis_count');
-        diagnosis_count.innerHTML='04/12';
-        document.getElementById("box4").style.display="block";// ４問目に戻る処理ここまで
-// 点数削除
-        if(array1[0] != question4[0]){
-          array1[0] = question4[0];
-        }else if(array1[1] != question4[1]){
-          array1[1] = question4[1];
-        }else if (array1[2] != question4[2]) {
-          array1[2] = question4[2];
-        }
-      }else if(document.getElementById("box6").style.display== "block"){
-        document.getElementById("box6").style.display="none";
-        var diagnosis_count = document.getElementById('diagnosis_count');
-        diagnosis_count.innerHTML='05/12';
-        document.getElementById("box5").style.display="block";// ５問目に戻る処理ここまで
-// 点数削除
-        if(array1[0] != question5[0]){
-          array1[0] = question5[0];
-        }else if(array1[1] != question5[1]){
-          array1[1] = question5[1];
-        }else if (array1[2] != question5[2]) {
-          array1[2] = question5[2];
-        }
-      }else if(document.getElementById("box7").style.display== "block"){
-          document.getElementById("box7").style.display="none";
-          var diagnosis_count = document.getElementById('diagnosis_count');
-          diagnosis_count.innerHTML='06/12';
-          document.getElementById("box6").style.display="block";// ６問目に戻る処理ここまで
-// 点数削除
-          if(array1[0] != question6[0]){
-            array1[0] = question6[0];
-          }else if(array1[1] != question6[1]){
-            array1[1] = question6[1];
-          }else if (array1[2] != question6[2]) {
-            array1[2] = question6[2];
-          }
-        }else if(document.getElementById("box8").style.display== "block"){
-            document.getElementById("box8").style.display="none";
-            var diagnosis_count = document.getElementById('diagnosis_count');
-            diagnosis_count.innerHTML='07/12';
-            document.getElementById("box7").style.display="block";// ７問目に戻る処理ここまで
-// 点数削除
-            if(array1[0] != question7[0]){
-              array1[0] = question7[0];
-            }else if(array1[1] != question7[1]){
-              array1[1] = question7[1];
-            }else if (array1[2] != question7[2]) {
-              array1[2] = question7[2];
-            }
-          }else if(document.getElementById("box9").style.display== "block"){
-              document.getElementById("box9").style.display="none";
-              var diagnosis_count = document.getElementById('diagnosis_count');
-              diagnosis_count.innerHTML='08/12';
-              document.getElementById("box8").style.display="block";// ８問目に戻る処理ここまで
-// 点数削除
-              if(array1[0] != question8[0]){
-                array1[0] = question8[0];
-              }else if(array1[1] != question8[1]){
-                array1[1] = question8[1];
-              }else if (array1[2] != question8[2]) {
-                array1[2] = question8[2];
-              }
-            }else if(document.getElementById("box10").style.display== "block"){
-                document.getElementById("box10").style.display="none";
-                var diagnosis_count = document.getElementById('diagnosis_count');
-                diagnosis_count.innerHTML='09/12';
-                document.getElementById("box9").style.display="block";// ９問目に戻る処理ここまで
-// 点数削除
-                if(array1[0] != question9[0]){
-                  array1[0] = question9[0];
-                }else if(array1[1] != question9[1]){
-                  array1[1] = question9[1];
-                }else if (array1[2] != question9[2]) {
-                  array1[2] = question9[2];
-                }
-              }else if(document.getElementById("box11").style.display== "block"){
-                  document.getElementById("box11").style.display="none";
-                  var diagnosis_count = document.getElementById('diagnosis_count');
-                  diagnosis_count.innerHTML='10/12';
-                  document.getElementById("box10").style.display="block";// １０問目に戻る処理ここまで
-// 点数削除
-                  if(array1[0] != question10[0]){
-                    array1[0] = question10[0];
-                  }else if(array1[1] != question10[1]){
-                    array1[1] = question10[1];
-                  }else if (array1[2] != question10[2]) {
-                    array1[2] = question10[2];
-                  }
-                }else if(document.getElementById("box12").style.display== "block"){
-                    document.getElementById("box12").style.display="none";
-                    var diagnosis_count = document.getElementById('diagnosis_count');
-                    diagnosis_count.innerHTML='11/12';
-                    document.getElementById("box11").style.display="block";// １１問目に戻る処理ここまで
-// 点数削除
-                    if(array1[0] != question11[0]){
-                      array1[0] = question11[0];
-                    }else if(array1[1] != question11[1]){
-                      array1[1] = question11[1];
-                    }else if (array1[2] != question11[2]) {
-                      array1[2] = question11[2];
-                    }
-}
-console.log(array1);
-}
-
-// 結果反映
-function clickTest12(evt){
- t=evt.target || evt.srcElement;
- document.getElementById("box12").style.display="none";
- document.getElementById("answer_none").style.display="none";
-  if( array1[1] < array1[0] && array1[2] < array1[0]){
-   document.getElementById("kekka1").style.display="block";
- } else if (array1[0] < array1[1] && array1[2] < array1[1]) {
-   document.getElementById("kekka2").style.display="block";
- }  else if (array1[0] < array1[2] && array1[1] < array1[2]){
-   document.getElementById("kekka3").style.display="block";
- }else{
-      document.getElementById("kekka1").style.display="block";
- }
-}
-console.log(array1);
-</script>
 
 <body>
   <!-- ヘッター -->
-    <header>
-  <div id="nav-drawer">
+  <header>
+    <div id="nav-drawer">
       <input id="nav-input" type="checkbox" class="nav-unshown">
       <label id="nav-open" for="nav-input"><span></span></label>
-      <label class="nav-unshown" id="nav-close" for="nav-input"><h1>marubatu</h1></label>
-  <div id="nav-content">
-    <div class="nav-content-img">
-    <img src="revert\ヘッターロゴ.png" alt="">
-  </div>
-  <div class="nav-border"></div>
-  <h1 id="nav-close">marubatu</h1>
-    <ul>
-      <li><a href="BeginnersGuide.html">Corporate philosophy</a>
-        <a href="BeginnersGuide.html"><span class="fs19">初めての方へ</span></a></li>
-      <li><a href="index.html?1#slider_content1" id="nav_slider_content1" onclick="nav_slider_content1click()">Toothbrush</a>
-      <a href="index.html?1#slider_content1" id="nav_slider_content1" onclick="nav_slider_content1click()"><span class="fs19">歯ブラシ</span></a></li>
-      <li><a id="nav_slider_content2"  href="index.html?2#slider_content2">Tooth paste</a>
-      <a href="index.html?2#slider_content2" id="nav_slider_content2"><span class="fs19">歯磨き粉</span></a></li>
-      <li><a href="index.html?3#slider_content3" id="nav_slider_content3" onclick="nav_slider_content3click()">Set item</a>
-      <a href="index.html?3#slider_content3" id="nav_slider_content3" onclick="nav_slider_content3click()"><span class="fs19">セットアイテム</span></a></li>
-      <li><a href="sindan_input.html">Diagnosis</a>
-      <a href="sindan_input.html"><span class="fs19">適正診断</span></a></li>
-      <li><a href="contact.html">Contact</a>
-        <a href="contact.html"><span class="fs19">お問い合わせ</span></a></li>
+      <label class="nav-unshown" id="nav-close" for="nav-input">
+        <h1>marubatu</h1>
+      </label>
+      <div id="nav-content">
+        <div class="nav-content-img">
+          <img src="revert\ヘッターロゴ.png" alt="">
+        </div>
+        <div class="nav-border"></div>
+        <h1 id="nav-close">marubatu</h1>
+        <ul>
+          <li><a href="BeginnersGuide.html">Corporate philosophy</a>
+            <a href="BeginnersGuide.html"><span class="fs19">初めての方へ</span></a></li>
+          <li><a href="index.html?1#slider_content1" id="nav_slider_content1"
+              onclick="nav_slider_content1click()">Toothbrush</a>
+            <a href="index.html?1#slider_content1" id="nav_slider_content1" onclick="nav_slider_content1click()"><span
+                class="fs19">歯ブラシ</span></a></li>
+          <li><a id="nav_slider_content2" href="index.html?2#slider_content2">Tooth paste</a>
+            <a href="index.html?2#slider_content2" id="nav_slider_content2"><span class="fs19">歯磨き粉</span></a></li>
+          <li><a href="index.html?3#slider_content3" id="nav_slider_content3" onclick="nav_slider_content3click()">Set
+              item</a>
+            <a href="index.html?3#slider_content3" id="nav_slider_content3" onclick="nav_slider_content3click()"><span
+                class="fs19">セットアイテム</span></a></li>
+          <li><a href="sindan_input.html">Diagnosis</a>
+            <a href="sindan_input.html"><span class="fs19">適正診断</span></a></li>
+          <li><a href="contact.html">Contact</a>
+            <a href="contact.html"><span class="fs19">お問い合わせ</span></a></li>
 
 
-    </ul>
-  </div>
-  </div>
-  <img class="header_rogo"src="revert\ヘッターロゴ.png" alt="">
-</header>
-<!-- ヘッターここまで -->
+        </ul>
+      </div>
+    </div>
+    <img class="header_rogo" src="revert\ヘッターロゴ.png" alt="">
+  </header>
+  <!-- ヘッターここまで -->
 
-<div class="diagnosis">
-  <div id="answer_none">
-<div class="diagnosis_title">
-  <p class="diagnosis_title_toptext"><span class="diagnosis_title_top">12問で分かる</span></p>
-  <p class="diagnosis_title_bottom">適正診断</p>
-  </div>
-  <p id="diagnosis_count">01/12</p>
+  <div class="diagnosis">
+    <div id="answer_none">
+      <div class="diagnosis_title">
+        <p class="diagnosis_title_toptext"><span class="diagnosis_title_top">12問で分かる</span></p>
+        <p class="diagnosis_title_bottom">適正診断</p>
+      </div>
+      <p id="diagnosis_count">01/12</p>
 
-</div>
-<div class="diagnosis_cheak">
-<div id="box1">
-  <div class="diagnosis_img">
-    <img src="revert\12659258319120.jpg">
-  </div>
-<p class="box_title"><span class="box_title_border">Q.歯磨きは何回？<span></p>
-<!-- <p class="box_border">‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾</p> -->
-<ul>
- <li  id="clickTest" onClick='clickTest1(event),clickTest0(event);' ><p>■しない</p></li>
- <li  id="clickTest" onClick='clickTest1(event),clickTest0(event);' ><p>■1回〜2回</p></li>
- <li  id="clickTest" onClick='clickTest1(event),clickTest0(event);' ><p>■3回以上</p></li>
-</ul>
-</div>
+    </div>
+    <div class="diagnosis_cheak">
+      <div id="box1">
+        <div class="diagnosis_img">
+          <img src="revert\12659258319120.jpg">
+        </div>
+        <p id="box_title" class="box_title"><span class="box_title_border">Q.歯磨きは何回？<span></p>
+        <!-- <p class="box_border">‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾</p> -->
+        <ul>
+          <li class="clickTest" onclick="clickevent(2);">
+            <p id="ans-1">■しない</p>
+          </li>
+          <li class="clickTest" onclick='clickevent(4);'>
+            <p id="ans-2">■1回〜2回</p>
+          </li>
+          <li class="clickTest" onclick='clickevent(6);'>
+            <p id="ans-3">■3回以上</p>
+          </li>
+        </ul><button id="back" onclick='clickevent(0)'><i class="fas fa-arrow-alt-circle-left"></i></buttan>
+      </div>
 
-<div id="box2">
-  <div class="diagnosis_img">
-    <img src="revert\12659258329007.jpg">
-  </div>
-<p class="box_title"><span class="box_title_border">Q.歯磨き後にフロスは使用している？</span></p>
-<!-- <p class="box_border">‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾</p> -->
-<ul>
- <li  id="clickTest" onClick='clickTest2(event),clickTest0(event);'><p>■してる</p></li>
-<li class="two" id="clickTest" onClick='clickTest2(event),clickTest0(event);' ><p class="two">■たまに</p></li>
- <li class="three" id="clickTest" onClick='clickTest2(event),clickTest0(event);' ><p class="three">■してない</p></li>
-</ul>
-<button id="back" onclick="backclick()"><i class="fas fa-arrow-alt-circle-left"></i></buttan>
-</div>
 
-<div id="box3">
-  <div class="diagnosis_img">
-    <img src="revert\12659258323088.jpg">
-  </div>
-<p class="box_title"><span class="box_title_border">Q.虫歯経験</span></p>
-<!-- <p class="box_border">‾‾‾‾‾‾‾‾‾</p> -->
-<ul>
- <li class="one" id="clickTest" onClick='clickTest3(event),clickTest0(event);'>
-   <p class="one">■なったことがない</p>
- </li>
- <li class="two" id="clickTest" onClick='clickTest3(event),clickTest0(event);'>
-   <p class="two">■1〜3本</p>
- </li>
- <li class="three" id="clickTest" onClick='clickTest3(event),clickTest0(event);'>
-   <p class="three">■4本以上</p>
- </li>
-</ul>
-<button id="back" onclick="backclick()"><i class="fas fa-arrow-alt-circle-left"></i></buttan>
-</div>
-
-<div id="box4">
-  <div class="diagnosis_img">
-    <img src="revert\12659258352823.jpg">
-  </div>
-<p class="box_title"><span class="box_title_border">Q.お菓子や甘いものをよく食べる？</span></p>
-<!-- <p class="box_border">‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾</p> -->
-<ul>
- <li class="three" id="clickTest" onClick='clickTest4(event),clickTest0(event);'>
-   <p class="three">■よく食べる</p>
- </li>
- <li class="two" id="clickTest" onClick='clickTest4(event),clickTest0(event);'>
-   <p class="two">■たまに</p></li>
- <li class="one" id="clickTest" onClick='clickTest4(event),clickTest0(event);'>
-   <p class="one">■食べない</p></li>
-</ul>
-<button id="back" onclick="backclick()"><i class="fas fa-arrow-alt-circle-left"></i></buttan>
-</div>
-
-<div id="box5">
-  <div class="diagnosis_img">
-    <img src="revert\12659258363497.jpg">
-  </div>
-<p class="box_title"><span class="box_title_border">Q.冷たいものや熱いものがしみる</span></p>
-<!-- <p class="box_border">‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾</p> -->
-<ul>
- <li class="one" id="clickTest" onClick='clickTest5(event),clickTest0(event);'>
-   <p class="one">■しみる</p></li>
- <li class="two" id="clickTest" onClick='clickTest5(event),clickTest0(event);'>
-   <p class="two">■たまにしみる</p></li>
- <li class="three" id="clickTest" onClick='clickTest5(event),clickTest0(event);'>
-   <p class="three">■しみない</p></li>
-</ul>
-<button id="back" onclick="backclick()"><i class="fas fa-arrow-alt-circle-left"></i></buttan>
-</div>
-
-<div id="box6">
-  <div class="diagnosis_img">
-    <img src="revert\12659258352827.jpg">
-  </div>
-<p class="box_title"><span class="box_title_border">Q.1日辺りタバコを吸う本数は</span></p>
-<!-- <p class="box_border">‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾</p> -->
-<ul>
- <li class="one" id="clickTest" onClick='clickTest6(event),clickTest0(event);'>
-   <p class="one">■吸わない</p></li>
- <li class="two" id="clickTest" onClick='clickTest6(event),clickTest0(event);' >
-   <p class="two">■5本未満</p></li>
- <li class="three" id="clickTest" onClick='clickTest6(event),clickTest0(event);' >
-   <p class="three">■5本以上</p></li>
-</ul>
-<button id="back" onclick="backclick()"><i class="fas fa-arrow-alt-circle-left"></i></buttan>
-</div>
-
-<div id="box7">
-  <div class="horizontal">
-    <img id="horizontal_bigimg" src="revert\12659258348337.jpg">
-  </div>
-<p class="box_title"><span class="box_title_border">Q.歯の黄ばみが気になる</span></p>
-<!-- <p class="box_border">‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾</p> -->
-<ul>
- <li class="two"  id="clickTest" onClick='clickTest7(event),clickTest0(event);'>
-   <p class="two">■わからない</p>
- </li>
- <li  id="clickTest" onClick='clickTest7(event),clickTest0(event);' >
-   <p>■気にならない</p>
- </li>
- <li class="three" id="clickTest" onClick='clickTest7(event),clickTest0(event);'>
-   <p class="three">■気になる</p>
- </li>
-</ul>
-<button id="back" onclick="backclick()"><i class="fas fa-arrow-alt-circle-left"></i></buttan>
-</div>
-
-<div id="box8">
-  <div class="diagnosis_img">
-    <img src="revert\12659258337686.jpg">
-  </div>
-<p class="box_title"><span class="box_title_border">Q.自身の口臭が気になる</span></p>
-<!-- <p class="box_border">‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾</p> -->
-<ul>
- <li class="two" id="clickTest" onClick='clickTest8(event),clickTest0(event);' >
-   <p class="two">■わからない</p>
- </li>
- <li id="clickTest" onClick='clickTest8(event),clickTest0(event);' >
-   <p>■気にならない</p>
- </li>
- <li class="three" id="clickTest" onClick='clickTest8(event),clickTest0(event);' >
-   <p class="three">■気になる</p>
- </li>
-</ul>
-<button id="back" onclick="backclick()"><i class="fas fa-arrow-alt-circle-left"></i></buttan>
-</div>
-
-<div id="box9">
-  <div class="diagnosis_img">
-    <img src="revert\12659258313792.jpg">
-  </div>
-<p class="box_title"><span class="box_title_border">Q.歯磨きの時の出血頻度</span></p>
-<!-- <p class="box_border">‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾</p> -->
-<ul>
- <li class="three" id="clickTest" onClick='clickTest9(event),clickTest0(event);' >
-   <p class="three">■いつも</p>
- </li>
- <li class="two" id="clickTest" onClick='clickTest9(event),clickTest0(event);' >
-   <p class="two">■たまに</p></li>
- <li class="one" id="clickTest" onClick='clickTest9(event),clickTest0(event);' >
-   <p class="one">■ない</p></li>
-</ul>
-<button id="back" onclick="backclick()"><i class="fas fa-arrow-alt-circle-left"></i></buttan>
-</div>
-
-<div id="box10">
-  <div class="horizontal">
-    <img id="horizontal_bigimg" src="revert\12659258324106.jpg">
-  </div>
-<p class="box_title"><span class="box_title_border">Q.口の中の乾燥が気になる</span></p>
-<!-- <p class="box_border">‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾</p> -->
-<ul>
-  <li class="three" id="clickTest" onClick='clickTest10(event),clickTest0(event);' >
-    <p class="three">■いつも</p></li>
-  <li class="two" id="clickTest" onClick='clickTest10(event),clickTest0(event);' >
-    <p class="two">■たまに</p></li>
-  <li class="one" id="clickTest" onClick='clickTest10(event),clickTest0(event);' >
-    <p class="one">■気にならない</p></li>
-</ul>
-<button id="back" onclick="backclick()"><i class="fas fa-arrow-alt-circle-left"></i></buttan>
-</div>
-
-<div id="box11">
-  <div class="diagnosis_img">
-    <img src="revert\12659258346727.jpg">
-  </div>
-<p class="box_title"><span class="box_title_border">Q.歯磨きにかける時間</span></p>
-<!-- <p class="box_border">‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾</p> -->
-<ul>
- <li  id="clickTest" onClick='clickTest11(event),clickTest0(event);' ><p>■1分程</p></li>
- <li  id="clickTest" onClick='clickTest11(event),clickTest0(event);' ><p>■1〜3分</p></li>
- <li  id="clickTest" onClick='clickTest11(event),clickTest0(event);' ><p>■3分以上</p></li>
-</ul>
-<button id="back" onclick="backclick()"><i class="fas fa-arrow-alt-circle-left"></i></buttan>
-</div>
-
-<div id="box12">
-  <div class="diagnosis_img">
-    <img src="revert\12659258337686.jpg">
-  </div>
-<p class="box_title"><span class="box_title_border">Q.定期的メンテナンス</span></p>
-<!-- <p class="box_border">‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾</p> -->
-<ul>
- <li  id="clickTest" onClick='clickTest12(event),clickTest0(event);' ><p>■定期的に通っている</p></li>
- <li  id="clickTest" onClick='clickTest12(event),clickTest0(event);' ><p>■1年に数回</p></li>
- <li   id="clickTest" onClick='clickTest12(event),clickTest0(event);' ><p>■行ったことがない</p></li>
-</ul>
-<button id="back" onclick="backclick()"><i class="fas fa-arrow-alt-circle-left"></i></buttan>
-
-</div>
-
-<div id="kekka1">
-  <div class="product_revert_icon">
-  <img class="product_revert"src="revert\フッターロゴ.png" alt="">
-  </div>
-<div class="diagnosis_result">
-  <div class="diagnosis_result_content">
-    <p class="diagnosis_result_content_text1">診断お疲れ様です。</p>
-    <p class="diagnosis_result_content_text2">あなたにあった<br>歯磨きセット</p>
-    <p class="diagnosis_result_content_type_white">ホワイトニングタイプ</p>
-    <img src="revert\ソニッケアー×ルシェロホワイト.png" alt="">
-      <p class="diagnosis_result_content_name"><span class="ploduct_subname">PHILIPS 電動歯ブラシ</span><br><span class="">ソニッケアー<br>
-        <span class="TOP_ploduct_subname2">ダイヤモンドクリーン</span><br>×<br><span class="TOP_ploduct_subname">GC 歯磨きペースト</span><br>ルシェロ ホワイト</p>
-      <p class="diagnosis_result_content_praice">￥34,950</p>
-    <div class="set_explanationtext">
-      <p><span class="set_explanationtext_title">・説明</span><br>
-手磨きと比べて<br>
-最大5倍の着色汚れを落とす<br>
-ソニッケアーと<br>
-歯の表面汚れを浮かせて落とす<br>
-ルシェロホワイトで、<br>
-輝く白い歯に。</p>
-      <div class="diagnosis_step_">
-      <a href="revert_prodact_Sonicare×ruscellowhite_step.html">
-        <h1 class="diagnosis_step_button">ご購入</h1>
-      </a>
-      <a href="sindan_input.html"><h1 id="TOP_genre_setbutton" class="diagnosis_step_button2">もう一度診断する</h1></a>
+      <div id="kekka1">
+        <div class="product_revert_icon">
+          <img class="product_revert" src="revert\フッターロゴ.png" alt="">
+        </div>
+        <div class="diagnosis_result">
+          <div class="diagnosis_result_content">
+            <p class="diagnosis_result_content_text1">診断お疲れ様です。</p>
+            <p class="diagnosis_result_content_text2">あなたにあった<br>歯磨きセット</p>
+            <p class="diagnosis_result_content_type_white">ホワイトニングタイプ</p>
+            <img src="revert\ソニッケアー×ルシェロホワイト.png" alt="">
+            <p class="diagnosis_result_content_name"><span class="ploduct_subname">PHILIPS 電動歯ブラシ</span><br><span
+                class="">ソニッケアー<br>
+                <span class="TOP_ploduct_subname2">ダイヤモンドクリーン</span><br>×<br><span class="TOP_ploduct_subname">GC
+                  歯磨きペースト</span><br>ルシェロ ホワイト</p>
+            <p class="diagnosis_result_content_praice">￥34,950</p>
+            <div class="set_explanationtext">
+              <p><span class="set_explanationtext_title">・説明</span><br>
+                手磨きと比べて<br>
+                最大5倍の着色汚れを落とす<br>
+                ソニッケアーと<br>
+                歯の表面汚れを浮かせて落とす<br>
+                ルシェロホワイトで、<br>
+                輝く白い歯に。</p>
+              <div class="diagnosis_step_">
+                <a href="revert_prodact_Sonicare×ruscellowhite_step.html">
+                  <h1 class="diagnosis_step_button">ご購入</h1>
+                </a>
+                <a href="sindan_input.html">
+                  <h1 id="TOP_genre_setbutton" class="diagnosis_step_button2">もう一度診断する</h1>
+                </a>
 
               </div>
-  </div>
-</div>
-</div>
-  </div>
-
-<div id="kekka2">
-  <div class="product_revert_icon">
-  <img class="product_revert"src="revert\フッターロゴ.png" alt="">
-  </div>
-  <div class="diagnosis_result">
-    <div class="diagnosis_result_content">
-      <p class="diagnosis_result_content_text1">診断お疲れ様です。</p>
-      <p class="diagnosis_result_content_text2">あなたにあった<br>歯磨きセット</p>
-      <p class="diagnosis_result_content_type">虫歯予防タイプ</p>
-      <img src="revert\テペ×アパガード.png" alt="">
-        <p class="diagnosis_result_content_name"><span class="TOP_ploduct_subname">Cross Field 歯ブラシ</span><br>TePe セレクト
-        <br>×<br><span class="TOP_ploduct_subname">Oral Care 歯磨剤</span><br>アパガードリナメル</p>
-        <p class="diagnosis_result_content_praice">￥2,240</p>
-        <div class="set_explanationtext">
-          <p><span class="set_explanationtext_title">・説明</span><br>
-    奥歯まで隅々磨けるテペと<br>
-    傷ついた歯の表面を修復しながら<br>
-    むし歯予防できるアパガードで、<br>
-    健康で艶やかな歯に。</p>
-
-        <div class="diagnosis_step_">
-        <a href="revert_prodact_tepe×APAGARD_step.html">
-          <h1 class="diagnosis_step_button">ご購入</h1>
-        </a>
-        <a href="sindan_input.html"><h1 id="TOP_genre_setbutton" class="diagnosis_step_button2">もう一度診断する</h1></a>
+            </div>
+          </div>
         </div>
-    </div>
-  </div>
-</div>
-</div>
-<div id="kekka3">
-  <div class="product_revert_icon">
-  <img class="product_revert"src="revert\フッターロゴ.png" alt="">
-  </div>
-  <div class="diagnosis_result">
-    <div class="diagnosis_result_content">
-      <p class="diagnosis_result_content_text1">診断お疲れ様です。</p>
-      <p class="diagnosis_result_content_text2">あなたにあった<br>歯磨きセット</p>
-      <p class="diagnosis_result_content_type">口臭・汚れ・ネバ付きタイプ</p>
-      <img src="revert\クラプロックス×オラピ.png" alt="">
-        <p class="diagnosis_result_content_name"><span class="TOP_ploduct_subname">CURAPROX 歯ブラシ</span><br>クラプロックス CS5460
-          <br>×<br><span class="TOP_ploduct_subname">トライフ 口腔ケア製品</span><br>
-            オーラルピース クリーン＆モイスチュア</p>
-        <p class="diagnosis_result_content_praice">￥2,150</p>
-        <div class="set_explanationtext">
-          <p><span class="set_explanationtext_title">・説明</span><br>
-    歯と歯ぐきに優しい使い心地の<br>
-    クラプロックスと、<br>
-    天然由来のオーガニックジェル、<br>
-    オーラルピースで<br>
-    お口全体を清潔で爽やかに。</p>
-        <div class="diagnosis_step_">
-        <a href="revert_prodact_CURAPROX×ORALPEACE_step.html">
-          <h1 class="diagnosis_step_button">ご購入</h1>
-        </a>
-        <a href="sindan_input.html">
-          <h1 id="TOP_genre_setbutton" class="diagnosis_step_button2">もう一度診断する</h1></a>
+      </div>
+
+      <div id="kekka2">
+        <div class="product_revert_icon">
+          <img class="product_revert" src="revert\フッターロゴ.png" alt="">
         </div>
-    </div>
-  </div>
+        <div class="diagnosis_result">
+          <div class="diagnosis_result_content">
+            <p class="diagnosis_result_content_text1">診断お疲れ様です。</p>
+            <p class="diagnosis_result_content_text2">あなたにあった<br>歯磨きセット</p>
+            <p class="diagnosis_result_content_type">虫歯予防タイプ</p>
+            <img src="revert\テペ×アパガード.png" alt="">
+            <p class="diagnosis_result_content_name"><span class="TOP_ploduct_subname">Cross Field 歯ブラシ</span><br>TePe
+              セレクト
+              <br>×<br><span class="TOP_ploduct_subname">Oral Care 歯磨剤</span><br>アパガードリナメル</p>
+            <p class="diagnosis_result_content_praice">￥2,240</p>
+            <div class="set_explanationtext">
+              <p><span class="set_explanationtext_title">・説明</span><br>
+                奥歯まで隅々磨けるテペと<br>
+                傷ついた歯の表面を修復しながら<br>
+                むし歯予防できるアパガードで、<br>
+                健康で艶やかな歯に。</p>
+
+              <div class="diagnosis_step_">
+                <a href="revert_prodact_tepe×APAGARD_step.html">
+                  <h1 class="diagnosis_step_button">ご購入</h1>
+                </a>
+                <a href="sindan_input.html">
+                  <h1 id="TOP_genre_setbutton" class="diagnosis_step_button2">もう一度診断する</h1>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="kekka3">
+        <div class="product_revert_icon">
+          <img class="product_revert" src="revert\フッターロゴ.png" alt="">
+        </div>
+        <div class="diagnosis_result">
+          <div class="diagnosis_result_content">
+            <p class="diagnosis_result_content_text1">診断お疲れ様です。</p>
+            <p class="diagnosis_result_content_text2">あなたにあった<br>歯磨きセット</p>
+            <p class="diagnosis_result_content_type">口臭・汚れ・ネバ付きタイプ</p>
+            <img src="revert\クラプロックス×オラピ.png" alt="">
+            <p class="diagnosis_result_content_name"><span class="TOP_ploduct_subname">CURAPROX 歯ブラシ</span><br>クラプロックス
+              CS5460
+              <br>×<br><span class="TOP_ploduct_subname">トライフ 口腔ケア製品</span><br>
+              オーラルピース クリーン＆モイスチュア</p>
+            <p class="diagnosis_result_content_praice">￥2,150</p>
+            <div class="set_explanationtext">
+              <p><span class="set_explanationtext_title">・説明</span><br>
+                歯と歯ぐきに優しい使い心地の<br>
+                クラプロックスと、<br>
+                天然由来のオーガニックジェル、<br>
+                オーラルピースで<br>
+                お口全体を清潔で爽やかに。</p>
+              <div class="diagnosis_step_">
+                <a href="revert_prodact_CURAPROX×ORALPEACE_step.html">
+                  <h1 class="diagnosis_step_button">ご購入</h1>
+                </a>
+                <a href="sindan_input.html">
+                  <h1 id="TOP_genre_setbutton" class="diagnosis_step_button2">もう一度診断する</h1>
+                </a>
+              </div>
+            </div>
+          </div>
 
 
-</div>
-</div>
+        </div>
+      </div>
 
-<!-- フッター -->
-<div class="TOP_under">
-  <div class="TOP_under_img">
-<img class="TOP_under_text" src="revert\フッターロゴ.png">
-</div>
-<div class="undermenu">
-<a href="BeginnersGuide.html" class="TOP_new"><p>初めての方へ</p></a>
-<a href="sindan_input.html" class="TOP_online"><p>適正診断</p></a>
-</div>
-<div class="undermenu mgt-120">
-<a href="#" class="TOP_service"><p>利用規約</p></a>
-<a href="contact.html" class="TOP_contact"><p>お問い合わせ</p></a>
-</div>
-<p class="TOP_address mgt-120">住所 ： 東京都中央区新富1-1-7 BizSQUARE銀座　6階<br><span class="TEL">TEL ： 03-4405-5679</span><p>
-  <div class="TOP_under_icon">
-  <img class="youtube pr7" src="revert\ユーチューブ.png" alt="">
-  <img class="instagram" src="revert\インスタ.png" alt="">
-  <img class="twitter pl7" src="revert\ツイッター.png" alt="">
-  </div>
+      <!-- フッター -->
+      <div class="TOP_under">
+        <div class="TOP_under_img">
+          <img class="TOP_under_text" src="revert\フッターロゴ.png">
+        </div>
+        <div class="undermenu">
+          <a href="BeginnersGuide.html" class="TOP_new">
+            <p>初めての方へ</p>
+          </a>
+          <a href="sindan_input.html" class="TOP_online">
+            <p>適正診断</p>
+          </a>
+        </div>
+        <div class="undermenu mgt-120">
+          <a href="#" class="TOP_service">
+            <p>利用規約</p>
+          </a>
+          <a href="contact.html" class="TOP_contact">
+            <p>お問い合わせ</p>
+          </a>
+        </div>
+        <p class="TOP_address mgt-120">住所 ： 東京都中央区新富1-1-7 BizSQUARE銀座　6階<br><span class="TEL">TEL ： 03-4405-5679</span>
+        <p>
+        <div class="TOP_under_icon">
+          <img class="youtube pr7" src="revert\ユーチューブ.png" alt="">
+          <img class="instagram" src="revert\インスタ.png" alt="">
+          <img class="twitter pl7" src="revert\ツイッター.png" alt="">
+        </div>
 
-</div>
-<!-- フッターここまで -->
+      </div>
+      <!-- フッターここまで -->
+      <script type="text/javascript">
+        const quest = document.getElementById('box_title');//問題文ID
+        const ans1 = document.getElementById('ans-1');//回答欄1ID
+        const ans2 = document.getElementById('ans-2');//回答欄2ID
+        const ans3 = document.getElementById('ans-3');//回答欄3ID
+        const num = document.getElementById('diagnosis_count');//カウントID
+        const back = document.getElementById("back");
+        back.style.display = "none";
+        //点数配列
+        const points = new Array(12);
+        let idx = 0;//問題数カウンタ
 
+        //問題を格納
+        const ques = [];
+
+        //問題1　見やすく
+        ques.push([
+          `Q.歯磨きは何回？`,
+          `■しない`, 0,
+          `■1回〜2回`, 0,
+          `■3回以上`, 0
+        ]);
+
+        //問題2
+        ques.push([
+          `Q.歯磨き後にフロスは使用している？`,
+          `■してる`, 0,
+          `■たまに`, 2,
+          `■3回以上`, 3
+        ]);
+        //問題3
+        ques.push([`Q.虫歯経験`, `■なったことがない`, 1, `■1〜3本`, 2, `■4本以上`, 3]);
+        ques.push([`Q.お菓子や甘いものをよく食べる？`, `■よく食べる`, 3, `■たまに`, 2, `■食べない`, 1]);
+        ques.push([`Q.冷たいものや熱いものがしみる`, `■しみる`, 1, `■たまにしみる`, 2, `■しみない`, 3]);
+        ques.push([`Q.1日辺りタバコを吸う本数は`, `■吸わない`, 1, `■5本未満`, 2, `■5本以上`, 3]);
+        ques.push([`Q.歯の黄ばみが気になる`, `■わからない`, 2, `■気にならない`, 0, `■気になる`, 3]);
+        ques.push([`Q.自身の口臭が気になる`, `■わからない`, 2, `■気にならない`, 0, `■気になる`, 3]);
+        ques.push([`Q.歯磨きの時の出血頻度`, `■いつも`, 3, `■たまに`, 2, `■ない`, 1]);
+        ques.push([`Q.口の中の乾燥が気になる`, `■いつも`, 3, `■たまに`, 2, `■気にならない`, 1]);
+        ques.push([`Q.歯磨きにかける時間`, `■1分程`, 0, `■1〜3分`, 0, `■3分以上`, 0]);
+        ques.push([`Q.定期的メンテナンス`, `■定期的に通っている`, 0, `■1年に数回`, 0, `■行ったことがない`, 0]);
+
+
+
+        //問題文書き換え
+        function quebox() {
+          console.log(points);
+          const que = ques[idx];
+          num.innerHTML = "0" + (1 + idx) + "/12";
+          quest.innerHTML = que[0];
+          ans1.innerHTML = que[1];
+          ans2.innerHTML = que[3];
+          ans3.innerHTML = que[5];
+
+          // 戻るボタン表示
+          if (idx == 0) {
+            back.style.display = "none";
+          } else {
+            back.style.display = "block";
+          }
+        }
+
+        //診断結果表示
+        function ansbox(ap) {
+          console.log(points);
+          document.getElementById("box1").style.display = "none";
+
+          if (ap[0] < ap[1] && ap[2] < ap[1]) {//[1]が一番多ければこれ
+            document.getElementById("kekka2").style.display = "block";
+          } else if (ap[0] < ap[2] && ap[1] < ap[2]) {//[2]が一番多ければこれ
+            document.getElementById("kekka3").style.display = "block";
+          } else {//[0]が多い場合含めその他はこれ
+            document.getElementById("kekka1").style.display = "block";
+          }
+        }
+
+        function clickevent(ans) {
+          const que = ques[idx];
+          if (ans > 0 && idx >= 11) {//最終問題で選択肢を選択した場合
+            points[idx] = que[ans];
+            const point = [0, 0, 0];
+            for (let i = 0; i < points.length; i++) {
+              if (points[i] == 1) {
+                ++point[0];
+              } else if (points[i] == 2) {
+                ++point[1];
+              } else if (points[i] == 3) {
+                ++point[2];
+              }
+            }
+            ansbox(point);
+
+          } else {
+
+            if (ans > 0) {
+              const que = ques[idx];
+              points[idx] = que[ans];
+              idx++;
+            } else if (idx > 0) {
+              --idx;
+            }
+            quebox();
+          }
+        }
+        num.innerHTML = "0" + (1 + idx) + "/12";
+      </script>
 </body>
+
 </html>

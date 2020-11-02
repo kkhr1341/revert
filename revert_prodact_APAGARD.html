@@ -1,171 +1,202 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="revert.css">
-    <link rel="stylesheet" href="https://use.typekit.net/ngv6mfs.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
-    <script type="text/javascript">
-    function nav_slider_content1click(){
-      document.getElementById("slider_content2").style.display="none";
-      document.getElementById("slider_content1").style.display="block";
-      document.getElementById("slider_content3").style.display="none";
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="revert.css">
+  <link rel="stylesheet" href="https://use.typekit.net/ngv6mfs.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+  <script type="text/javascript">
+    function nav_slider_content1click() {
+      document.getElementById("slider_content2").style.display = "none";
+      document.getElementById("slider_content1").style.display = "block";
+      document.getElementById("slider_content3").style.display = "none";
       document.getElementById('TOP_genre_rightbutton').style.backgroundColor = "lightgrey";
       document.getElementById('TOP_genre_leftbutton').style.backgroundColor = "gray";
       document.getElementById('TOP_genre_setbutton').style.backgroundColor = "lightgrey";
-       }
-    function nav_slider_content2click(){
-      document.getElementById("slider_content1").style.display="none";
-      document.getElementById("slider_content2").style.display="block";
-      document.getElementById("slider_content3").style.display="none";
+    }
+    function nav_slider_content2click() {
+      document.getElementById("slider_content1").style.display = "none";
+      document.getElementById("slider_content2").style.display = "block";
+      document.getElementById("slider_content3").style.display = "none";
       document.getElementById('TOP_genre_rightbutton').style.backgroundColor = "gray";
       document.getElementById('TOP_genre_leftbutton').style.backgroundColor = "lightgrey";
       document.getElementById('TOP_genre_setbutton').style.backgroundColor = "lightgrey";
     }
-    function nav_slider_content3click(){
-      document.getElementById("slider_content2").style.display="none";
-      document.getElementById("slider_content1").style.display="none";
-      document.getElementById("slider_content3").style.display="block";
+    function nav_slider_content3click() {
+      document.getElementById("slider_content2").style.display = "none";
+      document.getElementById("slider_content1").style.display = "none";
+      document.getElementById("slider_content3").style.display = "block";
       document.getElementById('TOP_genre_rightbutton').style.backgroundColor = "lightgrey";
       document.getElementById('TOP_genre_leftbutton').style.backgroundColor = "lightgrey";
       document.getElementById('TOP_genre_setbutton').style.backgroundColor = "gray";
-       }
+    }
 
-    </script>
+  </script>
 
-    <title></title>
-  </head>
-  <body>
-    <!-- ヘッター -->
-      <header>
+  <title></title>
+</head>
+
+<body>
+  <!-- ヘッター -->
+  <header>
     <div id="nav-drawer">
-        <input id="nav-input" type="checkbox" class="nav-unshown">
-        <label id="nav-open" for="nav-input"><span></span></label>
-        <label class="nav-unshown" id="nav-close" for="nav-input"><h1>marubatu</h1></label>
-    <div id="nav-content">
-      <div class="nav-content-img">
-      <img src="revert\ヘッターロゴ.png" alt="">
-    </div>
-    <div class="nav-border"></div>
-    <h1 id="nav-close">marubatu</h1>
-      <ul>
-        <li><a href="BeginnersGuide.html">Corporate philosophy</a>
-          <a href="BeginnersGuide.html"><span class="fs19">初めての方へ</span></a></li>
-        <li><a href="index.html?1#slider_content1" id="nav_slider_content1" onclick="nav_slider_content1click()">Toothbrush</a>
-        <a href="index.html?1#slider_content1" id="nav_slider_content1" onclick="nav_slider_content1click()"><span class="fs19">歯ブラシ</span></a></li>
-        <li><a id="nav_slider_content2" onclick="nav_slider_content2click()" href="index.html?2#slider_content2">Tooth paste</a>
-        <a href="index.html?2#slider_content2" id="nav_slider_content2" onclick="nav_slider_content2click()"><span class="fs19">歯磨き粉</span></a></li>
-        <li><a href="index.html?3#slider_content3" id="nav_slider_content3" onclick="nav_slider_content3click()">Set item</a>
-        <a href="index.html?3#slider_content3" id="nav_slider_content3" onclick="nav_slider_content3click()"><span class="fs19">セットアイテム</span></a></li>
-        <li><a href="sindan_input.html">Diagnosis</a>
-        <a href="sindan_input.html"><span class="fs19">適正診断</span></a></li>
-        <li><a href="contact.html">Contact</a>
-          <a href="contact.html"><span class="fs19">お問い合わせ</span></a></li>
+      <input id="nav-input" type="checkbox" class="nav-unshown">
+      <label id="nav-open" for="nav-input"><span></span></label>
+      <label class="nav-unshown" id="nav-close" for="nav-input">
+        <h1>marubatu</h1>
+      </label>
+      <div id="nav-content">
+        <div class="nav-content-img">
+          <img src="revert\ヘッターロゴ.png" alt="">
+        </div>
+        <div class="nav-border"></div>
+        <h1 id="nav-close">marubatu</h1>
+        <ul>
+          <li><a href="BeginnersGuide.html">Corporate philosophy</a>
+            <a href="BeginnersGuide.html"><span class="fs19">初めての方へ</span></a></li>
+          <li><a href="index.html?1#slider_content1" id="nav_slider_content1"
+              onclick="nav_slider_content1click()">Toothbrush</a>
+            <a href="index.html?1#slider_content1" id="nav_slider_content1" onclick="nav_slider_content1click()"><span
+                class="fs19">歯ブラシ</span></a></li>
+          <li><a id="nav_slider_content2" onclick="nav_slider_content2click()" href="index.html?2#slider_content2">Tooth
+              paste</a>
+            <a href="index.html?2#slider_content2" id="nav_slider_content2" onclick="nav_slider_content2click()"><span
+                class="fs19">歯磨き粉</span></a></li>
+          <li><a href="index.html?3#slider_content3" id="nav_slider_content3" onclick="nav_slider_content3click()">Set
+              item</a>
+            <a href="index.html?3#slider_content3" id="nav_slider_content3" onclick="nav_slider_content3click()"><span
+                class="fs19">セットアイテム</span></a></li>
+          <li><a href="sindan_input.html">Diagnosis</a>
+            <a href="sindan_input.html"><span class="fs19">適正診断</span></a></li>
+          <li><a href="contact.html">Contact</a>
+            <a href="contact.html"><span class="fs19">お問い合わせ</span></a></li>
 
 
-      </ul>
+        </ul>
+      </div>
     </div>
-    </div>
-    <img class="header_rogo"src="revert\ヘッターロゴ.png" alt="">
+    <img class="header_rogo" src="revert\ヘッターロゴ.png" alt="">
   </header>
   <!-- ヘッターここまで -->
 
-<div class="product_revert_icon">
-<img class="product_revert"src="revert\フッターロゴ.png" alt="">
-</div>
-
-<div class="product_sonic">
-  <img class="product_revert_img" src="revert\アパカード①.jpg" alt="">
-  <div class="product_sonic_text">
-    <p class="product_sonic_name"><span class="TOP_ploduct_subname">Oral Care 歯磨剤</span><br>アパガードリナメル</p>
-    <p class="product_sonic_maney">￥2,200</p>
-    <div class="product_sonic_button">
-    <a href="revert_prodact_APAGARD_step.html"><h1 class="product_sonic_buy_top">購入</h1></a>
-  </div>
-    <p class="product_sonic_subtitle">歯にもトリートメントを！<br>
-より健康で、より綺麗な歯に<p>
-</div>
-<div class="product_sonic_explanation">
-  <h2>・商品説明</h2>
-  <div class="product_sonic_explanationtext">
-    <p>実は歯が白さを失う原因のほとんどは、<br>
-歯の表面のエナメル質のトラブル。</p>
-
-<p>1. 表面の汚れ
-（しみ、タバコのヤニ）<br>
-2. 硬い食べ物、
-強すぎるブラッシングによる傷<br>
-3. 歯垢中の菌が生成する
-酸によりエナメル質が<br><span class="product_gml"><span class="pc_product_gml">溶け出す</span></span></p>
-
-<p>アパガードリナメルは、
-エナメル質の健康が失われる
-以上3つの原因を取り除くことにより、
-歯の輝きを取り戻す効果があります。</p>
-
-<p>特長は3つ！<br>
-・プラークを吸着除去<br>
-・傷ついた歯の表面を修復<br>
-・初期むし歯を再石灰化</p>
-
-<p>アパガードリナメルに配合された
-ナノ粒子薬用ハイドロキシアパタイトは、
-傷ついた歯の表面を修復し、歯にミネラルを補給。<br>
-汚れや着色をつきにくくし、むし歯も予防します。</p>
-</div>
-</div>
-<div class="product_sonic_contentbutton">
-  <a href="revert_prodact_APAGARD_step.html"><h1 class="product_sonic_buy">購入</h1></a>
-  <a href="https://lin.ee/f3lGvDp"><h1 class="product_sonic_review">質問</h1></a>
-</div>
-<div class="product_sonic_bolder">
-<div class="product_sonic_under">
-  <p>おすすめのセット購入</p>
-</div>
-</div>
-<div class="products_content">
-<div class="product_sonic_set">
-  <div class="APAGARDRENAMEL">
-    <img src="revert\クラプロ.jpg" alt="">
-    <p class="APAGARDRENAMEL_name">curaden</p>
-  </div>
-<div class="ORALPEACE">
-  <img src="revert\sonic2 (1).jpg" alt="">
-  <p class="ORALPEACE_name">ソニッケアー</p>
-</div>
-<div class="ORALPEACE2">
-  <img class="hgt216" src="revert\tepe①.jpg" alt="">
-  <p class="ORALPEACE_name">テぺ</p>
-</div>
-</div>
-</div>
-
-</div>
-<!-- フッター -->
-<div class="TOP_under">
-  <div class="TOP_under_img">
-<img class="TOP_under_text" src="revert\フッターロゴ.png">
-</div>
-<div class="undermenu">
-<a href="BeginnersGuide.html" class="TOP_new"><p>初めての方へ</p></a>
-<a href="sindan_input.html" class="TOP_online"><p>適正診断</p></a>
-</div>
-<div class="undermenu mgt-120">
-<a href="#" class="TOP_service"><p>利用規約</p></a>
-<a href="contact.html" class="TOP_contact"><p>お問い合わせ</p></a>
-</div>
-<p class="TOP_address mgt-120">住所 ： 東京都中央区新富1-1-7 BizSQUARE銀座　6階<br><span class="TEL">TEL ： 03-4405-5679</span><p>
-  <div class="TOP_under_icon">
-  <img class="youtube pr7" src="revert\ユーチューブ.png" alt="">
-  <img class="instagram" src="revert\インスタ.png" alt="">
-  <img class="twitter pl7" src="revert\ツイッター.png" alt="">
+  <div class="product_revert_icon">
+    <img class="product_revert" src="revert\フッターロゴ.png" alt="">
   </div>
 
-</div>
-<!-- フッターここまで -->
+  <div class="product_sonic">
+    <img class="product_revert_img" src="revert\アパカード①.jpg" alt="">
+    <div class="product_sonic_text">
+      <p class="product_sonic_name"><span class="TOP_ploduct_subname">Oral Care 歯磨剤</span><br>アパガードリナメル</p>
+      <p class="product_sonic_maney">￥2,200</p>
+      <div class="product_sonic_button">
+        <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+          <input type="hidden" name="cmd" value="_s-xclick">
+          <input type="hidden" name="hosted_button_id" value="W9C9N2UU4298G">
+          <input class="shop-submit" type="submit" value="購入" name="submit" alt="PayPal - オンラインでより安全・簡単にお支払い">
+        </form>
+      </div>
+      <p class="product_sonic_subtitle">歯にもトリートメントを！<br>
+        より健康で、より綺麗な歯に
+      <p>
+    </div>
+    <div class="product_sonic_explanation">
+      <h2>・商品説明</h2>
+      <div class="product_sonic_explanationtext">
+        <p>実は歯が白さを失う原因のほとんどは、<br>
+          歯の表面のエナメル質のトラブル。</p>
 
-  </body>
+        <p>1. 表面の汚れ
+          （しみ、タバコのヤニ）<br>
+          2. 硬い食べ物、
+          強すぎるブラッシングによる傷<br>
+          3. 歯垢中の菌が生成する
+          酸によりエナメル質が<br><span class="product_gml"><span class="pc_product_gml">溶け出す</span></span></p>
+
+        <p>アパガードリナメルは、
+          エナメル質の健康が失われる
+          以上3つの原因を取り除くことにより、
+          歯の輝きを取り戻す効果があります。</p>
+
+        <p>特長は3つ！<br>
+          ・プラークを吸着除去<br>
+          ・傷ついた歯の表面を修復<br>
+          ・初期むし歯を再石灰化</p>
+
+        <p>アパガードリナメルに配合された
+          ナノ粒子薬用ハイドロキシアパタイトは、
+          傷ついた歯の表面を修復し、歯にミネラルを補給。<br>
+          汚れや着色をつきにくくし、むし歯も予防します。</p>
+      </div>
+    </div>
+    <div class="product_sonic_contentbutton">
+      <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+        <input type="hidden" name="cmd" value="_s-xclick">
+        <input type="hidden" name="hosted_button_id" value="W9C9N2UU4298G">
+        <input class="shop-submit" type="submit" value="購入" name="submit" alt="PayPal - オンラインでより安全・簡単にお支払い">
+      </form>
+      <a href="https://lin.ee/f3lGvDp">
+        <h1 class="product_sonic_review">質問</h1>
+      </a>
+    </div>
+    <div class="product_sonic_bolder">
+      <div class="product_sonic_under">
+        <p>おすすめのセット購入</p>
+      </div>
+    </div>
+    <div class="products_content">
+      <div class="product_sonic_set">
+        <div class="APAGARDRENAMEL">
+          <img src="revert\クラプロ.jpg" alt="">
+          <p class="APAGARDRENAMEL_name">curaden</p>
+        </div>
+        <div class="ORALPEACE">
+          <img src="revert\sonic2 (1).jpg" alt="">
+          <p class="ORALPEACE_name">ソニッケアー</p>
+        </div>
+        <div class="ORALPEACE2">
+          <img class="hgt216" src="revert\tepe①.jpg" alt="">
+          <p class="ORALPEACE_name">テぺ</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <!-- フッター -->
+  <div class="TOP_under">
+    <div class="TOP_under_img">
+      <img class="TOP_under_text" src="revert\フッターロゴ.png">
+    </div>
+    <div class="undermenu">
+      <a href="BeginnersGuide.html" class="TOP_new">
+        <p>初めての方へ</p>
+      </a>
+      <a href="sindan_input.html" class="TOP_online">
+        <p>適正診断</p>
+      </a>
+    </div>
+    <div class="undermenu mgt-120">
+      <a href="#" class="TOP_service">
+        <p>利用規約</p>
+      </a>
+      <a href="contact.html" class="TOP_contact">
+        <p>お問い合わせ</p>
+      </a>
+    </div>
+    <p class="TOP_address mgt-120">住所 ： 東京都中央区新富1-1-7 BizSQUARE銀座　6階<br><span class="TEL">TEL ： 03-4405-5679</span>
+    <p>
+    <div class="TOP_under_icon">
+      <img class="youtube pr7" src="revert\ユーチューブ.png" alt="">
+      <img class="instagram" src="revert\インスタ.png" alt="">
+      <img class="twitter pl7" src="revert\ツイッター.png" alt="">
+    </div>
+
+  </div>
+  <!-- フッターここまで -->
+
+</body>
+
 </html>
