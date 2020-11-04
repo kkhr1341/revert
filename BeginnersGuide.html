@@ -1,237 +1,267 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="revert.css">
-    <link rel="stylesheet" href="https://use.typekit.net/ngv6mfs.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
-    <script type="text/javascript">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="revert.css">
+  <link rel="stylesheet" href="https://use.typekit.net/ngv6mfs.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+  <script type="text/javascript">
     // フェードインJS
     /* 到達したら要素を表示させる */
     function showElementAnimation() {
       var element = document.getElementsByClassName('js-fadein');
-      if(!element) return; // 要素がなかったら処理をキャンセル
+      if (!element) return; // 要素がなかったら処理をキャンセル
 
       var showTiming = window.innerHeight > 768 ? 200 : 80; // 要素が出てくるタイミングはここで調整
       var scrollY = window.pageYOffset; //スクロール量を取得
       var windowH = window.innerHeight; //ブラウザウィンドウのビューポート(viewport)の高さを取得
 
-      for(var i=0;i<element.length;i++) {
+      for (var i = 0; i < element.length; i++) {
         var elemClientRect = element[i].getBoundingClientRect();
         var elemY = scrollY + elemClientRect.top;
-        if(scrollY + windowH - showTiming > elemY) {
+        if (scrollY + windowH - showTiming > elemY) {
           element[i].classList.add('is-show');
-        } else if(scrollY + windowH < elemY) {
-        // 上にスクロールして再度非表示にする場合はこちらを記述
+        } else if (scrollY + windowH < elemY) {
+          // 上にスクロールして再度非表示にする場合はこちらを記述
           element[i].classList.remove('is-show');
         }
       }
     }
     showElementAnimation();
     window.addEventListener('scroll', showElementAnimation);
-    </script>
-    <title></title>
-  </head>
-  <body>
-    <!-- ヘッター -->
-      <header>
-    <div id="nav-drawer">
-        <input id="nav-input" type="checkbox" class="nav-unshown">
-        <label id="nav-open" for="nav-input"><span></span></label>
-        <label class="nav-unshown" id="nav-close" for="nav-input"><h1>marubatu</h1></label>
-    <div id="nav-content">
-      <div class="nav-content-img">
-      <img src="revert\ヘッターロゴ.png" alt="">
-    </div>
-    <div class="nav-border"></div>
-    <h1 id="nav-close">marubatu</h1>
-      <ul>
-        <li><a href="BeginnersGuide.html">Corporate philosophy</a>
-          <a href="BeginnersGuide.html"><span class="fs19">初めての方へ</span></a></li>
-        <li><a href="index.html?1#slider_content1" id="nav_slider_content1" onclick="nav_slider_content1click()">Toothbrush</a>
-        <a href="index.html?1#slider_content1" id="nav_slider_content1" onclick="nav_slider_content1click()"><span class="fs19">歯ブラシ</span></a></li>
-        <li><a id="nav_slider_content2" onclick="nav_slider_content2click()" href="index.html?2#slider_content2">Tooth paste</a>
-        <a href="index.html?2#slider_content2" id="nav_slider_content2" onclick="nav_slider_content2click()"><span class="fs19">歯磨き粉</span></a></li>
-        <li><a href="index.html?3#slider_content3" id="nav_slider_content3" onclick="nav_slider_content3click()">Set item</a>
-        <a href="index.html?3#slider_content3" id="nav_slider_content3" onclick="nav_slider_content3click()"><span class="fs19">セットアイテム</span></a></li>
-        <li><a href="sindan_input.html">Diagnosis</a>
-        <a href="sindan_input.html"><span class="fs19">適正診断</span></a></li>
-        <li><a href="contact.html">Contact</a>
-          <a href="contact.html"><span class="fs19">お問い合わせ</span></a></li>
+  </script>
+  <title></title>
+</head>
 
-      </ul>
+<body>
+  <!-- ヘッター -->
+  <header>
+    <div id="nav-drawer">
+      <input id="nav-input" type="checkbox" class="nav-unshown">
+      <label id="nav-open" for="nav-input"><span></span></label>
+      <label class="nav-unshown" id="nav-close" for="nav-input">
+        <h1>marubatu</h1>
+      </label>
+      <div id="nav-content">
+        <div class="nav-content-img">
+          <img src="revert\ヘッターロゴ.png" alt="">
+        </div>
+        <div class="nav-border"></div>
+        <h1 id="nav-close">marubatu</h1>
+        <ul>
+          <li><a href="BeginnersGuide.html">Corporate philosophy</a>
+            <a href="BeginnersGuide.html"><span class="fs19">初めての方へ</span></a></li>
+          <li><a href="index.html?1#slider_content1" id="nav_slider_content1"
+              onclick="nav_slider_content1click()">Toothbrush</a>
+            <a href="index.html?1#slider_content1" id="nav_slider_content1" onclick="nav_slider_content1click()"><span
+                class="fs19">歯ブラシ</span></a></li>
+          <li><a id="nav_slider_content2" onclick="nav_slider_content2click()" href="index.html?2#slider_content2">Tooth
+              paste</a>
+            <a href="index.html?2#slider_content2" id="nav_slider_content2" onclick="nav_slider_content2click()"><span
+                class="fs19">歯磨き粉</span></a></li>
+          <li><a href="index.html?3#slider_content3" id="nav_slider_content3" onclick="nav_slider_content3click()">Set
+              item</a>
+            <a href="index.html?3#slider_content3" id="nav_slider_content3" onclick="nav_slider_content3click()"><span
+                class="fs19">セットアイテム</span></a></li>
+          <li><a href="sindan_input.html">Diagnosis</a>
+            <a href="sindan_input.html"><span class="fs19">適正診断</span></a></li>
+          <li><a href="contact.html">Contact</a>
+            <a href="contact.html"><span class="fs19">お問い合わせ</span></a></li>
+
+        </ul>
+      </div>
     </div>
-    </div>
-    <img class="header_rogo"src="revert\ヘッターロゴ.png" alt="">
+    <img class="header_rogo" src="revert\ヘッターロゴ.png" alt="">
+    <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post"
+      style="width: 6vw;height: 6vw;margin: auto;margin-right: 10px;">
+      <input type="hidden" name="cmd" value="_s-xclick">
+      <input type="hidden" name="encrypted"
+        value="-----BEGIN PKCS7-----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-----END PKCS7-----">
+      <input type="image"
+        src="https://kkhr1341.github.io/revert/revert/%E3%82%AB%E3%83%BC%E3%83%88%E3%81%AE%E3%82%A2%E3%82%A4%E3%82%B3%E3%83%B3%E7%B4%A0%E6%9D%90.svg"
+        border="0" name="submit" alt="PayPal - オンラインでより安全・簡単にお支払い">
+      <img alt="" border="0" src="https://www.paypalobjects.com/ja_JP/i/scr/pixel.gif" width="1" height="1">
+    </form>
   </header>
   <!-- ヘッターここまで -->
 
   <div class="product_revert_icon">
-  <img class="product_revert"src="revert\フッターロゴ.png" alt="">
+    <img class="product_revert" src="revert\フッターロゴ.png" alt="">
   </div>
 
   <p class="beginners_title">初めての方へ</p>
   <div class="beginners_text">
     <p class="mgt-10vw js-fadein">皆さん 何かしらのご縁で Revert へアクセス有難う御座います。</p>
 
-<p class="js-fadein">いきなりですが
-〝Revert〟という言葉の意味を知ってますか？</p>
+    <p class="js-fadein">いきなりですが
+      〝Revert〟という言葉の意味を知ってますか？</p>
 
-<p class="js-fadein">知らない方も多いと思うので説明します。</p>
+    <p class="js-fadein">知らない方も多いと思うので説明します。</p>
 
-<p class="js-fadein">〝Revert〟とは立ち返る、元に戻す という意味です。</p>
+    <p class="js-fadein">〝Revert〟とは立ち返る、元に戻す という意味です。</p>
 
-<p class="js-fadein">※立ち返る
-物事を開始した地点に戻ること。
-初心を取り戻すこと。</p>
+    <p class="js-fadein">※立ち返る
+      物事を開始した地点に戻ること。
+      初心を取り戻すこと。</p>
 
-<p class="js-fadein">デジタルな今だからこそ 立ち返る必要があるなあと正直僕は思っています。</p>
-
-
-<p class="js-fadein">ある程度のことに関しては
-なにをするにしてもかなり便利な世の中になりましたよね。※平成7年生まれ。笑<br>
-
-僕はこの時代に生まれて良かったなと心の底から思ってます。笑</p>
+    <p class="js-fadein">デジタルな今だからこそ 立ち返る必要があるなあと正直僕は思っています。</p>
 
 
-<p class="js-fadein">ただ、それと同時に〝心〟と〝愛〟がなくなっている気がします。※良い商品を買う事を除く←経済を回す為</p>
+    <p class="js-fadein">ある程度のことに関しては
+      なにをするにしてもかなり便利な世の中になりましたよね。※平成7年生まれ。笑<br>
+
+      僕はこの時代に生まれて良かったなと心の底から思ってます。笑</p>
+
+
+    <p class="js-fadein">ただ、それと同時に〝心〟と〝愛〟がなくなっている気がします。※良い商品を買う事を除く←経済を回す為</p>
 
 
 
 
-<p class="js-fadein">なぜ？ という自分のアンテナを少し張るだけで 立ち返り（Revert）に近づくと僕は思っています。</p>
+    <p class="js-fadein">なぜ？ という自分のアンテナを少し張るだけで 立ち返り（Revert）に近づくと僕は思っています。</p>
 
-<p class="js-fadein">今、思っている【当たり前】が少しでも変わり
-貴方の人生を〝より豊か〟に変えて頂ければと思っております。</p>
-
-
-<p class="js-fadein">ところで、皆さん 人間の3大欲求である【食】ですが皆さんは食事は好きですか？</p>
-
-<p class="js-fadein">僕は人生の楽しみの1つ とハッキリ言えるほど大好きです。笑</p>
-
-<p class="js-fadein">飲食をする際はどこから摂取されますか？<br>
-大勢の方は【口】からですよね？</p>
-
-<p class="js-fadein">貴方の【口（歯）】は綺麗ですか？</p>
-
-<p class="js-fadein">虫歯がないから大丈夫！と思っているそこの貴方
-このままいけば将来大変なことになるかも、、</p>
+    <p class="js-fadein">今、思っている【当たり前】が少しでも変わり
+      貴方の人生を〝より豊か〟に変えて頂ければと思っております。</p>
 
 
-<p class="js-fadein">実は 日本 は歯に関する〝予防〟という点においては意識がかなり低い国になります。</p>
+    <p class="js-fadein">ところで、皆さん 人間の3大欲求である【食】ですが皆さんは食事は好きですか？</p>
 
-<p class="js-fadein">日本人は口が臭い と外国の方に思われていたり
-30歳以上の方の8割が【歯周病】であったり、、※病気です</p>
+    <p class="js-fadein">僕は人生の楽しみの1つ とハッキリ言えるほど大好きです。笑</p>
 
-<p class="js-fadein">そしてなんと、日本人の80歳以上は歯が平均12本（本来28本（32））となっています、、</p>
+    <p class="js-fadein">飲食をする際はどこから摂取されますか？<br>
+      大勢の方は【口】からですよね？</p>
 
-<p class="js-fadein">また最新の論文では
-歯が平均20本ある人は【食生活にほぼ満足することができる】と書しています。</p>
+    <p class="js-fadein">貴方の【口（歯）】は綺麗ですか？</p>
 
-
-<p class="js-fadein">まず第一にですけど
-【歯】は全て（28本）残っててほしいですよね。笑<br>
-僕の世代は100年時代と言われているので余計に。</p>
+    <p class="js-fadein">虫歯がないから大丈夫！と思っているそこの貴方
+      このままいけば将来大変なことになるかも、、</p>
 
 
-<p class="js-fadein">しかし、このままいけば 私達も80歳以上になった時、12本（今の半分以下）になっちゃう可能性が高いんですよ、、
-<br>※島国なので食が似ている為</p>
+    <p class="js-fadein">実は 日本 は歯に関する〝予防〟という点においては意識がかなり低い国になります。</p>
+
+    <p class="js-fadein">日本人は口が臭い と外国の方に思われていたり
+      30歳以上の方の8割が【歯周病】であったり、、※病気です</p>
+
+    <p class="js-fadein">そしてなんと、日本人の80歳以上は歯が平均12本（本来28本（32））となっています、、</p>
+
+    <p class="js-fadein">また最新の論文では
+      歯が平均20本ある人は【食生活にほぼ満足することができる】と書しています。</p>
 
 
-<p class="js-fadein">絶対に嫌ですよね、、</p>
-
-<p class="js-fadein">ただ、世界規模で見てみると80歳以上の方が20本以上残っている国はあるんですよ！</p>
-
-<p class="js-fadein">20本とまでいかなくとも
-平均17本以上残っている国が<br>
-・アメリカ<br>
-・スウェーデン<br>
-・スイス　なのです。</p>
-
-<p class="js-fadein">上記3ヶ国と日本はなにが違うのか？<br>
-ズバリ【予防】に対しての意識です。</p>
-
-<p class="js-fadein">今の歯医者さんにおいての
-日本人の当たり前は
-【虫歯】になったら歯医者さんへ行く です。</p>
+    <p class="js-fadein">まず第一にですけど
+      【歯】は全て（28本）残っててほしいですよね。笑<br>
+      僕の世代は100年時代と言われているので余計に。</p>
 
 
-<p class="js-fadein">虫歯がなくても歯医者さんに通う割合が
-上記3ヶ国の人々は80〜90%
-日本では2%となっております、、</p>
-
-<p class="js-fadein">かなり引いちゃいますよね、、笑<br>
-【当たり前】ってなんなんだろう。</p>
+    <p class="js-fadein">しかし、このままいけば 私達も80歳以上になった時、12本（今の半分以下）になっちゃう可能性が高いんですよ、、
+      <br>※島国なので食が似ている為</p>
 
 
-<p class="js-fadein">この文章を読んだ方には全員 歯医者さんに行って定期検診に通っていただきたいです！<br>
-※クリーニングは3ヶ月に1回 1回約1,500円〜4,000円で受けられます。<br>
-お近くの歯医者さんを調べてみてください。</p>
+    <p class="js-fadein">絶対に嫌ですよね、、</p>
+
+    <p class="js-fadein">ただ、世界規模で見てみると80歳以上の方が20本以上残っている国はあるんですよ！</p>
+
+    <p class="js-fadein">20本とまでいかなくとも
+      平均17本以上残っている国が<br>
+      ・アメリカ<br>
+      ・スウェーデン<br>
+      ・スイス　なのです。</p>
+
+    <p class="js-fadein">上記3ヶ国と日本はなにが違うのか？<br>
+      ズバリ【予防】に対しての意識です。</p>
+
+    <p class="js-fadein">今の歯医者さんにおいての
+      日本人の当たり前は
+      【虫歯】になったら歯医者さんへ行く です。</p>
 
 
-<p class="js-fadein">しかし、1度1日を振り返ってください。</p>
+    <p class="js-fadein">虫歯がなくても歯医者さんに通う割合が
+      上記3ヶ国の人々は80〜90%
+      日本では2%となっております、、</p>
 
-<p class="js-fadein">多くの人が起床時と睡眠前<br>
-1日に2回は歯磨きをしているのでは？<br>
-
-・定期検診は3ヶ月に1回<br>
-・歯磨きは毎日2回<br>
-
-毎日の歯磨きを見返した方が早そうですね！笑</p>
-
-<p class="js-fadein">美味しい食べ物は綺麗な口腔状態で食べたいですもんね！<br>
-少年・少女の頃（Revert）のような綺麗な歯で。</p>
-
-<p class="js-fadein">弊社の商品で元に戻しましょう！！</p>
-
-<p class="js-fadein">弊社では世界の予防先進国である<br>
-・アメリカ<br>
-・スウェーデン<br>
-・スイス<br>
-での選りすぐりの商品を販売しております。<br>
-
-【商品ページはコチラ　タグ】</p>
-
-<p class="js-fadein">※歯ブラシに関しては資金が貯まり次第
-【日本人に合った歯ブラシ】を製造致します</p>
+    <p class="js-fadein">かなり引いちゃいますよね、、笑<br>
+      【当たり前】ってなんなんだろう。</p>
 
 
-<p class="js-fadein">まずは 予防に関して意識の高い国の一流商品をご使用されてみてはいかがでしょうか？</p>
+    <p class="js-fadein">この文章を読んだ方には全員 歯医者さんに行って定期検診に通っていただきたいです！<br>
+      ※クリーニングは3ヶ月に1回 1回約1,500円〜4,000円で受けられます。<br>
+      お近くの歯医者さんを調べてみてください。</p>
 
-<p class="js-fadein">弊社（私）は
-本当の意味での 【豊かな人生】を貴方に推奨します。</p>
+
+    <p class="js-fadein">しかし、1度1日を振り返ってください。</p>
+
+    <p class="js-fadein">多くの人が起床時と睡眠前<br>
+      1日に2回は歯磨きをしているのでは？<br>
+
+      ・定期検診は3ヶ月に1回<br>
+      ・歯磨きは毎日2回<br>
+
+      毎日の歯磨きを見返した方が早そうですね！笑</p>
+
+    <p class="js-fadein">美味しい食べ物は綺麗な口腔状態で食べたいですもんね！<br>
+      少年・少女の頃（Revert）のような綺麗な歯で。</p>
+
+    <p class="js-fadein">弊社の商品で元に戻しましょう！！</p>
+
+    <p class="js-fadein">弊社では世界の予防先進国である<br>
+      ・アメリカ<br>
+      ・スウェーデン<br>
+      ・スイス<br>
+      での選りすぐりの商品を販売しております。<br>
+
+      【商品ページはコチラ　タグ】</p>
+
+    <p class="js-fadein">※歯ブラシに関しては資金が貯まり次第
+      【日本人に合った歯ブラシ】を製造致します</p>
 
 
-<p class="mgb-10vw js-fadein">Revert  菊林 慶彌</p>
+    <p class="js-fadein">まずは 予防に関して意識の高い国の一流商品をご使用されてみてはいかがでしょうか？</p>
+
+    <p class="js-fadein">弊社（私）は
+      本当の意味での 【豊かな人生】を貴方に推奨します。</p>
+
+
+    <p class="mgb-10vw js-fadein">Revert 菊林 慶彌</p>
   </div>
-<div class="beginners_img js-fadein">
-  <img src="revert\スクリーンショット (205).png" alt="">
-</div>
-<!-- フッター -->
-<div class="TOP_under">
-  <div class="TOP_under_img">
-<img class="TOP_under_text" src="revert\フッターロゴ.png">
-</div>
-<div class="undermenu">
-<a href="BeginnersGuide.html" class="TOP_new"><p>初めての方へ</p></a>
-<a href="sindan_input.html" class="TOP_online"><p>適正診断</p></a>
-</div>
-<div class="undermenu mgt-120">
-<a href="#" class="TOP_service"><p>利用規約</p></a>
-<a href="contact.html" class="TOP_contact"><p>お問い合わせ</p></a>
-</div>
-<p class="TOP_address mgt-120">住所 ： 東京都中央区新富1-1-7 BizSQUARE銀座　6階<br><span class="TEL">TEL ： 03-4405-5679</span><p>
-  <div class="TOP_under_icon">
-  <img class="youtube pr7" src="revert\ユーチューブ.png" alt="">
-  <img class="instagram" src="revert\インスタ.png" alt="">
-  <img class="twitter pl7" src="revert\ツイッター.png" alt="">
+  <div class="beginners_img js-fadein">
+    <img src="revert\スクリーンショット (205).png" alt="">
   </div>
+  <!-- フッター -->
+  <div class="TOP_under">
+    <div class="TOP_under_img">
+      <img class="TOP_under_text" src="revert\フッターロゴ.png">
+    </div>
+    <div class="undermenu">
+      <a href="BeginnersGuide.html" class="TOP_new">
+        <p>初めての方へ</p>
+      </a>
+      <a href="sindan_input.html" class="TOP_online">
+        <p>適正診断</p>
+      </a>
+    </div>
+    <div class="undermenu mgt-120">
+      <a href="#" class="TOP_service">
+        <p>利用規約</p>
+      </a>
+      <a href="contact.html" class="TOP_contact">
+        <p>お問い合わせ</p>
+      </a>
+    </div>
+    <p class="TOP_address mgt-120">住所 ： 東京都中央区新富1-1-7 BizSQUARE銀座　6階<br><span class="TEL">TEL ： 03-4405-5679</span>
+    <p>
+    <div class="TOP_under_icon">
+      <img class="youtube pr7" src="revert\ユーチューブ.png" alt="">
+      <img class="instagram" src="revert\インスタ.png" alt="">
+      <img class="twitter pl7" src="revert\ツイッター.png" alt="">
+    </div>
 
-</div>
-<!-- フッターここまで -->
+  </div>
+  <!-- フッターここまで -->
 
 </body>
+
 </html>

@@ -1,138 +1,168 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="revert.css">
-    <link rel="stylesheet" href="https://use.typekit.net/ngv6mfs.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
-    <script type="text/javascript">
-    function nav_slider_content1click(){
-      document.getElementById("slider_content2").style.display="none";
-      document.getElementById("slider_content1").style.display="block";
-      document.getElementById("slider_content3").style.display="none";
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="revert.css">
+  <link rel="stylesheet" href="https://use.typekit.net/ngv6mfs.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+  <script type="text/javascript">
+    function nav_slider_content1click() {
+      document.getElementById("slider_content2").style.display = "none";
+      document.getElementById("slider_content1").style.display = "block";
+      document.getElementById("slider_content3").style.display = "none";
       document.getElementById('TOP_genre_rightbutton').style.backgroundColor = "lightgrey";
       document.getElementById('TOP_genre_leftbutton').style.backgroundColor = "gray";
       document.getElementById('TOP_genre_setbutton').style.backgroundColor = "lightgrey";
-       }
-    function nav_slider_content2click(){
-      document.getElementById("slider_content1").style.display="none";
-      document.getElementById("slider_content2").style.display="block";
-      document.getElementById("slider_content3").style.display="none";
+    }
+    function nav_slider_content2click() {
+      document.getElementById("slider_content1").style.display = "none";
+      document.getElementById("slider_content2").style.display = "block";
+      document.getElementById("slider_content3").style.display = "none";
       document.getElementById('TOP_genre_rightbutton').style.backgroundColor = "gray";
       document.getElementById('TOP_genre_leftbutton').style.backgroundColor = "lightgrey";
       document.getElementById('TOP_genre_setbutton').style.backgroundColor = "lightgrey";
     }
-    function nav_slider_content3click(){
-      document.getElementById("slider_content2").style.display="none";
-      document.getElementById("slider_content1").style.display="none";
-      document.getElementById("slider_content3").style.display="block";
+    function nav_slider_content3click() {
+      document.getElementById("slider_content2").style.display = "none";
+      document.getElementById("slider_content1").style.display = "none";
+      document.getElementById("slider_content3").style.display = "block";
       document.getElementById('TOP_genre_rightbutton').style.backgroundColor = "lightgrey";
       document.getElementById('TOP_genre_leftbutton').style.backgroundColor = "lightgrey";
       document.getElementById('TOP_genre_setbutton').style.backgroundColor = "gray";
-       }
+    }
 
-    </script>
+  </script>
 
-    <title></title>
-  </head>
-  <body>
-    <!-- ヘッター -->
-      <header>
+  <title></title>
+</head>
+
+<body>
+  <!-- ヘッター -->
+  <header>
     <div id="nav-drawer">
-        <input id="nav-input" type="checkbox" class="nav-unshown">
-        <label id="nav-open" for="nav-input"><span></span></label>
-        <label class="nav-unshown" id="nav-close" for="nav-input"><h1>marubatu</h1></label>
-    <div id="nav-content">
-      <div class="nav-content-img">
-      <img src="revert\ヘッターロゴ.png" alt="">
-    </div>
-    <div class="nav-border"></div>
-    <h1 id="nav-close">marubatu</h1>
-      <ul>
-        <li><a href="BeginnersGuide.html">Corporate philosophy</a>
-          <a href="BeginnersGuide.html"><span class="fs19">初めての方へ</span></a></li>
-        <li><a href="index.html?1#slider_content1" id="nav_slider_content1" onclick="nav_slider_content1click()">Toothbrush</a>
-        <a href="index.html?1#slider_content1" id="nav_slider_content1" onclick="nav_slider_content1click()"><span class="fs19">歯ブラシ</span></a></li>
-        <li><a id="nav_slider_content2" onclick="nav_slider_content2click()" href="index.html?2#slider_content2">Tooth paste</a>
-        <a href="index.html?2#slider_content2" id="nav_slider_content2" onclick="nav_slider_content2click()"><span class="fs19">歯磨き粉</span></a></li>
-        <li><a href="index.html?3#slider_content3" id="nav_slider_content3" onclick="nav_slider_content3click()">Set item</a>
-        <a href="index.html?3#slider_content3" id="nav_slider_content3" onclick="nav_slider_content3click()"><span class="fs19">セットアイテム</span></a></li>
-        <li><a href="sindan_input.html">Diagnosis</a>
-        <a href="sindan_input.html"><span class="fs19">適正診断</span></a></li>
-        <li><a href="contact.html">Contact</a>
-          <a href="contact.html"><span class="fs19">お問い合わせ</span></a></li>
+      <input id="nav-input" type="checkbox" class="nav-unshown">
+      <label id="nav-open" for="nav-input"><span></span></label>
+      <label class="nav-unshown" id="nav-close" for="nav-input">
+        <h1>marubatu</h1>
+      </label>
+      <div id="nav-content">
+        <div class="nav-content-img">
+          <img src="revert\ヘッターロゴ.png" alt="">
+        </div>
+        <div class="nav-border"></div>
+        <h1 id="nav-close">marubatu</h1>
+        <ul>
+          <li><a href="BeginnersGuide.html">Corporate philosophy</a>
+            <a href="BeginnersGuide.html"><span class="fs19">初めての方へ</span></a></li>
+          <li><a href="index.html?1#slider_content1" id="nav_slider_content1"
+              onclick="nav_slider_content1click()">Toothbrush</a>
+            <a href="index.html?1#slider_content1" id="nav_slider_content1" onclick="nav_slider_content1click()"><span
+                class="fs19">歯ブラシ</span></a></li>
+          <li><a id="nav_slider_content2" onclick="nav_slider_content2click()" href="index.html?2#slider_content2">Tooth
+              paste</a>
+            <a href="index.html?2#slider_content2" id="nav_slider_content2" onclick="nav_slider_content2click()"><span
+                class="fs19">歯磨き粉</span></a></li>
+          <li><a href="index.html?3#slider_content3" id="nav_slider_content3" onclick="nav_slider_content3click()">Set
+              item</a>
+            <a href="index.html?3#slider_content3" id="nav_slider_content3" onclick="nav_slider_content3click()"><span
+                class="fs19">セットアイテム</span></a></li>
+          <li><a href="sindan_input.html">Diagnosis</a>
+            <a href="sindan_input.html"><span class="fs19">適正診断</span></a></li>
+          <li><a href="contact.html">Contact</a>
+            <a href="contact.html"><span class="fs19">お問い合わせ</span></a></li>
 
-    
-      </ul>
+
+        </ul>
+      </div>
     </div>
-    </div>
-    <img class="header_rogo"src="revert\ヘッターロゴ.png" alt="">
+    <img class="header_rogo" src="revert\ヘッターロゴ.png" alt="">
+    <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post"
+      style="width: 6vw;height: 6vw;margin: auto;margin-right: 10px;">
+      <input type="hidden" name="cmd" value="_s-xclick">
+      <input type="hidden" name="encrypted"
+        value="-----BEGIN PKCS7-----MIIG1QYJKoZIhvcNAQcEoIIGxjCCBsICAQExggEwMIIBLAIBADCBlDCBjjELMAkGA1UEBhMCVVMxCzAJBgNVBAgTAkNBMRYwFAYDVQQHEw1Nb3VudGFpbiBWaWV3MRQwEgYDVQQKEwtQYXlQYWwgSW5jLjETMBEGA1UECxQKbGl2ZV9jZXJ0czERMA8GA1UEAxQIbGl2ZV9hcGkxHDAaBgkqhkiG9w0BCQEWDXJlQHBheXBhbC5jb20CAQAwDQYJKoZIhvcNAQEBBQAEgYC1ujDDTZHVRO3YYW+Zejb2qP6sf0C60CURheLWmmQxcB+HmPmWvhNU/607Tx3WuOOLdiqwn52jEeALbSYpBdzL6JZ1PvBCzCWtug3yptiEQ53zfH1XpANmrAVsFCYnlJJMQDYzi+lSuoh7ddAWYC8Irwk07F6UrpySchXNJvWINjELMAkGBSsOAwIaBQAwUwYJKoZIhvcNAQcBMBQGCCqGSIb3DQMHBAgAfxQzVCMIhIAwo38Glwy8u9BO6ZAMYJUfAe82m4+qneNy0PukuciIHvlLwJIckVfXm59iqcWRilJaoIIDhzCCA4MwggLsoAMCAQICAQAwDQYJKoZIhvcNAQEFBQAwgY4xCzAJBgNVBAYTAlVTMQswCQYDVQQIEwJDQTEWMBQGA1UEBxMNTW91bnRhaW4gVmlldzEUMBIGA1UEChMLUGF5UGFsIEluYy4xEzARBgNVBAsUCmxpdmVfY2VydHMxETAPBgNVBAMUCGxpdmVfYXBpMRwwGgYJKoZIhvcNAQkBFg1yZUBwYXlwYWwuY29tMB4XDTA0MDIxMzEwMTMxNVoXDTM1MDIxMzEwMTMxNVowgY4xCzAJBgNVBAYTAlVTMQswCQYDVQQIEwJDQTEWMBQGA1UEBxMNTW91bnRhaW4gVmlldzEUMBIGA1UEChMLUGF5UGFsIEluYy4xEzARBgNVBAsUCmxpdmVfY2VydHMxETAPBgNVBAMUCGxpdmVfYXBpMRwwGgYJKoZIhvcNAQkBFg1yZUBwYXlwYWwuY29tMIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDBR07d/ETMS1ycjtkpkvjXZe9k+6CieLuLsPumsJ7QC1odNz3sJiCbs2wC0nLE0uLGaEtXynIgRqIddYCHx88pb5HTXv4SZeuv0Rqq4+axW9PLAAATU8w04qqjaSXgbGLP3NmohqM6bV9kZZwZLR/klDaQGo1u9uDb9lr4Yn+rBQIDAQABo4HuMIHrMB0GA1UdDgQWBBSWn3y7xm8XvVk/UtcKG+wQ1mSUazCBuwYDVR0jBIGzMIGwgBSWn3y7xm8XvVk/UtcKG+wQ1mSUa6GBlKSBkTCBjjELMAkGA1UEBhMCVVMxCzAJBgNVBAgTAkNBMRYwFAYDVQQHEw1Nb3VudGFpbiBWaWV3MRQwEgYDVQQKEwtQYXlQYWwgSW5jLjETMBEGA1UECxQKbGl2ZV9jZXJ0czERMA8GA1UEAxQIbGl2ZV9hcGkxHDAaBgkqhkiG9w0BCQEWDXJlQHBheXBhbC5jb22CAQAwDAYDVR0TBAUwAwEB/zANBgkqhkiG9w0BAQUFAAOBgQCBXzpWmoBa5e9fo6ujionW1hUhPkOBakTr3YCDjbYfvJEiv/2P+IobhOGJr85+XHhN0v4gUkEDI8r2/rNk1m0GA8HKddvTjyGw/XqXa+LSTlDYkqI8OwR8GEYj4efEtcRpRYBxV8KxAW93YDWzFGvruKnnLbDAF6VR5w/cCMn5hzGCAZowggGWAgEBMIGUMIGOMQswCQYDVQQGEwJVUzELMAkGA1UECBMCQ0ExFjAUBgNVBAcTDU1vdW50YWluIFZpZXcxFDASBgNVBAoTC1BheVBhbCBJbmMuMRMwEQYDVQQLFApsaXZlX2NlcnRzMREwDwYDVQQDFAhsaXZlX2FwaTEcMBoGCSqGSIb3DQEJARYNcmVAcGF5cGFsLmNvbQIBADAJBgUrDgMCGgUAoF0wGAYJKoZIhvcNAQkDMQsGCSqGSIb3DQEHATAcBgkqhkiG9w0BCQUxDxcNMjAxMTA0MDM0NjU5WjAjBgkqhkiG9w0BCQQxFgQUj17D+NFteN1Ncr2+uZD74+KsxxQwDQYJKoZIhvcNAQEBBQAEgYBPII+5BTKEgP9M/xcGHq2JjYT9qzxfKMwd4l9it4Khi6h0tpU3t9B7Eh5TsK0N7zAghfCk2XZbylivewMtJZZL9gq3O8R0VcIZbJn6OLPgiYEQfDlzgSsBbgtN7eSxpxMLXsoIpruHxr6yjFinN1nush9292KcIy475cyogly44A==-----END PKCS7-----">
+      <input type="image"
+        src="https://kkhr1341.github.io/revert/revert/%E3%82%AB%E3%83%BC%E3%83%88%E3%81%AE%E3%82%A2%E3%82%A4%E3%82%B3%E3%83%B3%E7%B4%A0%E6%9D%90.svg"
+        border="0" name="submit" alt="PayPal - オンラインでより安全・簡単にお支払い">
+      <img alt="" border="0" src="https://www.paypalobjects.com/ja_JP/i/scr/pixel.gif" width="1" height="1">
+    </form>
   </header>
   <!-- ヘッターここまで -->
 
-    <div class="products_step">
+  <div class="products_step">
     <div class="products_step_bar">
       <img src="revert\スクリーンショット (193).png" alt="">
       <p>ご注文小計（１点の商品）：<span class="font_red">￥2,200</span></p>
     </div>
     <div class="products_step_boder">
-    <div class="products_step_purchase">
-      <div class="products_step_purchase_img">
-      <img src="revert\アパカード①.jpg" alt="">
-      </div>
-      <div class="products_step_purchase_text">
-      <p class="products_step_purchase_text_name">アパガードリナメル</p>
-      <p class="products_step_purchase_text_text">歯にもトリートメントを！
-  より健康で、より綺麗な歯に</p>
-      <p class="products_step_purchase_text_praice mrg-40">￥2,200</p>
-      </div>
+      <div class="products_step_purchase">
+        <div class="products_step_purchase_img">
+          <img src="revert\アパカード①.jpg" alt="">
+        </div>
+        <div class="products_step_purchase_text">
+          <p class="products_step_purchase_text_name">アパガードリナメル</p>
+          <p class="products_step_purchase_text_text">歯にもトリートメントを！
+            より健康で、より綺麗な歯に</p>
+          <p class="products_step_purchase_text_praice mrg-40">￥2,200</p>
+        </div>
       </div>
       <div class="products_step_purchase_calculation">
-         <div class="products_step_recalculation">
-           <form class="ple_58" action="index.html" method="post">
-          <input type="text" name="" value="1">
-          <button class="products_step_button1">再計算</button>
+        <div class="products_step_recalculation">
+          <form class="ple_58" action="index.html" method="post">
+            <input type="text" name="" value="1">
+            <button class="products_step_button1">再計算</button>
           </form>
         </div>
         <div class="products_step_count">
           <form class="ple_58" action="index.html" method="post">
-           <input type="text" name="" value="1">
-           <button class="products_step_button2">数量</button>
-           <button class="products_step_deletebutton">削除する</button>
-           </form>
-         </div>
-         </div>
-       </div>
-         </div>
-         <div class="products_step_">
-         <button class="products_step_boybutton">ご購入の手続きへ</button>
-         <button class="products_step_boybutton2">買い物を続ける</button>
-         </div>
-         <!-- フッター -->
-         <div class="TOP_under">
-           <div class="TOP_under_img">
-         <img class="TOP_under_text" src="revert\フッターロゴ.png">
-         </div>
-         <div class="undermenu">
-         <a href="BeginnersGuide.html" class="TOP_new"><p>初めての方へ</p></a>
-         <a href="sindan_input.html" class="TOP_online"><p>適正診断</p></a>
-         </div>
-         <div class="undermenu mgt-120">
-         <a href="#" class="TOP_service"><p>利用規約</p></a>
-         <a href="contact.html" class="TOP_contact"><p>お問い合わせ</p></a>
-         </div>
-         <p class="TOP_address mgt-120">住所 ： 東京都中央区新富1-1-7 BizSQUARE銀座　6階<br><span class="TEL">TEL ： 03-4405-5679</span><p>
-           <div class="TOP_under_icon">
-           <img class="youtube pr7" src="revert\ユーチューブ.png" alt="">
-           <img class="instagram" src="revert\インスタ.png" alt="">
-           <img class="twitter pl7" src="revert\ツイッター.png" alt="">
-           </div>
+            <input type="text" name="" value="1">
+            <button class="products_step_button2">数量</button>
+            <button class="products_step_deletebutton">削除する</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="products_step_">
+    <button class="products_step_boybutton">ご購入の手続きへ</button>
+    <button class="products_step_boybutton2">買い物を続ける</button>
+  </div>
+  <!-- フッター -->
+  <div class="TOP_under">
+    <div class="TOP_under_img">
+      <img class="TOP_under_text" src="revert\フッターロゴ.png">
+    </div>
+    <div class="undermenu">
+      <a href="BeginnersGuide.html" class="TOP_new">
+        <p>初めての方へ</p>
+      </a>
+      <a href="sindan_input.html" class="TOP_online">
+        <p>適正診断</p>
+      </a>
+    </div>
+    <div class="undermenu mgt-120">
+      <a href="#" class="TOP_service">
+        <p>利用規約</p>
+      </a>
+      <a href="contact.html" class="TOP_contact">
+        <p>お問い合わせ</p>
+      </a>
+    </div>
+    <p class="TOP_address mgt-120">住所 ： 東京都中央区新富1-1-7 BizSQUARE銀座　6階<br><span class="TEL">TEL ： 03-4405-5679</span>
+    <p>
+    <div class="TOP_under_icon">
+      <img class="youtube pr7" src="revert\ユーチューブ.png" alt="">
+      <img class="instagram" src="revert\インスタ.png" alt="">
+      <img class="twitter pl7" src="revert\ツイッター.png" alt="">
+    </div>
 
-         </div>
-         <!-- フッターここまで -->
+  </div>
+  <!-- フッターここまで -->
 
-  </body>
+</body>
+
 </html>
